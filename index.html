@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Batman GCC Skills</title>
+    <meta name="description" content="Easily find and view Batman GCC characters and their skills">
+
+    <!-- Responsive viewport tag, tells small screens that it's responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Normalize.css, a cross-browser reset file -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css" rel="stylesheet">
+
+    <!-- Google Fonts --><!-- Maybe not necessary -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ceviche+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/float-grid.css" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+    <header>
+        <h1>Batman GCC Skills</h1>
+    </header>
+    <section class="home-screen">
+        <form class="js-search-form">
+            <div class="realm-container">
+                <label for="realms">Realm:</label>
+                <input id="realms" type="text" class="js-realm" required placeholder="Realm Name">
+            </div>
+            <label for="find">Character:</label>
+            <input id="find" type="text" class="js-toon" required placeholder="Character Name">
+            <br>
+            <button type="submit">Find</button>
+        </form>
+    </section>
+
+    <!--<section class="character-screen hidden">
+
+        <div class="row top-rows">
+        <div class="col-7">
+        <div>
+        <h2 class="js-character-name">NAME</h2>
+        <p>Level <span class="js-level">LEVEL</span> | <span class="js-player-race">RACE</span> <span class="js-player-class">CLASS</span> | <span class="js-realm">REALM</span></p>
+        <p><span class="js-guild">GUILD</span></p>
+        </div>
+        </div>
+        <div class="col-5">
+        <div>
+        <h2>Search Again</h2>
+        <form class="js-search-form">
+        <div class="realm-container-again">
+        <label for="realms-again">Realm:</label>
+        <input id="realms-again" type="text" class="js-realm" required placeholder="Realm Name">
+        </div>
+        <label for="find-again">Character:</label>
+        <input id="find-again" type="text" class="js-toon" required placeholder="Character Name">
+        <button type="submit">Find</button>
+        </form>
+        </div>
+        </div>
+        </div>
+
+        <div class="row">
+        <div class="col-7">
+        <div class="toon-stats">
+
+        <button class="accordion">Character Stats</button>
+        <div class="panel">
+        <h3>Primary Attributes</h3>
+        <ul>
+        <li>Health: <span class="js-health"></span></li>
+        <li>Stamina: <span class="js-stamina"></span></li>
+        <li>Strength: <span class="js-strength"></span></li>
+        <li>Agility: <span class="js-agility"></span></li>
+        <li>Intellect: <span class="js-intellect"></span></li>
+        </ul>
+        <h3>Secondary Attributes</h3>
+        <ul>
+        <li>Crit: <span class="js-crit-rating"></span> [<span class="js-crit"></span>%]</li>
+        <li>Haste: <span class="js-haste-rating"></span> [<span class="js-haste"></span>%]</li>
+        <li>Mastery: <span class="js-mastery-rating"></span> [<span class="js-mastery"></span>%]</li>
+        <li>Versatility: <span class="js-versatility"></span> [<span class="js-versatility-bonus"></span>%]</li>
+        <li>Leech: <span class="js-leech-rating"></span> [<span class="js-leech"></span>%]</li>
+        <li>Avoidance: <span class="js-avoidance"></span> [<span class="js-avoidance-bonus"></span>%]</li>
+        </ul>
+        <h3>Defence</h3>
+        <ul>
+        <li>Armor: <span class="js-armor"></span></li>
+        <li>Parry: <span class="js-parry-rating"></span> [<span class="js-parry"></span>%]</li>
+        <li>Dodge: <span class="js-dodge-rating"></span> [<span class="js-dodge"></span>%]</li>
+        <li>Block: <span class="js-block-rating"></span> [<span class="js-block"></span>%]</li>
+        </ul>
+        </div>
+
+        <button class="accordion">Gear List</button>
+        <div class="panel">
+        <h3>Average Item Level: <span class="js-item-level"></span></h3>
+        <ul class="gear-list">
+        </ul>
+        </div>
+
+        <button class="accordion">Talents</button>
+        <div class="panel">
+        <div class="spec-buttons">
+        </div>
+        </div>
+        </div>
+        </div>
+        <div class="col-5">
+        <div class="image-scroll">
+        <div class="toon-image">
+        </div>
+        </div>
+        </div>
+        </div>
+
+    </section>-->
+
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
