@@ -1,0 +1,373 @@
+{
+	"berserk": {
+		"name": "Berserk",
+		"type": "melee",
+		"icon": "",
+		"description": "Increase the strength of <strong>melee attacks</strong> by adding [x] <span class=\"white\">white</span> [diePlural] to each of them. Only active when <strong>at least half</strong> of [characterName]'s energy cubes are in [gender] <strong>wound zone</strong>.",
+		"altVillainDesc": "Increase the strength of <strong>melee attacks</strong> by adding [x] <span class=\"white\">white</span> [diePlural] to each of them. Only active after losing <strong>at least half [characterName]'s life points</strong>."
+	},
+	"circularStrike": {
+		"name": "Circular Strike",
+		"type": "melee",
+		"icon": "",
+		"description": "After <strong>neautralizing</strong> an enemy with a <strong>melee attack</strong>, <strong>any remaining successes</strong> can be used on [x] other mini[plural]",
+		"altVillainDesc": ""
+	},
+	"combo": {
+		"name": "Combo",
+		"type": "melee",
+		"icon": "",
+		"description": "When a mini is neutralized during a <strong>melee attack</strong>, gain a <strong>free melee attack</strong>, of [x] [dieColor] [diePlural], without any weapon bonuses, against another mini.",
+		"altVillainDesc": ""
+	},
+	"counterAttack": {
+		"name": "Counter Attack",
+		"type": "melee",
+		"icon": "",
+		"description": "After an <strong>enemy</strong> resolves a <strong>melee attack</strong> against [characterName], perform a free <strong>melee attack</strong> on the attacker with [x] <span class=\"yellow\">yellow</span> [diePlural], without weapon bonus benefits.",
+		"altVillainDesc": ""
+	},
+	"martialArts": {
+		"name": "Martial Arts",
+		"type": "melee",
+		"icon": "",
+		"description": "Add [x] <strong>automatic success[plural]</strong> during a melee attack if you have obtained <strong>at least one success</strong>.",
+		"altVillainDesc": ""
+	},
+	"burst": {
+		"name": "Burst",
+		"type": "ranged",
+		"icon": "",
+		"description": "After <strong>neautralizing</strong> an enemy with a <strong>ranged attack</strong>, <strong>remaining successes</strong> can be used on [x] <strong>other mini[plural]</strong> with a clear line of sight.",
+		"altVillainDesc": ""
+	},
+	"marksman": {
+		"name": "Marksman",
+		"type": "ranged",
+		"icon": "",
+		"description": "Add [x] <strong>automatic success[plural]</strong> during a <strong>ranged attack</strong> if you have obtained <strong>at least one success</strong>.",
+		"altVillainDesc": ""
+	},
+	"pointBlank": {
+		"name": "Point Blank",
+		"type": "ranged",
+		"icon": "",
+		"description": "Benefit from [x] <strong>free reroll[plural]</strong> when targeting a mini in your area with a <strong>ranged attack</strong>.",
+		"altVillainDesc": ""
+	},
+	"reach": {
+		"name": "Reach",
+		"type": "ranged",
+		"icon": "",
+		"description": "Target a mini that is <strong>not present in your area</strong> but possesses a <strong>clear line of sight</strong> for a <strong>melee attack</strong>. It must be at a <strong>distance lower or equal to</strong> [x].",
+		"altVillainDesc": ""
+	},
+	"retaliation": {
+		"name": "Retaliation",
+		"type": "ranged",
+		"icon": "",
+		"description": "After resolving a <strong>ranged attack</strong> against [characterName], perform a <strong>free ranged attack</strong> upon the attacker with [x] <strong><span class=\"yellow\">yellow</span> [diePlural]</strong>, without any weapon or elevation bonuses. <strong>Requires a ranged weapon</strong>.",
+		"altVillainDesc": ""
+	},
+	"bodyguard": {
+		"name": "Body Guard",
+		"type": "defense",
+		"icon": "",
+		"description": "<strong>Allied minis</strong> located in the same area as [characterName] increase their <strong>defense</strong> by [2] <strong>automatic success[plural]</strong>.",
+		"altVillainDesc": ""
+	},
+	"impenetrableDefense": {
+		"name": "Impenetrable Defense",
+		"type": "defense",
+		"icon": "",
+		"description": "Benefit from [x] <strong>automatic defense success[plural]</strong> against <strong>melee attacks</strong>.",
+		"altVillainDesc": ""
+	},
+	"protected": {
+		"name": "Protected",
+		"type": "defense",
+		"icon": "",
+		"description": "<strong>Avoid</strong> being the <strong>target of an attack</strong> if [characterName] is accompanied by at least [x] <strong>allied mini[plural]</strong> without this skill.",
+		"altVillainDesc": ""
+	},
+	"sacrifice": {
+		"name": "Sacrifice",
+		"type": "defense",
+		"icon": "",
+		"description": "Declare the use of this skill during the <strong>Create the Dice Pool step</strong> or an <strong>enemy attack</strong>. Take [x] <strong>success[plural]</strong> from the attack as <strong>undefendable wounds</strong> if it targets an ally mini in your area. The remaining successes are applied as usual to the defender.",
+		"altVillainDesc": ""
+	},
+	"untouchable": {
+		"name": "Untouchbale",
+		"type": "defense",
+		"icon": "",
+		"description": "Benefit from [x] <strong>automatic defense success[plural]</strong> against <strong>ranged attacks</strong>.",
+		"altVillainDesc": ""
+	},
+	"electricity": {
+		"name": "Electricity",
+		"type": "elemental",
+		"icon": "",
+		"description": "If you manage to <strong>exceed an opponent's defense</strong>, inflict [x] <strong>automatic wound[plural]</strong> before the rest of the attack's wounds are applied as usual.",
+		"altVillainDesc": ""
+	},
+	"flame": {
+		"name": "Flame",
+		"type": "elemental",
+		"icon": "",
+		"description": "During an <strong>attack</strong> or <strong>after an explosion</strong>, place [x] <strong>flame token[plural]</strong> in the corresponding area. Each token adds <strong>1 level of dangerous terrain</strong> to this area. The owner is <strong>immune</strong> to this effect.",
+		"altVillainDesc": "During an <strong>attack</strong> or <strong>after an explosion</strong>, place [x] <strong>flame token[plural]</strong> in the corresponding area. Each token adds <strong>1 level of dangerous terrain</strong> to this area. [characterName] is <strong>immune</strong> to this effect."
+	},
+	"frost": {
+		"name": "Frost",
+		"type": "elemental",
+		"icon": "",
+		"description": "During an <strong>attack</strong> or <strong>after an explosion</strong>, place [x] <strong>frost token[plural]</strong> in the corresponding area. Each token adds <strong>1 level of difficult terrain</strong> to this area. The owner is <strong>immune</strong> to this effect.",
+		"altVillainDesc": "During an <strong>attack</strong> or <strong>after an explosion</strong>, place [x] <strong>frost token[plural]</strong> in the corresponding area. Each token adds <strong>1 level of difficult terrain</strong> to this area. [characterName] is <strong>immune</strong> to this effect."
+	},
+	"gasImmunity": {
+		"name": "Gas Immunity",
+		"type": "elemental",
+		"icon": "",
+		"description": "<strong>Ignore wounds</strong> caused by <strong>gas tokens</strong>.",
+		"altVillainDesc": ""
+	},
+	"poison": {
+		"name": "Poison",
+		"type": "elemental",
+		"icon": "",
+		"description": "If you manage to <strong>exceed an opponent's defense</strong>, inflict [x] <strong>automatic wound[plural]</strong> before the rest of the attack's wounds are applied as usual.",
+		"altVillainDesc": ""
+	},
+	"toxicGas": {
+		"name": "Toxic Gas",
+		"type": "elemental",
+		"icon": "",
+		"description": "During an <strong>attack</strong> or <strong>after an explosion</strong>, place [x] <strong>gas token[plural]</strong> in the corresponding area. Each token adds <strong>1 level of dangerous terrain</strong> to this area. The owner is <strong>immune</strong> to this effect.",
+		"altVillainDesc": "During an <strong>attack</strong> or <strong>after an explosion</strong>, place [x] <strong>gas token[plural]</strong> in the corresponding area. Each token adds <strong>1 level of dangerous terrain</strong> to this area. [characterName] is <strong>immune</strong> to this effect."
+	},
+	"elusive": {
+		"name": "Elusive",
+		"type": "movement",
+		"icon": "",
+		"description": "Ignore [x] <strong>enemy size index[plural]</strong> when <strong>moving</strong>.",
+		"altVillainDesc": ""
+	},
+	"fly": {
+		"name": "Fly",
+		"type": "movement",
+		"icon": "",
+		"description": "Move by <strong>flying</strong>. <strong>Ignore hindering</strong> and <strong>difficult terrain</strong> when moving. Also ignore additional costs and effects of <strong>special moves</strong>.",
+		"altVillainDesc": ""
+	},
+	"immobilization": {
+		"name": "Immobilization",
+		"type": "movement",
+		"icon": "",
+		"description": "If at least [x] <strong>wound[plural]</strong> is dealt, the wounded mini is <strong>laid down</strong>. Standing requires using the Move Point Bonus for the First Movement.",
+		"altVillainDesc": ""
+	},
+	"mobility": {
+		"name": "Mobility",
+		"type": "movement",
+		"icon": "",
+		"description": "Ignore [x] <strong>difficult terrain level[plural]</strong> when moving.",
+		"altVillainDesc": ""
+	},
+	"parkour": {
+		"name": "Parkour",
+		"type": "movement",
+		"icon": "",
+		"description": "Ignore [x] <strong>jump</strong> or <strong>climb level[plural]</strong> when performing a <strong>special move</strong>, and [x] <strong>wound</strong> caused by a <strong>fall</strong>.",
+		"altVillainDesc": ""
+	},
+	"reducedMobility": {
+		"name": "Reduced Mobility",
+		"type": "movement",
+		"icon": "",
+		"description": "<strong>[characterName] cannot perform special moves (climb, jump, and fall).</strong>",
+		"altVillainDesc": ""
+	},
+	"tactician": {
+		"name": "Tactician",
+		"type": "thought",
+		"icon": "",
+		"description": "Perform an automatic <strong>thought</strong> action to immediately grant [x] <strong>free move point[plural]</strong> to an <strong>allied mini</strong> that hasn't been the target of this effect this turn. Character minis also get their Move Point Bonus for the First Movement.",
+		"altVillainDesc": ""
+	},
+	"wallbreaker": {
+		"name": "Wall Breaker",
+		"type": "movement",
+		"icon": "",
+		"description": "Move through a level [x] or lower wall at a movement cost raised by 2, placing a broken wall token on it. The two areas become adjacent and crossable and possess clear line of sight.",
+		"altVillainDesc": ""
+	},
+	"ambidexterity": {
+		"name": "Ambidexterity",
+		"type": "misc",
+		"icon": "",
+		"description": "Able to use <strong>two weapons</strong> of the <strong>same type</strong> simultaneously during attacks <strong>adding their bonuses</strong>. Individual weapon encumberance or size must be <strong>lower or equal to</strong> [x].",
+		"altVillainDesc": ""
+	},
+	"attraction": {
+		"name": "Attraction",
+		"type": "manipulation",
+		"icon": "",
+		"description": "<strong>Move a mini into your area</strong> by performing an <strong>automatic manipulation</strong>. They must possess a <strong>clear line of sight</strong> and be at a <strong>disatance lower or equal to</strong> [x]. Their size index must also be lower or equal to yours.",
+		"altVillainDesc": ""
+	},
+	"blast": {
+		"name": "Blast",
+		"type": "manipulation",
+		"icon": "",
+		"description": "<strong>Once per turn</strong>, spend an <strong>automatic manipulation</strong> to trigger a level [x] <strong>explosion in your area</strong> and in an <strong>adjacent area</strong> with <strong>clear line of sight</strong>.",
+		"altVillainDesc": ""
+	},
+	"cry": {
+		"name": "Cry",
+		"type": "misc",
+		"icon": "",
+		"description": "<strong>Once per turn</strong>, trigger a level [x] <strong>explosion</strong> in your area and in an adjacent area with a clear line of sight, <strong>ignoring the Spend Energy Cube</strong> step. [characterName] is not wounded during this explosion.",
+		"altVillainDesc": ""
+	},
+	"eliteCommand": {
+		"name": "Elite Command",
+		"type": "thought",
+		"icon": "",
+		"description": "Chooes an <strong>elite level tile</strong> from your side and [x] <strong>corresponding minis</strong> that start the mission in [characterName]'s area. Activate these by performing an <strong>automatic thought action</strong>. Each energy cube spent on <strong>defense</strong>, <strong>reroll</strong>, or <strong>move</strong> for the friendly minis is moved to [characterName]'s <strong>thought space</strong>.",
+		"altVillainDesc": ""
+	},
+	"grenade": {
+		"name": "Grenade",
+		"type": "manipulation",
+		"icon": "",
+		"description": "Perform a <strong>complex manipulation</strong> to trigger a level [x] <strong>explosion</strong> in an area with the <strong>difficulty equal to the disatance between your area and the targeted area</strong>. If failed, the explosion occurs at a distance equal to the number of successes obtained along the line of sight.",
+		"altVillainDesc": ""
+	},
+	"hacking": {
+		"name": "Hacking",
+		"type": "",
+		"icon": "",
+		"description": "",
+		"altVillainDesc": ""
+	},
+	"harmless": {
+		"name": "Harmless",
+		"type": "",
+		"icon": "",
+		"description": "",
+		"altVillainDesc": ""
+	},
+	"henchmanCommand": {
+		"name": "Henchman Command",
+		"type": "",
+		"icon": "",
+		"description": "",
+		"altVillainDesc": ""
+	},
+	"horror": {
+		"name": "Horror",
+		"type": "",
+		"icon": "",
+		"description": "",
+		"altVillainDesc": ""
+	},
+	"imaginaryFriend": {
+		"name": "Imaginary Friend",
+		"type": "",
+		"icon": "",
+		"description": "",
+		"altVillainDesc": ""
+	},
+	"investigation": {
+		"name": "Investigation",
+		"type": "",
+		"icon": "",
+		"description": "",
+		"altVillainDesc": ""
+	},
+	"lockPicking": {
+		"name": "Lock Picking",
+		"type": "",
+		"icon": "",
+		"description": "",
+		"altVillainDesc": ""
+	},
+	"luck": {
+		"name": "Luck",
+		"type": "",
+		"icon": "",
+		"description": "",
+		"altVillainDesc": ""
+	},
+	"misfortune": {
+		"name": "Misfortune",
+		"type": "",
+		"icon": "",
+		"description": "",
+		"altVillainDesc": ""
+	},
+	"moralCode": {
+		"name": "Moral Code",
+		"type": "",
+		"icon": "",
+		"description": "",
+		"altVillainDesc": ""
+	},
+	"munitionsSpecialist": {
+		"name": "Munitions Specialist",
+		"type": "",
+		"icon": "",
+		"description": "",
+		"altVillainDesc": ""
+	},
+	"nervesOfSteel": {
+		"name": "Nerves of Steel",
+		"type": "",
+		"icon": "",
+		"description": "",
+		"altVillainDesc": ""
+	},
+	"pushingLimits": {
+		"name": "Pushing Limits",
+		"type": "",
+		"icon": "",
+		"description": "",
+		"altVillainDesc": ""
+	},
+	"regeneration": {
+		"name": "Regeneration",
+		"type": "",
+		"icon": "",
+		"description": "",
+		"altVillainDesc": ""
+	},
+	"shackle": {
+		"name": "Shackle",
+		"type": "",
+		"icon": "",
+		"description": "",
+		"altVillainDesc": ""
+	},
+	"smokeGrenade": {
+		"name": "Smoke Grenade",
+		"type": "",
+		"icon": "",
+		"description": "",
+		"altVillainDesc": ""
+	},
+	"sneakAttack": {
+		"name": "Sneak Attack",
+		"type": "",
+		"icon": "",
+		"description": "",
+		"altVillainDesc": ""
+	},
+	"support": {
+		"name": "Support",
+		"type": "",
+		"icon": "",
+		"description": "",
+		"altVillainDesc": ""
+	}
+}
