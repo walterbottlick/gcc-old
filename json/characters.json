@@ -1,0 +1,50 @@
+{
+	"alfred": {
+		"name": "Alfred",
+		"subtitle": "",
+		"affiliation": "hero",
+		"gender": "his",
+		"melee": "white",
+		"ranged": "yellow",
+		"manipulation": "orange",
+		"thought": "orange",
+		"defense": "orange",
+		"moralCode": false,
+		"headerImage": "",
+		"icon": "",
+		"rank": 3,
+		"reinforcementCost": 0,
+		"skills": {
+			"luck": {
+				"obj": "skills.luck",
+				"level": 2,
+				"disabledAt": 0
+			},
+			"tactician": {
+				"obj": "skills.tactician",
+				"level": 2,
+				"disabledAt": 0
+			},
+			"sacrifice": {
+				"obj": "skills.sacrifice",
+				"level": 3,
+				"disabledAt": 0
+			},
+			"munitionsSpecialist": {
+				"obj": "skills.munitionsSpecialist",
+				"level": 1,
+				"disabledAt": 0
+			},
+			"impenetrableDefense": {
+				"obj": "skills.impenetrableDefense",
+				"level": 1,
+				"disabledAt": 4
+			},
+			"untouchable": {
+				"obj": "skills.untouchable",
+				"level": 1,
+				"disabledAt": 4
+			}
+		}
+	}
+}

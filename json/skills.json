@@ -73,7 +73,7 @@
 		"name": "Body Guard",
 		"type": "defense",
 		"icon": "",
-		"description": "<strong>Allied minis</strong> located in the same area as [characterName] increase their <strong>defense</strong> by [2] <strong>automatic success[plural]</strong>.",
+		"description": "<strong>Allied minis</strong> located in the same area as [characterName] increase their <strong>defense</strong> by [x] <strong>automatic success[plural]</strong>.",
 		"altVillainDesc": ""
 	},
 	"impenetrableDefense": {
