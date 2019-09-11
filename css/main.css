@@ -1,0 +1,53 @@
+html {
+	height: 100%;
+	background-color: rgb(0,159,204);
+  	background-image: radial-gradient(rgb(0,159,204), rgb(16,48,68));
+}
+
+header {
+	text-align: center;
+	margin-bottom: 2em; 
+}
+
+h1 {
+	margin: 1em 0 0;
+}
+
+h2 {
+	margin: 0;
+}
+
+.main-buttons div {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+button {
+	font-family: 'courier new';
+	font-weight: bold;
+	text-transform: uppercase;
+	color: rgb(255,255,255) !important;
+	width: 60%;
+	font-size: 20px;
+	text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+	box-shadow: 1px 1px 8px rgba(0,0,0,0.2);
+	padding: 8px 22px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 1px solid rgb(131,82,22);
+	background: rgb(243,148,0);
+	background: linear-gradient(top,  rgb(243,148,0),  rgb(190,120,5));
+	background: -ms-linear-gradient(top,  rgb(243,148,0),  rgb(190,120,5));
+	background: -webkit-gradient(linear, left top, left bottom, from(rgb(243,148,0)), to(rgb(190,120,5)));
+	background: -moz-linear-gradient(top,  rgb(243,148,0),  rgb(190,120,5));
+}
+
+button:focus {outline:0;}
+
+button:active {
+	background: linear-gradient(top,  rgb(190,120,5),  rgb(243,148,0));
+	background: -ms-linear-gradient(top,  rgb(190,120,5),  rgb(243,148,0));
+	background: -webkit-gradient(linear, left top, left bottom, from(rgb(190,120,5)), to(rgb(243,148,0)));
+	background: -moz-linear-gradient(top,  rgb(190,120,5),  rgb(243,148,0));
+}
