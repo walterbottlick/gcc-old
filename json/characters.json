@@ -16,35 +16,122 @@
 		"reinforcementCost": 0,
 		"skills": {
 			"luck": {
-				"obj": "skills.luck",
 				"level": 2,
 				"disabledAt": 0
 			},
 			"tactician": {
-				"obj": "skills.tactician",
 				"level": 2,
 				"disabledAt": 0
 			},
 			"sacrifice": {
-				"obj": "skills.sacrifice",
 				"level": 3,
 				"disabledAt": 0
 			},
 			"munitionsSpecialist": {
-				"obj": "skills.munitionsSpecialist",
 				"level": 1,
 				"disabledAt": 0
 			},
 			"impenetrableDefense": {
-				"obj": "skills.impenetrableDefense",
 				"level": 1,
 				"disabledAt": 4
 			},
 			"untouchable": {
-				"obj": "skills.untouchable",
 				"level": 1,
 				"disabledAt": 4
 			}
+		},
+		"startingItem": ""
+	},
+	"batmanDarkKnightReturns": {
+		"name": "Batman",
+		"subtitle": "Dark Knight Returns",
+		"affiliation": "hero",
+		"gender": "his",
+		"melee": "red",
+		"ranged": "orange",
+		"manipulation": "orange",
+		"thought": "red",
+		"defense": "orange",
+		"moralCode": true,
+		"headerImage": "",
+		"icon": "",
+		"rank": 3,
+		"reinforcementCost": 0,
+		"skills": {
+			"combo": {
+				"level": 2,
+				"disabledAt": 4
+			},
+			"berserk": {
+				"level": 1,
+				"disabledAt": 0
+			},
+			"martialArts": {
+				"level": 1,
+				"disabledAt": 4
+			},
+			"pushingLimits": {
+				"level": 2,
+				"disabledAt": 0
+			},
+			"sacrifice": {
+				"level": 3,
+				"disabledAt": 0
+			},
+			"investigation": {
+				"level": 2,
+				"disabledAt": 0
+			},
+			"parkour": {
+				"level": 1,
+				"disabledAt": 3
+			}
+		},
+		"startingItem": ""
+	},
+	"nightwing": {
+		"name": "Nightwing",
+		"subtitle": "",
+		"affiliation": "hero",
+		"gender": "his",
+		"melee": "orange",
+		"ranged": "orange",
+		"manipulation": "yellow",
+		"thought": "orange",
+		"defense": "orange",
+		"moralCode": true,
+		"headerImage": "",
+		"icon": "",
+		"rank": 3,
+		"reinforcementCost": 0,
+		"skills": {
+			"combo": {
+				"level": 1,
+				"disabledAt": 4
+			},
+			"martialArts": {
+				"level": 1,
+				"disabledAt": 4
+			},
+			"counterAttack": {
+				"level": 2,
+				"disabledAt": 3
+			},
+			"ambidexterity": {
+				"level": 1,
+				"disabledAt": 0
+			},
+			"mobility": {
+				"level": 1,
+				"disabledAt": 4
+			},
+			"parkour": {
+				"level": 2,
+				"disabledAt": 4
+			}
+		},
+		"startingItem": {
+			"baton": 2
 		}
 	}
 }
