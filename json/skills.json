@@ -10,7 +10,7 @@
 		"name": "Circular Strike",
 		"type": "melee",
 		"icon": "",
-		"description": "After <strong>neautralizing</strong> an enemy with a <strong>melee attack</strong>, <strong>any remaining successes</strong> can be used on [x] other mini[plural]",
+		"description": "After <strong>neutralizing</strong> an enemy with a <strong>melee attack</strong>, <strong>any remaining successes</strong> can be used on [x] other mini[plural]",
 		"altVillainDesc": ""
 	},
 	"combo": {
@@ -38,7 +38,7 @@
 		"name": "Burst",
 		"type": "ranged",
 		"icon": "",
-		"description": "After <strong>neautralizing</strong> an enemy with a <strong>ranged attack</strong>, <strong>remaining successes</strong> can be used on [x] <strong>other mini[plural]</strong> with a clear line of sight.",
+		"description": "After <strong>neutralizing</strong> an enemy with a <strong>ranged attack</strong>, <strong>any remaining successes</strong> can be used on [x] <strong>other mini[plural]</strong> with a clear line of sight.",
 		"altVillainDesc": ""
 	},
 	"marksman": {
@@ -246,128 +246,128 @@
 	},
 	"hacking": {
 		"name": "Hacking",
-		"type": "",
+		"type": "thought",
 		"icon": "",
-		"description": "",
+		"description": "Benefit from [x] <strong>automatic success[plural]</strong> during <strong>specific thought actions</strong> listed in the scenario setup.",
 		"altVillainDesc": ""
 	},
 	"harmless": {
 		"name": "Harmless",
-		"type": "",
+		"type": "misc",
 		"icon": "",
-		"description": "",
+		"description": "During an attack, normal wounds you inflict are <strong>reduced to 0</strong>.",
 		"altVillainDesc": ""
 	},
 	"henchmanCommand": {
 		"name": "Henchman Command",
-		"type": "",
+		"type": "thought",
 		"icon": "",
-		"description": "",
+		"description": "Choose a <strong>henchman level tile</strong> from your side and [x] <strong>corresponding mini[plural]</strong> that start the mission in [characterName]'s area. Activate the mini[plural] by performing an <strong>automatic thought action</strong>. Each energy cube spent on <strong>defense</strong>, <strong>reroll</strong>, or <strong>move</strong> for the friendly mini[plural] is moved to [characterName]'s <strong>thought space</strong>.",
 		"altVillainDesc": ""
 	},
 	"horror": {
 		"name": "Horror",
-		"type": "",
+		"type": "misc",
 		"icon": "",
-		"description": "",
+		"description": "The <strong>move point cost</strong> of enemies entering [characterName]'s area is <strong>increased</strong> by [x].",
 		"altVillainDesc": ""
 	},
 	"imaginaryFriend": {
 		"name": "Imaginary Friend",
-		"type": "",
+		"type": "misc",
 		"icon": "",
-		"description": "",
+		"description": "Gain 1 <strong>additional <span class=\"yellow\">yellow</span> die</strong> for all your actions from \"<em>a little voice in your head</em>\". To <strong>nullify</strong> this effect, an opponent <strong>in your area</strong> must perform a <strong>complex thought of difficulty</strong> [x].",
 		"altVillainDesc": ""
 	},
 	"investigation": {
 		"name": "Investigation",
-		"type": "",
+		"type": "thought",
 		"icon": "",
-		"description": "",
+		"description": "Benefit from [x] <strong>automatic success[plural]</strong> during <strong>specific thought actions</strong> listed in the scenario setup.",
 		"altVillainDesc": ""
 	},
 	"lockPicking": {
 		"name": "Lock Picking",
-		"type": "",
+		"type": "manipulation",
 		"icon": "",
-		"description": "",
+		"description": "Benefit from [x] <strong>automatic success[plural]</strong> during <strong>specific manipulation actions</strong> listed in the scenario setup.",
 		"altVillainDesc": ""
 	},
 	"luck": {
 		"name": "Luck",
-		"type": "",
+		"type": "misc",
 		"icon": "",
-		"description": "",
+		"description": "Benefit from [x] <strong>free reroll[plural]</strong> whenever rolling dice as [characterName].",
 		"altVillainDesc": ""
 	},
 	"misfortune": {
 		"name": "Misfortune",
-		"type": "",
+		"type": "misc",
 		"icon": "",
-		"description": "",
+		"description": "<strong>Force</strong> an enemy in your area to <strong>reroll [x] [diePlural]</strong>. You may choose the [diePlural] to reroll after any free rerolls.",
 		"altVillainDesc": ""
 	},
 	"moralCode": {
 		"name": "Moral Code",
-		"type": "",
+		"type": "misc",
 		"icon": "",
-		"description": "",
+		"description": "[characterName] cannot use lethal items.",
 		"altVillainDesc": ""
 	},
 	"munitionsSpecialist": {
 		"name": "Munitions Specialist",
-		"type": "",
+		"type": "manipulation",
 		"icon": "",
-		"description": "",
+		"description": "Benefit from [x] <strong>automatic success[plural]</strong> during <strong>specific manipulation actions</strong> listed in the scenario setup.",
 		"altVillainDesc": ""
 	},
 	"nervesOfSteel": {
 		"name": "Nerves of Steel",
-		"type": "",
+		"type": "misc",
 		"icon": "",
-		"description": "",
+		"description": "Ignore [x] <strong>enemy menace index[plural]</strong> when performing <strong>ranged attacks</strong>, <strong>manipulations</strong>, or <strong>thoughts</strong>.",
 		"altVillainDesc": ""
 	},
 	"pushingLimits": {
 		"name": "Pushing Limits",
-		"type": "",
+		"type": "misc",
 		"icon": "",
-		"description": "",
+		"description": "Self inflict [x] <strong>wound[plural]</strong>. Cubes moved to the wound zone by this skill are considered to have been spent on the current action, regardless of exertion limit.",
 		"altVillainDesc": ""
 	},
 	"regeneration": {
 		"name": "Regeneration",
-		"type": "",
+		"type": "misc",
 		"icon": "",
-		"description": "",
-		"altVillainDesc": ""
+		"description": "During the <em>Declare Heroes' Stance</em> step, move [x] cubes from your <strong>wound zone</strong> to your <strong>fatigue zone</strong>.",
+		"altVillainDesc": "At the start of [characterName]'s activation, <strong>recover [x] life points</strong>."
 	},
 	"shackle": {
 		"name": "Shackle",
-		"type": "",
+		"type": "melee",
 		"icon": "",
-		"description": "",
+		"description": "On a <strong>successful melee attack</strong>, place [x] <strong>shackle token[plural]</strong> on the defender. <strong>No wounds are inflicted</strong> by this attack. The shackled mini has their <strong>successes reduced by</strong> [x] when performing <strong>attacks, thoughts, manipulations, or defenses</strong>. These tokens can be removed by performing a <strong>successful complex manipulation of difficulty</strong> [x] (even by allied minis in the same area).",
 		"altVillainDesc": ""
 	},
 	"smokeGrenade": {
 		"name": "Smoke Grenade",
-		"type": "",
+		"type": "misc",
 		"icon": "",
-		"description": "",
+		"description": "After triggering an explosion in an area, place [x] <strong>smoke grenade tokens</strong> there. During <strong>ranged attacks</strong>, attackers must count the number of <strong>smoke grenade tokens</strong> in areas that their line of sight passes through. This total is subtracted from their number of attack successes",
 		"altVillainDesc": ""
 	},
 	"sneakAttack": {
 		"name": "Sneak Attack",
-		"type": "",
+		"type": "misc",
 		"icon": "",
-		"description": "",
+		"description": "When [characterName] attacks an enemy in [gender] area, if the total menace indexes of allies is equal to or higher than the total menace indexes of enemies in that area, add [x] automatic success[plural] to the attack.",
 		"altVillainDesc": ""
 	},
 	"support": {
 		"name": "Support",
-		"type": "",
+		"type": "misc",
 		"icon": "",
-		"description": "",
+		"description": "Provide [x] free reroll[plural] to all the allied minis in [characterName]'s area.",
 		"altVillainDesc": ""
 	}
 }
