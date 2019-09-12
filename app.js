@@ -6,11 +6,15 @@ var characterList = "https://walterbottlick.github.io/gcc/json/characters.json";
 // 
 
 $.getJSON(skillList, function(json) {
-    console.log(json); // this will show the info it in firebug console
+    console.log(json);
+    var skills = json;
+    // call function here to deal with retrieved object. See toonfinder app.js
 });
 
 $.getJSON(characterList, function(json) {
-    console.log(json); // this will show the info it in firebug console
+    console.log(json);
+    var characters = json;
+    // call function here to deal with retrieved object. See toonfinder app.js
 });
 
 
