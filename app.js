@@ -2,9 +2,17 @@
 
 var skillList = "https://walterbottlick.github.io/gcc/json/skills.json";
 var characterList = "https://walterbottlick.github.io/gcc/json/characters.json";
+var skills = {};
+var characters = {};
 
-// 
+
+$.getJSON(skillList, function(json) {
+    skills = json;
+});
 
 $.getJSON(characterList, function(json) {
-    console.log(json); // this will show the info it in firebug console
+    characters = json;
 });
+
+console.log(skills);
+console.log(characters);
