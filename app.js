@@ -8,10 +8,12 @@ var characters = {};
 
 $.getJSON(skillList, function(json) {
     skills = json;
+    console.log(json);
 });
 
 $.getJSON(characterList, function(json) {
     characters = json;
+    console.log(json);
 });
 
 console.log(skills);
