@@ -25,7 +25,6 @@ h2 {
 button {
 	font-family: 'courier new';
 	font-weight: bold;
-	text-transform: uppercase;
 	color: rgb(255,255,255) !important;
 	width: 60%;
 	font-size: 20px;
