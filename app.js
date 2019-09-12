@@ -6,12 +6,12 @@ var skills = {};
 var characters = {};
 
 
-$.getJSON(skillList, function(skills) {
-    this.skills = skills;
+$.getJSON(skillList, function(json) {
+    skills = json;
 });
 
-$.getJSON(characterList, function(characters) {
-    this.characters = characters;
+$.getJSON(characterList, function(json) {
+    characters = json;
 });
 
 console.log(skills);
