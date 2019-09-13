@@ -57,22 +57,37 @@ input {
 }
 
 .skill-box {
-	height: 5em;
-	background-color: white;
-	padding: 0;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
 }
 
-.skill-box div {
+.skill-box .skill-container {
+	background-color: white;
+	height: auto;
+}
+
+.skill-box .skill-container div {
 	display: inline-block;
 }
 
-.skill-box div:first-child {
+.skill-box .skill-container div:first-child {
 	height: 5em;
 	width: 25%;
 	background-color: black;
 }
 
-.skill-box div:last-child {
-	height: 5em;
-	width: 75%;
+.skill-box .skill-container div:last-child {
+	height: auto;
+	width: 73%;
+	vertical-align: top;
+}
+
+.skill-box .skill-container div:last-child h4 {
+	margin: 1em 0 0.5em;
+    font-size: 0.7em;
+}
+
+.skill-box .skill-container div:last-child p {
+	font-size: 0.6em;
+    margin: 0 0 1em 0;
 }
