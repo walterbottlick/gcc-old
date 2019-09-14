@@ -4,43 +4,57 @@
 		"subtitle": "",
 		"affiliation": "hero",
 		"gender": "his",
-		"melee": "white",
-		"ranged": "yellow",
-		"manipulation": "orange",
-		"thought": "orange",
-		"defense": "orange",
 		"moralCode": false,
 		"headerImage": "",
 		"icon": "",
-		"rank": 3,
-		"reinforcementCost": 0,
-		"skills": {
-			"luck": {
-				"level": 2,
-				"disabledAt": 0
+		"sheet": {
+			"melee": "white",
+			"ranged": "yellow",
+			"manipulation": "orange",
+			"thought": "orange",
+			"defense": "orange",
+			"skills": {
+				"luck": {
+					"level": 2,
+					"disabledAt": 0
+				},
+				"tactician": {
+					"level": 2,
+					"disabledAt": 0
+				},
+				"sacrifice": {
+					"level": 3,
+					"disabledAt": 0
+				},
+				"munitionsSpecialist": {
+					"level": 1,
+					"disabledAt": 0
+				},
+				"impenetrableDefense": {
+					"level": 1,
+					"disabledAt": 4
+				},
+				"untouchable": {
+					"level": 1,
+					"disabledAt": 4
+				}
 			},
-			"tactician": {
-				"level": 2,
-				"disabledAt": 0
-			},
-			"sacrifice": {
-				"level": 3,
-				"disabledAt": 0
-			},
-			"munitionsSpecialist": {
-				"level": 1,
-				"disabledAt": 0
-			},
-			"impenetrableDefense": {
-				"level": 1,
-				"disabledAt": 4
-			},
-			"untouchable": {
-				"level": 1,
-				"disabledAt": 4
-			}
+			"startingItem": ""
 		},
-		"startingItem": ""
+		"tile": {
+			"rank": 3,
+			"reinforcementCost": 0,
+			"skills": {
+				"support": 2,
+				"tactician": 2,
+				"bodyguard": 1
+			},
+			"power": {
+				"name": "Care",
+				"type": "Special Event",
+				"description": "The hero resets the lieutenant's life point marker back to its initial value.<br><span class=\"and-or\">OR</span><br>The hero immediately performs a character activation with Alfred. They only carry out their First Movement Step."
+			}
+		}
 	},
 	"batmanDarkKnightReturns": {
 		"name": "Batman",
