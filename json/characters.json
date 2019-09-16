@@ -161,5 +161,64 @@
 		"startingItem": {
 			"baton": 2
 		}
+	},
+	"nightwing": {
+		"name": "Nightwing",
+		"subtitle": "",
+		"affiliation": "hero",
+		"gender": "his",
+		"moralCode": true,
+		"headerImage": "",
+		"icon": "",
+		"sheet": {
+			"melee": "orange",
+			"ranged": "orange",
+			"manipulation": "yellow",
+			"thought": "orange",
+			"defense": "orange",
+			"skills": {
+				"combo": {
+					"level": 1,
+					"disabledAt": 4
+				},
+				"martialArts": {
+					"level": 1,
+					"disabledAt": 4
+				},
+				"counterAttack": {
+					"level": 2,
+					"disabledAt": 3
+				},
+				"ambidexterity": {
+					"level": 1,
+					"disabledAt": 0
+				},
+				"mobility": {
+					"level": 1,
+					"disabledAt": 4
+				},
+				"parkour": {
+					"level": 2,
+					"disabledAt": 4
+				}
+			},
+			"startingItem": {
+				"baton": 2
+			}
+		},
+		"tile": {
+			"rank": 3,
+			"reinforcementCost": 0,
+			"skills": {
+				"parkour": 3,
+				"mobility": 2,
+				"counterAttack": 2
+			},
+			"power": {
+				"name": "Impetuous",
+				"type": "Special Event",
+				"description": "<p>The hero immediately performs a character activation with Nightwing. To do so, they follow the Activate a Character Controlled by a Tile steps with the following excepions:</p><ul><li>Nightwing can only perform one of the two movement steps.</li><li>During the Declare an Action Other than a Movement step, they can only declare melee attacks.</li></ul>"
+			}
+		}
 	}
 }
