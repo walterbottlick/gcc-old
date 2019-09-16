@@ -52,7 +52,7 @@
 			"power": {
 				"name": "Care",
 				"type": "Special Event",
-				"description": "The hero resets the lieutenant's life point marker back to its initial value.<br><span class=\"and-or\">OR</span><br>The hero immediately performs a character activation with Alfred. They only carry out their First Movement Step."
+				"description": "<p>The hero resets the lieutenant's life point marker back to its initial value.</p><p class=\"and-or\">OR</p><p>The hero immediately performs a character activation with Alfred. They only carry out their First Movement Step.</p>"
 			}
 		}
 	},
@@ -61,47 +61,61 @@
 		"subtitle": "Dark Knight Returns",
 		"affiliation": "hero",
 		"gender": "his",
-		"melee": "red",
-		"ranged": "orange",
-		"manipulation": "orange",
-		"thought": "red",
-		"defense": "orange",
 		"moralCode": true,
 		"headerImage": "",
 		"icon": "",
-		"rank": 3,
-		"reinforcementCost": 0,
-		"skills": {
-			"combo": {
-				"level": 2,
-				"disabledAt": 4
+		"sheet": {
+			"melee": "red",
+			"ranged": "orange",
+			"manipulation": "orange",
+			"thought": "red",
+			"defense": "orange",
+			"skills": {
+				"combo": {
+					"level": 2,
+					"disabledAt": 4
+				},
+				"berserk": {
+					"level": 1,
+					"disabledAt": 0
+				},
+				"martialArts": {
+					"level": 1,
+					"disabledAt": 4
+				},
+				"pushingLimits": {
+					"level": 2,
+					"disabledAt": 0
+				},
+				"sacrifice": {
+					"level": 3,
+					"disabledAt": 0
+				},
+				"investigation": {
+					"level": 2,
+					"disabledAt": 0
+				},
+				"parkour": {
+					"level": 1,
+					"disabledAt": 3
+				}
 			},
-			"berserk": {
-				"level": 1,
-				"disabledAt": 0
-			},
-			"martialArts": {
-				"level": 1,
-				"disabledAt": 4
-			},
-			"pushingLimits": {
-				"level": 2,
-				"disabledAt": 0
-			},
-			"sacrifice": {
-				"level": 3,
-				"disabledAt": 0
-			},
-			"investigation": {
-				"level": 2,
-				"disabledAt": 0
-			},
-			"parkour": {
-				"level": 1,
-				"disabledAt": 3
-			}
+			"startingItem": ""
 		},
-		"startingItem": ""
+		"tile": {
+			"rank": 3,
+			"reinforcementCost": 0,
+			"skills": {
+				"support": 2,
+				"circularStrike": 1,
+				"berserk": 1
+			},
+			"power": {
+				"name": "No Limits",
+				"type": "Special Event",
+				"description": "<p>The hero immediately performs a character activation with Batman. To do so, they follow the Activate a Character Controlled by a Tile steps with the following exceptions:</p><ul><li>They can perform their First Movement Step but not the second.</li><li>During the Declare an Action Other than Movement step, they can only declare melee attack actions with 2 orange dice and an action multiplier of 3. They then suffer one wound.</li></ul><p class=\"and-or\">OR</p><p>The hero immediately performs a character activation with Batman. To do so, they follow the Activate a Character Controlled by a Tile steps with the following exceptions:</p><ul><li>They can perform their First Movement Step but not the second.</li><li>During the Declare an Action Other than Movement step, they can only declare a melee attack action with 2 black dice + 1 red die. They then suffer two wounds.</li></ul>"
+			}
+		}
 	},
 	"nightwing": {
 		"name": "Nightwing",
