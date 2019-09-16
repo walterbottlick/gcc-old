@@ -12,12 +12,10 @@ var characters = {};
 // Call JSON files
 
 $.getJSON(skillList, function(json) {
-    var skills = json;
-    setSkillList(skills);
+    setSkillList(json);
 });
 
 $.getJSON(characterList, function(json) {
-    var characters = json;
     setCharacterList(json);
 });
 
