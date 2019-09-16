@@ -12,19 +12,21 @@ var characters = {};
 // Call JSON files
 
 $.getJSON(skillList, function(json) {
-    console.log(json);
     var skills = json;
-    createSkillList(skills);
+    setSkillList(skills);
 });
 
 $.getJSON(characterList, function(json) {
-    console.log(json);
     var characters = json;
-    // call function here to deal with retrieved object. See toonfinder app.js
+    setCharacterList(json);
 });
 
-// Functions
+// Setters
 
-function createSkillList(json) {
+function setSkillList(json) {
 	skills = json;
+}
+
+function setCharacterList(json) {
+	characters = json;
 }
