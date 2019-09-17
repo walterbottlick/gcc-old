@@ -46,7 +46,7 @@ $('#skillBtn').click(function() {
                 <div>
                 	<h4>` + skills[key].name + `</h4>`
                 	if (skills[key].altTileDesc) {
-                		+ `<p><em>Hero Sheet</em></p>` + 
+                		+ `<p><em>Hero Sheet</em></p>`
                 	}
                 	`<p>` + skills[key].description + `</p>`
                 	if (skills[key].altTileDesc) {
