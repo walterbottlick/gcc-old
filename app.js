@@ -65,7 +65,32 @@ $('#skillBtn').click(function() {
 			`;
 		}
 
-		document.getElementById('melee-skills-list').appendChild(div);
+		switch (skills[key].type) {
+			case melee:
+				document.getElementById('melee-skills-list').appendChild(div);
+				break;
+			case ranged:
+				document.getElementById('ranged-skills-list').appendChild(div);
+				break;
+			case defense:
+				document.getElementById('defense-skills-list').appendChild(div);
+				break;
+			case elemental:
+				document.getElementById('elemental-skills-list').appendChild(div);
+				break;
+			case movement:
+				document.getElementById('movement-skills-list').appendChild(div);
+				break;
+			case manipulation:
+				document.getElementById('manipulation-skills-list').appendChild(div);
+				break;
+			case thought:
+				document.getElementById('thought-skills-list').appendChild(div);
+				break;
+			case misc:
+				document.getElementById('misc-skills-list').appendChild(div);
+				break;
+		}
 
 		$('.skills-screen').removeClass('hidden');
 	}
