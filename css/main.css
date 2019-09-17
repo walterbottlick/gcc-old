@@ -77,7 +77,11 @@ input {
 .skill-box .skill-container div:first-child {
 	height: 5em;
 	width: 25%;
-	background-color: black;
+}
+
+.skill-box .skill-container div:first-child img {
+	max-width: 100%;
+    padding-top: 0.2em;
 }
 
 .skill-box .skill-container div:last-child {
