@@ -47,9 +47,9 @@ $('#skillBtn').click(function() {
 	                <div>
 	                	<h4>` + skills[key].name + `</h4>
                 		<p><em>Hero Sheet</em></p>
-                		<p>` + skills[key].description + `</p>
+                		<p>` + placeholderReplace(skills[key].description) + `</p>
                 		<p><em>Tile</em></p>
-                		<p>` + skills[key].altTileDesc + `</p>
+                		<p>` + placeholderReplace(skills[key].altTileDesc) + `</p>
 	                </div>
 	            </div>
 			`;
@@ -59,7 +59,7 @@ $('#skillBtn').click(function() {
 	                <div><img src="` + skills[key].icon + `"></div>
 	                <div>
 	                	<h4>` + skills[key].name + `</h4>
-                		<p>` + skills[key].description + `</p>
+                		<p>` + placeholderReplace(skills[key].description) + `</p>
 	                </div>
 	            </div>
 			`;
@@ -95,3 +95,28 @@ $('#skillBtn').click(function() {
 		$('.skills-screen').removeClass('hidden');
 	}
 });
+
+// Replaces placeholder content in skills
+
+function placeholderReplace (desc,charName) {
+	var finalDesc = desc;
+	var mapObj = {};
+	if (charName) {
+		mapObj = {};
+	} else {
+		mapObj = {
+			[characterName]: "The owner",
+			[gender]: "their",
+			s[plural]: "ses",
+			x[plural]: "xes",
+			[plural]: "s",
+			[diePlural]: "dice"
+		}
+
+		finalDesc = finalDesc.replace(/\[characterName\]|\[gender\]|s\[plural\]|x\[plural\]|\[plural\]|\[diePlural\]/gi, function(matched){
+			return mapObj[matched];
+		});
+	}
+
+	return finalDesc;
+}
