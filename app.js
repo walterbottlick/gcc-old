@@ -105,12 +105,12 @@ function placeholderReplace (desc,charName) {
 		mapObj = {};
 	} else {
 		mapObj = {
-			[characterName]: "The owner",
-			[gender]: "their",
-			s[plural]: "ses",
-			x[plural]: "xes",
-			[plural]: "s",
-			[diePlural]: "dice"
+			"[characterName]": "The owner",
+			"[gender]": "their",
+			"s[plural]": "ses",
+			"x[plural]": "xes",
+			"[plural]": "s",
+			"[diePlural]": "dice"
 		}
 
 		finalDesc = finalDesc.replace(/\[characterName\]|\[gender\]|s\[plural\]|x\[plural\]|\[plural\]|\[diePlural\]/gi, function(matched){
