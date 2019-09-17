@@ -58,5 +58,7 @@ $('#skillBtn').click(function() {
 		`;
 
 		document.getElementById('melee-skills-list').appendChild(div);
+
+		$('.skills-screen').removeClass('hidden');
 	}
 });
