@@ -2,371 +2,371 @@
 	"berserk": {
 		"name": "Berserk",
 		"type": "melee",
-		"icon": "",
+		"icon": "/images/skills/berserk.png",
 		"description": "Increase the strength of <strong>melee attacks</strong> by adding [x] <span class=\"white\">white</span> [diePlural] to each of them. Only active when <strong>at least half</strong> of [characterName]'s energy cubes are in [gender] <strong>wound zone</strong>.",
 		"altTileDesc": "Increase the strength of <strong>melee attacks</strong> by adding [x] <span class=\"white\">white</span> [diePlural] to each of them. Only active after losing <strong>at least half [characterName]'s life points</strong>."
 	},
 	"circularStrike": {
 		"name": "Circular Strike",
 		"type": "melee",
-		"icon": "",
+		"icon": "/images/skills/circularStrike.png",
 		"description": "After <strong>neutralizing</strong> an enemy with a <strong>melee attack</strong>, <strong>any remaining successes</strong> can be used on [x] other mini[plural]",
 		"altTileDesc": ""
 	},
 	"combo": {
 		"name": "Combo",
 		"type": "melee",
-		"icon": "",
+		"icon": "/images/skills/combo.png",
 		"description": "When a mini is neutralized during a <strong>melee attack</strong>, gain a <strong>free melee attack</strong>, of [x] [dieColor] [diePlural], without any weapon bonuses, against another mini.",
 		"altTileDesc": ""
 	},
 	"counterAttack": {
 		"name": "Counter Attack",
 		"type": "melee",
-		"icon": "",
+		"icon": "/images/skills/counterAttack.png",
 		"description": "After an <strong>enemy</strong> resolves a <strong>melee attack</strong> against [characterName], perform a free <strong>melee attack</strong> on the attacker with [x] <span class=\"yellow\">yellow</span> [diePlural], without weapon bonus benefits.",
 		"altTileDesc": ""
 	},
 	"martialArts": {
 		"name": "Martial Arts",
 		"type": "melee",
-		"icon": "",
+		"icon": "/images/skills/martialArts.png",
 		"description": "Add [x] <strong>automatic success[plural]</strong> during a melee attack if you have obtained <strong>at least one success</strong>.",
 		"altTileDesc": ""
 	},
 	"burst": {
 		"name": "Burst",
 		"type": "ranged",
-		"icon": "",
+		"icon": "/images/skills/burst.png",
 		"description": "After <strong>neutralizing</strong> an enemy with a <strong>ranged attack</strong>, <strong>any remaining successes</strong> can be used on [x] <strong>other mini[plural]</strong> with a clear line of sight.",
 		"altTileDesc": ""
 	},
 	"marksman": {
 		"name": "Marksman",
 		"type": "ranged",
-		"icon": "",
+		"icon": "/images/skills/marksman.png",
 		"description": "Add [x] <strong>automatic success[plural]</strong> during a <strong>ranged attack</strong> if you have obtained <strong>at least one success</strong>.",
 		"altTileDesc": ""
 	},
 	"pointBlank": {
 		"name": "Point Blank",
 		"type": "ranged",
-		"icon": "",
+		"icon": "/images/skills/pointBlank.png",
 		"description": "Benefit from [x] <strong>free reroll[plural]</strong> when targeting a mini in your area with a <strong>ranged attack</strong>.",
 		"altTileDesc": ""
 	},
 	"reach": {
 		"name": "Reach",
 		"type": "ranged",
-		"icon": "",
+		"icon": "/images/skills/reach.png",
 		"description": "Target a mini that is <strong>not present in your area</strong> but possesses a <strong>clear line of sight</strong> for a <strong>melee attack</strong>. It must be at a <strong>distance lower or equal to</strong> [x].",
 		"altTileDesc": ""
 	},
 	"retaliation": {
 		"name": "Retaliation",
 		"type": "ranged",
-		"icon": "",
+		"icon": "/images/skills/retaliation.png",
 		"description": "After resolving a <strong>ranged attack</strong> against [characterName], perform a <strong>free ranged attack</strong> upon the attacker with [x] <strong><span class=\"yellow\">yellow</span> [diePlural]</strong>, without any weapon or elevation bonuses. <strong>Requires a ranged weapon</strong>.",
 		"altTileDesc": ""
 	},
 	"bodyguard": {
 		"name": "Body Guard",
 		"type": "defense",
-		"icon": "",
+		"icon": "/images/skills/bodyguard.png",
 		"description": "<strong>Allied minis</strong> located in the same area as [characterName] increase their <strong>defense</strong> by [x] <strong>automatic success[plural]</strong>.",
 		"altTileDesc": ""
 	},
 	"impenetrableDefense": {
 		"name": "Impenetrable Defense",
 		"type": "defense",
-		"icon": "",
+		"icon": "/images/skills/impenetrableDefense.png",
 		"description": "Benefit from [x] <strong>automatic defense success[plural]</strong> against <strong>melee attacks</strong>.",
 		"altTileDesc": ""
 	},
 	"protected": {
 		"name": "Protected",
 		"type": "defense",
-		"icon": "",
+		"icon": "/images/skills/protected.png",
 		"description": "<strong>Avoid</strong> being the <strong>target of an attack</strong> if [characterName] is accompanied by at least [x] <strong>allied mini[plural]</strong> without this skill.",
 		"altTileDesc": ""
 	},
 	"sacrifice": {
 		"name": "Sacrifice",
 		"type": "defense",
-		"icon": "",
+		"icon": "/images/skills/sacrifice.png",
 		"description": "Declare the use of this skill during the <strong>Create the Dice Pool step</strong> or an <strong>enemy attack</strong>. Take [x] <strong>success[plural]</strong> from the attack as <strong>undefendable wounds</strong> if it targets an ally mini in your area. The remaining successes are applied as usual to the defender.",
 		"altTileDesc": ""
 	},
 	"untouchable": {
 		"name": "Untouchbale",
 		"type": "defense",
-		"icon": "",
+		"icon": "/images/skills/untouchable.png",
 		"description": "Benefit from [x] <strong>automatic defense success[plural]</strong> against <strong>ranged attacks</strong>.",
 		"altTileDesc": ""
 	},
 	"electricity": {
 		"name": "Electricity",
 		"type": "elemental",
-		"icon": "",
+		"icon": "/images/skills/electricity.png",
 		"description": "If you manage to <strong>exceed an opponent's defense</strong>, inflict [x] <strong>automatic wound[plural]</strong> before the rest of the attack's wounds are applied as usual.",
 		"altTileDesc": ""
 	},
 	"flame": {
 		"name": "Flame",
 		"type": "elemental",
-		"icon": "",
+		"icon": "/images/skills/flame.png",
 		"description": "During an <strong>attack</strong> or <strong>after an explosion</strong>, place [x] <strong>flame token[plural]</strong> in the corresponding area. Each token adds <strong>1 level of dangerous terrain</strong> to this area. The owner is <strong>immune</strong> to this effect.",
 		"altTileDesc": ""
 	},
 	"frost": {
 		"name": "Frost",
 		"type": "elemental",
-		"icon": "",
+		"icon": "/images/skills/frost.png",
 		"description": "During an <strong>attack</strong> or <strong>after an explosion</strong>, place [x] <strong>frost token[plural]</strong> in the corresponding area. Each token adds <strong>1 level of difficult terrain</strong> to this area. The owner is <strong>immune</strong> to this effect.",
 		"altTileDesc": ""
 	},
 	"gasImmunity": {
 		"name": "Gas Immunity",
 		"type": "elemental",
-		"icon": "",
+		"icon": "/images/skills/gasImmunity.png",
 		"description": "<strong>Ignore wounds</strong> caused by <strong>gas tokens</strong>.",
 		"altTileDesc": ""
 	},
 	"poison": {
 		"name": "Poison",
 		"type": "elemental",
-		"icon": "",
+		"icon": "/images/skills/poison.png",
 		"description": "If you manage to <strong>exceed an opponent's defense</strong>, inflict [x] <strong>automatic wound[plural]</strong> before the rest of the attack's wounds are applied as usual.",
 		"altTileDesc": ""
 	},
 	"toxicGas": {
 		"name": "Toxic Gas",
 		"type": "elemental",
-		"icon": "",
+		"icon": "/images/skills/toxicGas.png",
 		"description": "During an <strong>attack</strong> or <strong>after an explosion</strong>, place [x] <strong>gas token[plural]</strong> in the corresponding area. Each token adds <strong>1 level of dangerous terrain</strong> to this area. The owner is <strong>immune</strong> to this effect.",
 		"altTileDesc": ""
 	},
 	"elusive": {
 		"name": "Elusive",
 		"type": "movement",
-		"icon": "",
+		"icon": "/images/skills/elusive.png",
 		"description": "Ignore [x] <strong>enemy size index[plural]</strong> when <strong>moving</strong>.",
 		"altTileDesc": ""
 	},
 	"fly": {
 		"name": "Fly",
 		"type": "movement",
-		"icon": "",
+		"icon": "/images/skills/fly.png",
 		"description": "Move by <strong>flying</strong>. <strong>Ignore hindering</strong> and <strong>difficult terrain</strong> when moving. Also ignore additional costs and effects of <strong>special moves</strong>.",
 		"altTileDesc": ""
 	},
 	"immobilization": {
 		"name": "Immobilization",
 		"type": "movement",
-		"icon": "",
+		"icon": "/images/skills/immobilization.png",
 		"description": "If at least [x] <strong>wound[plural]</strong> is dealt, the wounded mini is <strong>laid down</strong>. Standing requires using the Move Point Bonus for the First Movement.",
 		"altTileDesc": ""
 	},
 	"mobility": {
 		"name": "Mobility",
 		"type": "movement",
-		"icon": "",
+		"icon": "/images/skills/mobility.png",
 		"description": "Ignore [x] <strong>difficult terrain level[plural]</strong> when moving.",
 		"altTileDesc": ""
 	},
 	"parkour": {
 		"name": "Parkour",
 		"type": "movement",
-		"icon": "",
+		"icon": "/images/skills/parkour.png",
 		"description": "Ignore [x] <strong>jump</strong> or <strong>climb level[plural]</strong> when performing a <strong>special move</strong>, and [x] <strong>wound</strong> caused by a <strong>fall</strong>.",
 		"altTileDesc": ""
 	},
 	"reducedMobility": {
 		"name": "Reduced Mobility",
 		"type": "movement",
-		"icon": "",
+		"icon": "/images/skills/reducedMobility.png",
 		"description": "<strong>[characterName] cannot perform special moves (climb, jump, and fall).</strong>",
 		"altTileDesc": ""
 	},
 	"tactician": {
 		"name": "Tactician",
 		"type": "thought",
-		"icon": "",
+		"icon": "/images/skills/tactician.png",
 		"description": "Perform an automatic <strong>thought</strong> action to immediately grant [x] <strong>free move point[plural]</strong> to an <strong>allied mini</strong> that hasn't been the target of this effect this turn. Character minis also get their Move Point Bonus for the First Movement.",
 		"altTileDesc": ""
 	},
 	"wallbreaker": {
 		"name": "Wall Breaker",
 		"type": "movement",
-		"icon": "",
+		"icon": "/images/skills/wallbreaker.png",
 		"description": "Move through a level [x] or lower wall at a movement cost raised by 2, placing a broken wall token on it. The two areas become adjacent and crossable and possess clear line of sight.",
 		"altTileDesc": ""
 	},
 	"ambidexterity": {
 		"name": "Ambidexterity",
 		"type": "misc",
-		"icon": "",
+		"icon": "/images/skills/ambidexterity.png",
 		"description": "Able to use <strong>two weapons</strong> of the <strong>same type</strong> simultaneously during attacks <strong>adding their bonuses</strong>. Individual weapon encumberance or size must be <strong>lower or equal to</strong> [x].",
 		"altTileDesc": ""
 	},
 	"attraction": {
 		"name": "Attraction",
 		"type": "manipulation",
-		"icon": "",
+		"icon": "/images/skills/attraction.png",
 		"description": "<strong>Move a mini into your area</strong> by performing an <strong>automatic manipulation</strong>. They must possess a <strong>clear line of sight</strong> and be at a <strong>disatance lower or equal to</strong> [x]. Their size index must also be lower or equal to yours.",
 		"altTileDesc": ""
 	},
 	"blast": {
 		"name": "Blast",
 		"type": "manipulation",
-		"icon": "",
+		"icon": "/images/skills/blast.png",
 		"description": "<strong>Once per turn</strong>, spend an <strong>automatic manipulation</strong> to trigger a level [x] <strong>explosion in your area</strong> and in an <strong>adjacent area</strong> with <strong>clear line of sight</strong>.",
 		"altTileDesc": ""
 	},
 	"cry": {
 		"name": "Cry",
 		"type": "misc",
-		"icon": "",
+		"icon": "/images/skills/cry.png",
 		"description": "<strong>Once per turn</strong>, trigger a level [x] <strong>explosion</strong> in your area and in an adjacent area with a clear line of sight, <strong>ignoring the Spend Energy Cube</strong> step. [characterName] is not wounded during this explosion.",
 		"altTileDesc": ""
 	},
 	"eliteCommand": {
 		"name": "Elite Command",
 		"type": "thought",
-		"icon": "",
+		"icon": "/images/skills/eliteCommand.png",
 		"description": "Chooes an <strong>elite level tile</strong> from your side and [x] <strong>corresponding minis</strong> that start the mission in [characterName]'s area. Activate these by performing an <strong>automatic thought action</strong>. Each energy cube spent on <strong>defense</strong>, <strong>reroll</strong>, or <strong>move</strong> for the friendly minis is moved to [characterName]'s <strong>thought space</strong>.",
 		"altTileDesc": ""
 	},
 	"grenade": {
 		"name": "Grenade",
 		"type": "manipulation",
-		"icon": "",
+		"icon": "/images/skills/grenade.png",
 		"description": "Perform a <strong>complex manipulation</strong> to trigger a level [x] <strong>explosion</strong> in an area with the <strong>difficulty equal to the disatance between your area and the targeted area</strong>. If failed, the explosion occurs at a distance equal to the number of successes obtained along the line of sight.",
 		"altTileDesc": ""
 	},
 	"hacking": {
 		"name": "Hacking",
 		"type": "thought",
-		"icon": "",
+		"icon": "/images/skills/hacking.png",
 		"description": "Benefit from [x] <strong>automatic success[plural]</strong> during <strong>specific thought actions</strong> listed in the scenario setup.",
 		"altTileDesc": ""
 	},
 	"harmless": {
 		"name": "Harmless",
 		"type": "misc",
-		"icon": "",
+		"icon": "/images/skills/harmless.png",
 		"description": "During an attack, normal wounds you inflict are <strong>reduced to 0</strong>.",
 		"altTileDesc": ""
 	},
 	"henchmanCommand": {
 		"name": "Henchman Command",
 		"type": "thought",
-		"icon": "",
+		"icon": "/images/skills/henchmanCommand.png",
 		"description": "Choose a <strong>henchman level tile</strong> from your side and [x] <strong>corresponding mini[plural]</strong> that start the mission in [characterName]'s area. Activate the mini[plural] by performing an <strong>automatic thought action</strong>. Each energy cube spent on <strong>defense</strong>, <strong>reroll</strong>, or <strong>move</strong> for the friendly mini[plural] is moved to [characterName]'s <strong>thought space</strong>.",
 		"altTileDesc": ""
 	},
 	"horror": {
 		"name": "Horror",
 		"type": "misc",
-		"icon": "",
+		"icon": "/images/skills/horror.png",
 		"description": "The <strong>move point cost</strong> of enemies entering [characterName]'s area is <strong>increased</strong> by [x].",
 		"altTileDesc": ""
 	},
 	"imaginaryFriend": {
 		"name": "Imaginary Friend",
 		"type": "misc",
-		"icon": "",
+		"icon": "/images/skills/imaginaryFriend.png",
 		"description": "Gain 1 <strong>additional <span class=\"yellow\">yellow</span> die</strong> for all your actions from \"<em>a little voice in your head</em>\". To <strong>nullify</strong> this effect, an opponent <strong>in your area</strong> must perform a <strong>complex thought of difficulty</strong> [x].",
 		"altTileDesc": ""
 	},
 	"investigation": {
 		"name": "Investigation",
 		"type": "thought",
-		"icon": "",
+		"icon": "/images/skills/investigation.png",
 		"description": "Benefit from [x] <strong>automatic success[plural]</strong> during <strong>specific thought actions</strong> listed in the scenario setup.",
 		"altTileDesc": ""
 	},
 	"lockPicking": {
 		"name": "Lock Picking",
 		"type": "manipulation",
-		"icon": "",
+		"icon": "/images/skills/lockPicking.png",
 		"description": "Benefit from [x] <strong>automatic success[plural]</strong> during <strong>specific manipulation actions</strong> listed in the scenario setup.",
 		"altTileDesc": ""
 	},
 	"luck": {
 		"name": "Luck",
 		"type": "misc",
-		"icon": "",
+		"icon": "/images/skills/luck.png",
 		"description": "Benefit from [x] <strong>free reroll[plural]</strong> whenever rolling dice as [characterName].",
 		"altTileDesc": ""
 	},
 	"misfortune": {
 		"name": "Misfortune",
 		"type": "misc",
-		"icon": "",
+		"icon": "/images/skills/misfortune.png",
 		"description": "<strong>Force</strong> an enemy in your area to <strong>reroll [x] [diePlural]</strong>. You may choose the [diePlural] to reroll after any free rerolls.",
 		"altTileDesc": ""
 	},
 	"moralCode": {
 		"name": "Moral Code",
 		"type": "misc",
-		"icon": "",
+		"icon": "/images/skills/moralCode.png",
 		"description": "[characterName] cannot use lethal items.",
 		"altTileDesc": ""
 	},
 	"munitionsSpecialist": {
 		"name": "Munitions Specialist",
 		"type": "manipulation",
-		"icon": "",
+		"icon": "/images/skills/munitionsSpecialist.png",
 		"description": "Benefit from [x] <strong>automatic success[plural]</strong> during <strong>specific manipulation actions</strong> listed in the scenario setup.",
 		"altTileDesc": ""
 	},
 	"nervesOfSteel": {
 		"name": "Nerves of Steel",
 		"type": "misc",
-		"icon": "",
+		"icon": "/images/skills/nervesOfSteel.png",
 		"description": "Ignore [x] <strong>enemy menace index[plural]</strong> when performing <strong>ranged attacks</strong>, <strong>manipulations</strong>, or <strong>thoughts</strong>.",
 		"altTileDesc": ""
 	},
 	"pushingLimits": {
 		"name": "Pushing Limits",
 		"type": "misc",
-		"icon": "",
+		"icon": "/images/skills/pushingLimits.png",
 		"description": "Self inflict [x] <strong>wound[plural]</strong>. Cubes moved to the wound zone by this skill are considered to have been spent on the current action, regardless of exertion limit.",
 		"altTileDesc": ""
 	},
 	"regeneration": {
 		"name": "Regeneration",
 		"type": "misc",
-		"icon": "",
+		"icon": "/images/skills/regeneration.png",
 		"description": "During the <em>Declare Heroes' Stance</em> step, move [x] cubes from your <strong>wound zone</strong> to your <strong>fatigue zone</strong>.",
 		"altTileDesc": "At the start of [characterName]'s activation, <strong>recover [x] life points</strong>."
 	},
 	"shackle": {
 		"name": "Shackle",
 		"type": "melee",
-		"icon": "",
+		"icon": "/images/skills/shackle.png",
 		"description": "On a <strong>successful melee attack</strong>, place [x] <strong>shackle token[plural]</strong> on the defender. <strong>No wounds are inflicted</strong> by this attack. The shackled mini has their <strong>successes reduced by</strong> [x] when performing <strong>attacks, thoughts, manipulations, or defenses</strong>. These tokens can be removed by performing a <strong>successful complex manipulation of difficulty</strong> [x] (even by allied minis in the same area).",
 		"altTileDesc": ""
 	},
 	"smokeGrenade": {
 		"name": "Smoke Grenade",
 		"type": "misc",
-		"icon": "",
+		"icon": "/images/skills/smokeGrenade.png",
 		"description": "After triggering an explosion in an area, place [x] <strong>smoke grenade tokens</strong> there. During <strong>ranged attacks</strong>, attackers must count the number of <strong>smoke grenade tokens</strong> in areas that their line of sight passes through. This total is subtracted from their number of attack successes",
 		"altTileDesc": ""
 	},
 	"sneakAttack": {
 		"name": "Sneak Attack",
 		"type": "misc",
-		"icon": "",
+		"icon": "/images/skills/sneakAttack.png",
 		"description": "When [characterName] attacks an enemy in [gender] area, if the total menace indexes of allies is equal to or higher than the total menace indexes of enemies in that area, add [x] automatic success[plural] to the attack.",
 		"altTileDesc": ""
 	},
 	"support": {
 		"name": "Support",
 		"type": "misc",
-		"icon": "",
+		"icon": "/images/skills/support.png",
 		"description": "Provide [x] free reroll[plural] to all the allied minis in [characterName]'s area.",
 		"altTileDesc": ""
 	}
