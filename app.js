@@ -40,22 +40,30 @@ $('#skillBtn').click(function() {
 
 		div.classList.add('col-4', 'skill-box');
 
-		div.innerHTML = `
-            <div class="skill-container">
-                <div></div>
-                <div>
-                	<h4>` + skills[key].name + `</h4>`
-                	if (skills[key].altTileDesc) {
-                		+ `<p><em>Hero Sheet</em></p>`
-                	}
-                	`<p>` + skills[key].description + `</p>`
-                	if (skills[key].altTileDesc) {
-                		+ `<p><em>Tile</em></p>
-                		<p>` + skills[key].altTileDesc + `</p>`
-                	}
-                `</div>
-            </div>
-		`;
+		if (skills[key].altTileDesc) {
+			div.innerHTML = `
+	            <div class="skill-container">
+	                <div></div>
+	                <div>
+	                	<h4>` + skills[key].name + `</h4>
+                		<p><em>Hero Sheet</em></p>
+                		<p>` + skills[key].description + `</p>
+                		<p><em>Tile</em></p>
+                		<p>` + skills[key].altTileDesc + `</p>
+	                </div>
+	            </div>
+			`;
+		} else {
+			div.innerHTML = `
+	            <div class="skill-container">
+	                <div></div>
+	                <div>
+	                	<h4>` + skills[key].name + `</h4>
+                		<p>` + skills[key].description + `</p>
+	                </div>
+	            </div>
+			`;
+		}
 
 		document.getElementById('melee-skills-list').appendChild(div);
 
