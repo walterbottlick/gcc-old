@@ -29,20 +29,20 @@
     <section class="home-screen">
         <div class="row main-buttons">
             <div class="col-3">
-                <button type="button">CHARACTERS</button>
+                <button id="charBtn" type="button">CHARACTERS</button>
             </div>
             <div class="col-3">
-                <button type="button">SKILLS</button>
+                <button id="skillBtn" type="button">SKILLS</button>
             </div>
             <div class="col-3">
-                <button type="button">ITEMS</button>
+                <button id="itemBtn" type="button">ITEMS</button>
             </div>
             <div class="col-3">
-                <button type="button">LoS TOOL</button>
+                <button id="losBtn" type="button">LoS TOOL</button>
             </div>
         </div>
     </section>
-    <section class="skills-screen">
+    <section class="skills-screen hidden">
         <div class="row skills-search-container">
             <div class="col-4">
                 <input type="text" placeholder="Search for skill..." name="search">
@@ -64,24 +64,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 skill-box">
-                    <div class="skill-container">
-                        <div></div>
-                        <div></div>
-                    </div>
+            </div>
+        </div>
+        <div class="ranged-skills">
+            <div class="row ranged-skills-header">
+                <div class="col-4">
+                    <h3>RANGED</h3>
                 </div>
-                <div class="col-4 skill-box">
-                    <div class="skill-container">
-                        <div></div>
-                        <div></div>
-                    </div>
-                </div>
-                <div class="col-4 skill-box">
-                    <div class="skill-container">
-                        <div></div>
-                        <div></div>
-                    </div>
-                </div>
+            </div>
+            <div class="row ranged-skills-list">
                 <div class="col-4 skill-box">
                     <div class="skill-container">
                         <div></div>
@@ -90,124 +81,97 @@
                 </div>
             </div>
         </div>
-        <div class="row ranged-skills-header">
-            <div class="col-4">
-                <h3>RANGED</h3>
+        <div class="defense-skills">
+            <div class="row defense-skills-header">
+                <div class="col-4">
+                    <h3>DEFENSE</h3>
+                </div>
+            </div>
+            <div class="row defense-skills-list">
+                <div class="col-4 skill-box">
+                    <div class="skill-container">
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row defense-skills-header">
-            <div class="col-4">
-                <h3>DEFENSE</h3>
+        <div class="elemental-skills">
+            <div class="row elemental-skills-header">
+                <div class="col-4">
+                    <h3>ELEMENTAL</h3>
+                </div>
+            </div>
+            <div class="row elemental-skills-list">
+                <div class="col-4 skill-box">
+                    <div class="skill-container">
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row elemental-skills-header">
-            <div class="col-4">
-                <h3>ELEMENTAL</h3>
+        <div class="movement-skills">
+            <div class="row movement-skills-header">
+                <div class="col-4">
+                    <h3>MOVEMENT</h3>
+                </div>
+            </div>
+            <div class="row movement-skills-list">
+                <div class="col-4 skill-box">
+                    <div class="skill-container">
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row movement-skills-header">
-            <div class="col-4">
-                <h3>MOVEMENT</h3>
+        <div class="manipulation-skills">
+            <div class="row manipulation-skills-header">
+                <div class="col-4">
+                    <h3>MANIPULATION</h3>
+                </div>
+            </div>
+            <div class="row manipulation-skills-list">
+                <div class="col-4 skill-box">
+                    <div class="skill-container">
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row manipulation-skills-header">
-            <div class="col-4">
-                <h3>MANIPULATION</h3>
+        <div class="thought-skills">
+            <div class="row thought-skills-header">
+                <div class="col-4">
+                    <h3>THOUGHT</h3>
+                </div>
+            </div>
+            <div class="row thought-skills-list">
+                <div class="col-4 skill-box">
+                    <div class="skill-container">
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row thought-skills-header">
-            <div class="col-4">
-                <h3>THOUGHT</h3>
+        <div class="misc-skills">
+            <div class="row misc-skills-header">
+                <div class="col-4">
+                    <h3>MISC.</h3>
+                </div>
             </div>
-        </div>
-        <div class="row misc-skills-header">
-            <div class="col-4">
-                <h3>MISC.</h3>
+            <div class="row misc-skills-list">
+                <div class="col-4 skill-box">
+                    <div class="skill-container">
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-
-    <!--<section class="character-screen hidden">
-
-        <div class="row top-rows">
-        <div class="col-7">
-        <div>
-        <h2 class="js-character-name">NAME</h2>
-        <p>Level <span class="js-level">LEVEL</span> | <span class="js-player-race">RACE</span> <span class="js-player-class">CLASS</span> | <span class="js-realm">REALM</span></p>
-        <p><span class="js-guild">GUILD</span></p>
-        </div>
-        </div>
-        <div class="col-5">
-        <div>
-        <h2>Search Again</h2>
-        <form class="js-search-form">
-        <div class="realm-container-again">
-        <label for="realms-again">Realm:</label>
-        <input id="realms-again" type="text" class="js-realm" required placeholder="Realm Name">
-        </div>
-        <label for="find-again">Character:</label>
-        <input id="find-again" type="text" class="js-toon" required placeholder="Character Name">
-        <button type="submit">Find</button>
-        </form>
-        </div>
-        </div>
-        </div>
-
-        <div class="row">
-        <div class="col-7">
-        <div class="toon-stats">
-
-        <button class="accordion">Character Stats</button>
-        <div class="panel">
-        <h3>Primary Attributes</h3>
-        <ul>
-        <li>Health: <span class="js-health"></span></li>
-        <li>Stamina: <span class="js-stamina"></span></li>
-        <li>Strength: <span class="js-strength"></span></li>
-        <li>Agility: <span class="js-agility"></span></li>
-        <li>Intellect: <span class="js-intellect"></span></li>
-        </ul>
-        <h3>Secondary Attributes</h3>
-        <ul>
-        <li>Crit: <span class="js-crit-rating"></span> [<span class="js-crit"></span>%]</li>
-        <li>Haste: <span class="js-haste-rating"></span> [<span class="js-haste"></span>%]</li>
-        <li>Mastery: <span class="js-mastery-rating"></span> [<span class="js-mastery"></span>%]</li>
-        <li>Versatility: <span class="js-versatility"></span> [<span class="js-versatility-bonus"></span>%]</li>
-        <li>Leech: <span class="js-leech-rating"></span> [<span class="js-leech"></span>%]</li>
-        <li>Avoidance: <span class="js-avoidance"></span> [<span class="js-avoidance-bonus"></span>%]</li>
-        </ul>
-        <h3>Defence</h3>
-        <ul>
-        <li>Armor: <span class="js-armor"></span></li>
-        <li>Parry: <span class="js-parry-rating"></span> [<span class="js-parry"></span>%]</li>
-        <li>Dodge: <span class="js-dodge-rating"></span> [<span class="js-dodge"></span>%]</li>
-        <li>Block: <span class="js-block-rating"></span> [<span class="js-block"></span>%]</li>
-        </ul>
-        </div>
-
-        <button class="accordion">Gear List</button>
-        <div class="panel">
-        <h3>Average Item Level: <span class="js-item-level"></span></h3>
-        <ul class="gear-list">
-        </ul>
-        </div>
-
-        <button class="accordion">Talents</button>
-        <div class="panel">
-        <div class="spec-buttons">
-        </div>
-        </div>
-        </div>
-        </div>
-        <div class="col-5">
-        <div class="image-scroll">
-        <div class="toon-image">
-        </div>
-        </div>
-        </div>
-        </div>
-
-    </section>-->
 
     <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>

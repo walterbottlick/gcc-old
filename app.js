@@ -28,3 +28,12 @@ function setSkillList(json) {
 function setCharacterList(json) {
 	characters = json;
 }
+
+// Button Click Listeners
+
+$("#skillBtn").click(function() {
+	for (key in skills) {
+		console.log(key);
+		console.log(skill[key]);
+	}
+});
