@@ -33,9 +33,6 @@ function setCharacterList(json) {
 
 $('#skillBtn').click(function() {
 	for (key in skills) {
-		console.log(key);
-		console.log(skills[key]);
-
 		const div = document.createElement('div');
 
 		div.classList.add('col-4', 'skill-box');
@@ -105,15 +102,16 @@ function placeholderReplace (desc,charName) {
 		mapObj = {};
 	} else {
 		mapObj = {
-			"[characterName]": "The owner",
+			"[characterName]": "The Owner",
 			"[gender]": "their",
 			"s[plural]": "ses",
 			"x[plural]": "xes",
 			"[plural]": "s",
-			"[diePlural]": "dice"
+			"[diePlural]": "dice",
+			"[dieColor]": "melee attribute color"
 		}
 
-		finalDesc = finalDesc.replace(/\[characterName\]|\[gender\]|s\[plural\]|x\[plural\]|\[plural\]|\[diePlural\]/gi, function(matched){
+		finalDesc = finalDesc.replace(/\[characterName\]|\[gender\]|s\[plural\]|x\[plural\]|\[plural\]|\[diePlural\]|\[dieColor\]/gi, function(matched){
 			return mapObj[matched];
 		});
 	}
