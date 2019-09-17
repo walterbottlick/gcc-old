@@ -34,6 +34,6 @@ function setCharacterList(json) {
 $("#skillBtn").click(function() {
 	for (key in skills) {
 		console.log(key);
-		console.log(skill[key]);
+		console.log(skills[key]);
 	}
 });
