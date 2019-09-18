@@ -148,6 +148,7 @@ input {
 }
 
 .red, .orange, .yellow, .white {
+	font-weight: normal;
 	text-shadow: 
 		0 0 4px rgb(0,0,0),
 		0 0 4px rgb(0,0,0),
