@@ -10,11 +10,25 @@ header {
 }
 
 h1 {
+	font-family: 'Rajdhani', sans-serif;
 	margin: 1em 0 0;
 }
 
 h2 {
+	font-family: 'Rajdhani', sans-serif;
 	margin: 0;
+}
+
+h3 {
+	font-family: 'Rajdhani', sans-serif;
+}
+
+h4 {
+	font-family: 'Rajdhani', sans-serif;
+}
+
+p {
+	font-family: 'Zilla Slab', serif;
 }
 
 .main-buttons div,
@@ -24,7 +38,7 @@ h2 {
 }
 
 button {
-	font-family: 'courier new';
+	font-family: 'Zilla Slab', serif;
 	font-weight: bold;
 	color: rgb(255,255,255) !important;
 	width: 60%;
