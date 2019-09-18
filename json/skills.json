@@ -3,8 +3,8 @@
 		"name": "Berserk",
 		"type": "melee",
 		"icon": "/gcc/images/skills/berserk.png",
-		"description": "Increase the strength of <strong>melee attacks</strong> by adding [x] <span class=\"white\">white</span> [diePlural] to each of them. Only active when <strong>at least half</strong> of [characterName]'s energy cubes are in [gender] <strong>wound zone</strong>.",
-		"altTileDesc": "Increase the strength of <strong>melee attacks</strong> by adding [x] <span class=\"white\">white</span> [diePlural] to each of them. Only active after losing <strong>at least half [characterName]'s life points</strong>."
+		"description": "Add [x] <span class=\"white\">white</span> [diePlural] to each <strong>melee attack</strong>. Only active when <strong>at least half</strong> of [characterName]'s energy cubes are in [gender] <strong>wound zone</strong>.",
+		"altTileDesc": "Add [x] <span class=\"white\">white</span> [diePlural] to each <strong>melee attack</strong>. Only active after losing <strong>at least half [characterName]'s life points</strong>."
 	},
 	"circularStrike": {
 		"name": "Circular Strike",

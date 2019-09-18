@@ -91,10 +91,10 @@ input {
     -webkit-border-radius: 10px;
     border-radius: 10px;
     background: rgb(255, 255, 255);
-    background: linear-gradient(top, rgb(255, 255, 255), rgb(179, 179, 179));
-    background: -ms-linear-gradient(top, rgb(255, 255, 255), rgb(179, 179, 179));
-    background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), to(rgb(179, 179, 179)));
-    background: -moz-linear-gradient(top, rgb(255, 255, 255), rgb(179, 179, 179));
+    background: linear-gradient(top, rgb(255, 255, 255), rgb(165, 165, 165));
+    background: -ms-linear-gradient(top, rgb(255, 255, 255), rgb(165, 165, 165));
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), to(rgb(165, 165, 165)));
+    background: -moz-linear-gradient(top, rgb(255, 255, 255), rgb(165, 165, 165));
 }
 
 .skill-box .skill-container div {
@@ -129,6 +129,30 @@ input {
     margin: 0 0 1em 0;
 }
 
+.red {
+	color: red;
+}
+
+.orange {
+	color: orange;
+}
+
+
+.yellow {
+	color: yellow;
+}
+
+.white {
+	color: white;
+}
+
+.red, .orange, .yellow, .white {
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
 
 
 
