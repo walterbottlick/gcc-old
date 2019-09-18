@@ -24,6 +24,7 @@ h3 {
 	color: rgb(243,148,0);
     font-size: 1.75em;
     margin: 0.5em 0 0.25em;
+    text-shadow: 1px 1px 10px rgb(0,0,0);
 }
 
 h4 {
@@ -147,7 +148,7 @@ input {
 }
 
 .red, .orange, .yellow, .white {
-	text-shadow: 0 0 4px #000000;
+	text-shadow: 0 0 4px rgb(0,0,0);
 }
 
 
