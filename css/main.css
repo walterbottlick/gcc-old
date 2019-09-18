@@ -112,15 +112,6 @@ input {
     padding: 0.5em 0 0 0.5em;
 }
 
-.skill-box .skill-container div:first-child span {
-	position: relative;
-    bottom: 33%;
-    left: 51%;
-    color: white;
-    font-size: 0.85em;
-    font-family: 'Zilla Slab', serif;
-}
-
 .skill-box .skill-container div:last-child {
 	height: auto;
 	width: 74%;
