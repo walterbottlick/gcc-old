@@ -40,7 +40,7 @@ $('#skillBtn').click(function() {
 		if (skills[key].altTileDesc) {
 			div.innerHTML = `
 	            <div class="skill-container">
-	                <div><img src="` + skills[key].icon + `"></div>
+	                <div><img src="` + skills[key].icon + `"><span>x</span></div>
 	                <div>
 	                	<h4>` + skills[key].name + `</h4>
                 		<p><em>Hero Sheet</em></p>
@@ -53,7 +53,7 @@ $('#skillBtn').click(function() {
 		} else {
 			div.innerHTML = `
 	            <div class="skill-container">
-	                <div><img src="` + skills[key].icon + `"></div>
+	                <div><img src="` + skills[key].icon + `"><span>x</span></div>
 	                <div>
 	                	<h4>` + skills[key].name + `</h4>
                 		<p>` + placeholderReplace(skills[key].description) + `</p>
