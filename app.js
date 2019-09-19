@@ -32,7 +32,7 @@ function setCharacterList(json) {
 // Masonry selector. Makes skill boxes fill in nicely when different heights on desktop view
 
 $('.row').masonry({
-	itemSelector: '.col-4'
+	itemSelector: '.skill-box'
 });
 
 // Button Click Listeners
