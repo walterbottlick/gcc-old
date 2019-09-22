@@ -47,6 +47,9 @@ $('#skills-search').keyup(function(){
 			//make skill header appear if necessary
 		} else {
 			//remove respective skill-box element from page if present
+			if ($('#' + key).length) {
+				$('#' + key).remove();
+			}
 			//hide header if all skills in a section are removed
 		}
 	}
