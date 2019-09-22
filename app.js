@@ -93,6 +93,12 @@ $('#skillBtn').click(function() {
 	}
 });
 
+// Skills search bar keyup listener
+
+$('#skills-search').keyup(function(){
+	console.log($('#skills-search').val());
+});
+
 // Replaces placeholder content in skills
 
 function placeholderReplace (desc,charName) {
