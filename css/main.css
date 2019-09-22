@@ -49,6 +49,8 @@ p {
     margin: 1em auto;
 }
 
+
+
 button {
 	font-family: 'Zilla Slab', serif;
 	font-weight: bold;
@@ -176,6 +178,17 @@ input {
     -webkit-column-width: 19em;
     -moz-column-gap: 1em;
     -webkit-column-gap:1em;
+}
+
+.melee-skills,
+.ranged-skills,
+.defense-skills,
+.elemental-skills,
+.movement-skills,
+.manipulation-skills,
+.thought-skills,
+.misc-skills {
+	margin: 2em 0;
 }
 
 @media only screen and (min-width: 415px) {
