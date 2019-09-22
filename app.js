@@ -33,7 +33,7 @@ function setCharacterList(json) {
 
 $('#skillBtn').click(function() {
 	for (key in skills) {
-		skillRender(skills[key]);
+		skillRender(skills[key], key);
 	}
 	$('.skills-screen').removeClass('hidden');
 });
@@ -42,16 +42,23 @@ $('#skillBtn').click(function() {
 
 $('#skills-search').keyup(function(){
 	for (key in skills) {
-
+		if (skills[key].name.toLowerCase().includes($('#skills-search').val().toLowerCase())) {
+			//check if respective skill-box element is on page and add it if not
+			//make skill header appear if necessary
+		} else {
+			//remove respective skill-box element from page if present
+			//hide header if all skills in a section are removed
+		}
 	}
 });
 
 // Renders a skill in its respective skill list
 
-function skillRender (skillObj) {
+function skillRender (skillObj, key) {
 	const div = document.createElement('div');
 
 	div.classList.add('col-4', 'skill-box');
+	div.id = key;
 
 	if (skillObj.altTileDesc) {
 		div.innerHTML = `
