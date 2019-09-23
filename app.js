@@ -44,11 +44,17 @@ $('#skills-search').keyup(function(){
 	for (key in skills) {
 		if (skills[key].name.toLowerCase().includes($('#skills-search').val().toLowerCase())) {
 			//check if respective skill-box element is on page and add it if not
+			if (!$('#' + key).length) {
+				$('#' + key).removeClass('hidden');
+			}
 			//make skill header appear if necessary
+			if (!$('#' + skills[key].type + '-skills-list').is(':empty')) {
+				$('#' + skills[key].type + '-skills').removeClass('hidden');
+			}
 		} else {
 			//remove respective skill-box element from page if present
 			if ($('#' + key).length) {
-				$('#' + key).remove();
+				$('#' + key).addClass('hidden');
 			}
 			//hide header if all skills in a section are removed
 			if ($('#' + skills[key].type + '-skills-list').is(':empty')) {
