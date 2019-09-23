@@ -83,7 +83,7 @@ input {
 }
 
 .hidden {
-	display: none;
+	display: none !important;
 }
 
 .skill-box {
