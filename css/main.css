@@ -178,14 +178,14 @@ input {
     -webkit-column-gap:1em;
 }
 
-.melee-skills,
-.ranged-skills,
-.defense-skills,
-.elemental-skills,
-.movement-skills,
-.manipulation-skills,
-.thought-skills,
-.misc-skills {
+#melee-skills,
+#ranged-skills,
+#defense-skills,
+#elemental-skills,
+#movement-skills,
+#manipulation-skills,
+#thought-skills,
+#misc-skills {
 	margin: 2em 0;
 }
 

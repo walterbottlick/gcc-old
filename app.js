@@ -51,6 +51,9 @@ $('#skills-search').keyup(function(){
 				$('#' + key).remove();
 			}
 			//hide header if all skills in a section are removed
+			if ($('#' + skills[key].type + '-skills-list').is(':empty')) {
+				$('#' + skills[key].type + '-skills').addClass('hidden');
+			}
 		}
 	}
 });
