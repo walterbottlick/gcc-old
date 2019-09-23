@@ -48,7 +48,7 @@ $('#skills-search').keyup(function(){
 				$('#' + key).removeClass('hidden');
 			}
 			//make skill header appear if necessary
-			if ($('#' + skills[key].type + '-skills-list').children(':visible').length > 0) {
+			if ($('#' + skills[key].type + '-skills-list').children().hasClass('hidden').length) {
 				$('#' + skills[key].type + '-skills').removeClass('hidden');
 			}
 		} else {
@@ -57,7 +57,7 @@ $('#skills-search').keyup(function(){
 				$('#' + key).addClass('hidden');
 			}
 			//hide header if all skills in a section are removed
-			if ($('#' + skills[key].type + '-skills-list').children(':visible').length === 0) {
+			if (!$('#' + skills[key].type + '-skills-list').children().hasClass('hidden').length) {
 				$('#' + skills[key].type + '-skills').addClass('hidden');
 			}
 		}
