@@ -61,7 +61,7 @@ $('#skills-search').keyup(function(){
 			}
 		}
 
-		if ($('#' + skills[key].type + '-skills-list').children().length - $('#' + skills[key].type + '-skills-list').children('.hidden').length < 3) {
+		if ($('#' + skills[key].type + '-skills-list').children().length - $('#' + skills[key].type + '-skills-list').children('.hidden').length < 4) {
 			$('#' + skills[key].type + '-skills-list').removeClass('columnFix');
 		} else {
 			$('#' + skills[key].type + '-skills-list').addClass('columnFix');
