@@ -204,7 +204,9 @@ input {
 
 	header {
 		text-align: center;
-		margin-bottom: 2em; 
+		margin-bottom: 2em;
+		padding: 0;
+		background: none;
 	}
 
 	h1 {
