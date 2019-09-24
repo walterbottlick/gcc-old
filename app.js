@@ -8,7 +8,6 @@ var characterList = 'https://walterbottlick.github.io/gcc/json/characters.json';
 var skills = {};
 var characters = {};
 
-
 // Call JSON files
 
 $.getJSON(skillList, function(json) {
@@ -48,7 +47,7 @@ $('#skills-search').keyup(function(){
 				$('#' + key).removeClass('hidden');
 			}
 			//make skill header appear if necessary
-			if ($('#' + skills[key].type + '-skills-list').children().find('hidden').length > 0) {
+			if ($('#' + skills[key].type + '-skills-list').children().length > $('#' + skills[key].type + '-skills-list').children('.hidden').length) {
 				$('#' + skills[key].type + '-skills').removeClass('hidden');
 			}
 		} else {
@@ -57,7 +56,7 @@ $('#skills-search').keyup(function(){
 				$('#' + key).addClass('hidden');
 			}
 			//hide header if all skills in a section are removed
-			if ($('#' + skills[key].type + '-skills-list').children().find('hidden').length === 0) {
+			if ($('#' + skills[key].type + '-skills-list').children().length === $('#' + skills[key].type + '-skills-list').children('.hidden').length) {
 				$('#' + skills[key].type + '-skills').addClass('hidden');
 			}
 		}
