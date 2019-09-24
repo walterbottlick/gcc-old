@@ -68,10 +68,17 @@ $('#skills-search').keyup(function(){
 		}
 
 		if ($('.skills-screen').children().length - $('.skills-screen').children('.hidden').length === 1) {
-			const h3 = document.createElement('h3');
-			h3.id = 'noResults';
-			h3.innerHTML = 'No results found...';
-			$('.skills-screen').appendChild(h3);
+			const div = document.createElement('div');
+			div.classList.add('row');
+			div.id = 'noResults';
+
+			div.innerHTML = `
+		    	<div class="col-4">
+		        	<h3>No results found...</h3>
+		        </div>
+			`;
+
+			$('.skills-screen').appendChild(div);
 		} else {
 			$('#noResults').remove();
 		}
@@ -82,7 +89,6 @@ $('#skills-search').keyup(function(){
 
 function skillRender (skillObj, key) {
 	const div = document.createElement('div');
-
 	div.classList.add('col-4', 'skill-box');
 	div.id = key;
 
