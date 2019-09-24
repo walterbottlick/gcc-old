@@ -88,7 +88,7 @@ $('#skillBtn').click(function() {
 				break;
 		}
 	}
-	$('home-screen').addClass('hidden');
+	$('#home-screen').addClass('hidden');
 	$('#skills-screen').removeClass('hidden');
 });
 
