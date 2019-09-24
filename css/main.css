@@ -1,4 +1,6 @@
 html {
+	height: auto;
+    min-height: 100vh;
 	background-color: rgb(0,159,204);
   	background-attachment: fixed;
   	background-size: cover;
