@@ -53,6 +53,32 @@ section {
 	padding-top: 4em;
 }
 
+#nav-list {
+	text-align: left;
+    font-family: 'Zilla Slab', serif;
+    color: rgb(255,255,255);
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: max-height 0.5s ease-in-out;
+    -moz-transition: max-height 0.5s ease-in-out;
+    -ms-transition: max-height 0.5s ease-in-out;
+    -o-transition: max-height 0.5s ease-in-out;
+    transition: max-height 0.5s ease-in-out;
+}
+
+#nav-list ul {
+	padding-left: 1.25em;
+}
+
+#nav-list ul li {
+	list-style-type: none;
+	padding: 0.25em 0;
+}
+
+.nav-open {
+	max-height: 10em !important;
+}
+
 .main-buttons div {
 	text-align: center;
 	margin-bottom: 1em;

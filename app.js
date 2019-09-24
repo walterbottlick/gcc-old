@@ -30,7 +30,7 @@ function setCharacterList(json) {
 
 // Button Click Listeners
 
-$('#skillBtn').click(function() {
+$('.skillBtn').click(function() {
 	for (key in skills) {
 		const div = document.createElement('div');
 		div.classList.add('col-4', 'skill-box');
@@ -172,4 +172,5 @@ function placeholderReplace (desc,charName) {
 
 function navOpen(x) {
 	x.classList.toggle('change');
+	document.getElementById('nav-list').classList.toggle('nav-open');
 }
