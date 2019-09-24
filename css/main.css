@@ -263,6 +263,10 @@ input {
 		padding-top: 0;
 	}
 
+	#home-screen.hidden {
+		display: block !important; /* home-screen should always be displayed on desktop */
+	}
+
 	.nav {
 		display: none;
 	}
