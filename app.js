@@ -60,6 +60,12 @@ $('#skills-search').keyup(function(){
 				$('#' + skills[key].type + '-skills').addClass('hidden');
 			}
 		}
+
+		if ($('#' + skills[key].type + '-skills-list').children().length - $('#' + skills[key].type + '-skills-list').children('.hidden').length < 3) {
+			$('#' + skills[key].type + '-skills-list').removeClass('columnFix');
+		} else {
+			$('#' + skills[key].type + '-skills-list').addClass('columnFix');
+		}
 	}
 });
 

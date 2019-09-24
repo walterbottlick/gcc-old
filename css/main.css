@@ -1,6 +1,6 @@
 html {
 	height: 100%;
-	/*background-color: rgb(0,159,204);*/
+	background-color: rgb(0,159,204);
   	background-image: radial-gradient(rgb(0,159,204), rgb(16,48,68));
   	background-attachment: fixed;
 }
@@ -91,7 +91,6 @@ input {
 	padding-bottom: 0.45em;
 	display: inline-block;
     padding:  .5rem;
-    width:  100%;
 }
 
 .skill-box .skill-container {
@@ -164,20 +163,6 @@ input {
 		0 0 4px rgb(0,0,0);
 }
 
-#melee-skills-list,
-#ranged-skills-list,
-#defense-skills-list,
-#elemental-skills-list,
-#movement-skills-list,
-#manipulation-skills-list,
-#thought-skills-list,
-#misc-skills-list {
-	-moz-column-width: 19em;
-    -webkit-column-width: 19em;
-    -moz-column-gap: 1em;
-    -webkit-column-gap:1em;
-}
-
 #melee-skills,
 #ranged-skills,
 #defense-skills,
@@ -187,6 +172,17 @@ input {
 #thought-skills,
 #misc-skills {
 	margin: 2em 0;
+}
+
+.columnFix {
+	-moz-column-width: 19em;
+    -webkit-column-width: 19em;
+    -moz-column-gap: 1em;
+    -webkit-column-gap:1em;
+}
+
+.columnFix .skill-box {
+	width:  100%;
 }
 
 @media only screen and (min-width: 415px) {
