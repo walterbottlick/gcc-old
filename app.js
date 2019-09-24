@@ -42,31 +42,33 @@ $('#skillBtn').click(function() {
 $('#skills-search').keyup(function(){
 	for (key in skills) {
 		if (skills[key].name.toLowerCase().includes($('#skills-search').val().toLowerCase())) {
-			//check if respective skill-box element is on page and add it if not
+			// Check if respective skill-box element is on page and add it if not
 			if ($('#' + key).hasClass('hidden')) {
 				$('#' + key).removeClass('hidden');
 			}
-			//make skill header appear if necessary
+			// Make skill header appear if necessary
 			if ($('#' + skills[key].type + '-skills-list').children().length > $('#' + skills[key].type + '-skills-list').children('.hidden').length) {
 				$('#' + skills[key].type + '-skills').removeClass('hidden');
 			}
 		} else {
-			//remove respective skill-box element from page if present
+			// Remove respective skill-box element from page if present
 			if (!$('#' + key).hasClass('hidden')) {
 				$('#' + key).addClass('hidden');
 			}
-			//hide header if all skills in a section are removed
+			// Hide header if all skills in a section are removed
 			if ($('#' + skills[key].type + '-skills-list').children().length === $('#' + skills[key].type + '-skills-list').children('.hidden').length) {
 				$('#' + skills[key].type + '-skills').addClass('hidden');
 			}
 		}
 
+		// Add or remove columnFix class depending on if there are 3 or less results displaying in a category
 		if ($('#' + skills[key].type + '-skills-list').children().length - $('#' + skills[key].type + '-skills-list').children('.hidden').length < 4) {
 			$('#' + skills[key].type + '-skills-list').removeClass('columnFix');
 		} else {
 			$('#' + skills[key].type + '-skills-list').addClass('columnFix');
 		}
 
+		// Hide or display the no results message
 		if ($('#skills-screen').children().length - $('#skills-screen').children('.hidden').length === 1) {
 			const div = document.createElement('div');
 			div.classList.add('row');
@@ -79,7 +81,7 @@ $('#skills-search').keyup(function(){
 			`;
 
 			document.getElementById('skills-screen').appendChild(div);
-		} else {
+		} else if ($('#skills-screen').children().length - $('#skills-screen').children('.hidden').length > 2) {
 			$('#noResults').remove();
 		}
 	}
