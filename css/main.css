@@ -4,6 +4,7 @@ html {
   	background-image: radial-gradient(rgb(0,159,204), rgb(16,48,68));
     background-attachment: fixed;
     background-size: cover;
+    box-shadow: 1em 0 5em rgb(0,0,0);
 }
 
 header {
