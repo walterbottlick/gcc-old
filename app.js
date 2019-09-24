@@ -34,7 +34,7 @@ $('#skillBtn').click(function() {
 	for (key in skills) {
 		skillRender(skills[key], key);
 	}
-	$('.skills-screen').removeClass('hidden');
+	$('#skills-screen').removeClass('hidden');
 });
 
 // Skills search bar keyup listener
@@ -67,7 +67,7 @@ $('#skills-search').keyup(function(){
 			$('#' + skills[key].type + '-skills-list').addClass('columnFix');
 		}
 
-		if ($('.skills-screen').children().length - $('.skills-screen').children('.hidden').length === 1) {
+		if ($('#skills-screen').children().length - $('#skills-screen').children('.hidden').length === 1) {
 			const div = document.createElement('div');
 			div.classList.add('row');
 			div.id = 'noResults';
@@ -78,7 +78,7 @@ $('#skills-search').keyup(function(){
 		        </div>
 			`;
 
-			$('.skills-screen').appendChild(div);
+			document.getElementById('skills-screen').appendChild(div);
 		} else {
 			$('#noResults').remove();
 		}
