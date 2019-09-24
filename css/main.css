@@ -46,7 +46,7 @@ p {
 .skills-search-container div {
 	text-align: center;
 	float: none;
-    margin: 1em auto;
+    margin: 1em auto 0;
 }
 
 button {

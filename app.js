@@ -66,6 +66,15 @@ $('#skills-search').keyup(function(){
 		} else {
 			$('#' + skills[key].type + '-skills-list').addClass('columnFix');
 		}
+
+		if ($('.skills-screen').children().length - $('.skills-screen').children('.hidden').length === 1) {
+			const h3 = document.createElement('h3');
+			h3.id = 'noResults';
+			h3.innerHTML = 'No results found...';
+			$('.skills-screen').appendChild(h3);
+		} else {
+			$('#noResults').remove();
+		}
 	}
 });
 
