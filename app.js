@@ -172,3 +172,9 @@ function placeholderReplace (desc,charName) {
 
 	return finalDesc;
 }
+
+// Opens and closes mobile nav
+
+function navOpen(x) {
+	x.classList.toggle('change');
+}
