@@ -1,10 +1,8 @@
 html {
-    height: auto;
-    min-height: 100hv;
+    height: 100%;
     background-color: rgb(16,48,68);
   	background-image: radial-gradient(rgb(0,159,204), rgb(16,48,68));
     background-attachment: fixed;
-    background-size: cover;
 }
 
 header {
