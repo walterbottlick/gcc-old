@@ -93,6 +93,7 @@ $('.skillBtn').click(function() {
 		$('#skills-screen').removeClass('hidden');
 	}
 	$('#nav-list').removeClass('nav-open');
+	$('.nav').removeClass('change');
 });
 
 // Skills search bar keyup listener
