@@ -266,7 +266,7 @@ input {
 	transform: rotate(45deg) translate(-8px, -8px);
 }
 
-@media only screen and (min-width: 415px) {
+@media only screen and (min-width: 640px) {
 	button {
 		width: auto;
 	}
