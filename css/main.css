@@ -1,6 +1,7 @@
 html {
     height: 100%;
     background-color: rgb(8,102,134);
+  	/*background-image: radial-gradient(rgb(0,159,204), rgb(16,48,68));   leave for the color codes */
     background-attachment: fixed;
 }
 
@@ -16,9 +17,9 @@ header {
     position: fixed;
     width: 100%;
     z-index: 100;
-    -moz-box-shadow: 0 0 5em rgb(0,0,0);
-    -webkit-box-shadow: 0 0 5em rgb(0,0,0);
-    box-shadow: 0 0 5em rgb(0,0,0);
+    -moz-box-shadow: 0 0 2em rgb(0,0,0);
+    -webkit-box-shadow: 0 0 2em rgb(0,0,0);
+    box-shadow: 0 0 2em rgb(0,0,0);
 }
 
 h1 {
@@ -52,7 +53,7 @@ p {
 }
 
 section {
-	padding-top: 4em;
+	padding-top: 5em;
 }
 
 #nav-list {
@@ -140,7 +141,7 @@ input {
 
 .skill-box .skill-container {
 	height: auto;
-	box-shadow: 1px 1px 8px rgba(0,0,0,0.2);
+	box-shadow: 0 0 2em rgb(0,159,204);
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     border-radius: 10px;
