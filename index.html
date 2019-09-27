@@ -31,29 +31,35 @@
         <h2>Character Skills</h2>
         <div id="nav-list">
             <ul>
-                <li>CHARACTERS</li>
+                <li class="charBtn">CHARACTERS</li>
                 <li class="skillBtn">SKILLS</li>
                 <li>ITEMS</li>
                 <li>LoS TOOL</li>
             </ul>
         </div>
     </header>
+
+    <!-- Home Screen -->
+
     <section id="home-screen">
         <div class="row main-buttons">
             <div class="col-3">
-                <button id="charBtn" type="button">CHARACTERS</button>
+                <button class="charBtn" type="button">CHARACTERS</button>
             </div>
             <div class="col-3">
                 <button class="skillBtn" type="button">SKILLS</button>
             </div>
             <div class="col-3">
-                <button id="itemBtn" type="button">ITEMS</button>
+                <button class="itemBtn" type="button">ITEMS</button>
             </div>
             <div class="col-3">
-                <button id="losBtn" type="button">LoS TOOL</button>
+                <button class="losBtn" type="button">LoS TOOL</button>
             </div>
         </div>
     </section>
+
+    <!-- Skills Screen -->
+
     <section id="skills-screen" class="hidden">
         <div class="row skills-search-container">
             <div class="col-6">
@@ -66,7 +72,7 @@
                     <h3>MELEE</h3>
                 </div>
             </div>
-            <div class="row columnFix" id="melee-skills-list" class=""></div>
+            <div class="row columnFix" id="melee-skills-list"></div>
         </div>
         <div id="ranged-skills">
             <div class="row ranged-skills-header">
@@ -123,6 +129,40 @@
                 </div>
             </div>
             <div class="row columnFix" id="misc-skills-list"></div>
+        </div>
+    </section>
+
+    <!-- Characters Screen -->
+
+    <section id="characters-screen" class="hidden">
+        <div class="row characters-search-container">
+            <div class="col-6">
+                <input type="text" placeholder="Search for character..." name="search" id="character-search" maxlength="25" autocomplete="off">
+            </div>
+        </div>
+        <div id="heroes">
+            <div class="row heroes-header">
+                <div class="col-4">
+                    <h3>HEROES</h3>
+                </div>
+            </div>
+            <div class="row columnFix" id="heroes-list"></div>
+        </div>
+        <div id="villains">
+            <div class="row villains-header">
+                <div class="col-4">
+                    <h3>VILLAINS</h3>
+                </div>
+            </div>
+            <div class="row columnFix" id="villains-list"></div>
+        </div>
+        <div id="neutral">
+            <div class="row neutral-header">
+                <div class="col-4">
+                    <h3>NEUTRAL</h3>
+                </div>
+            </div>
+            <div class="row columnFix" id="neutral-list"></div>
         </div>
     </section>
 

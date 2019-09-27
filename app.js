@@ -30,6 +30,46 @@ function setCharacterList(json) {
 
 // Button Click Listeners
 
+$('.charBtn').click(function() {
+	if (!$('#characters-screen').is(':visible')) {
+		for (key in characters) {
+			const div = document.createElement('div');
+			div.classList.add('col-4', 'character-box');
+			div.id = key;
+			var subtitle = '';
+
+			if (characters[key].subtitle) {
+				subtitle = '<h5>' + characters[key].subtitle + '</h5>'
+			}
+
+			div.innerHTML = `
+				<div class="character-container">
+					<div>
+						<h4>` + characters[key].name + `</h4>`
+						+ characters[key].subtitle + 
+					`</div>
+				</div>
+			`;
+
+			switch(characters[key].affiliation) {
+				case 'hero':
+					document.getElementById('heroes-list').appendChild(div);
+					break;
+				case 'villain':
+					document.getElementById('villains-list').appendChild(div);
+					break;
+				case 'neutral':
+					document.getElementById('neutral-list').appendChild(div);
+					break;
+			}
+		}
+		$('section:not(#characters-screen)').addClass('hidden');
+		$('#characters-screen').removeClass('hidden');
+	}
+	$('#nav-list').removeClass('nav-open');
+	$('.nav').removeClass('change');
+});
+
 $('.skillBtn').click(function() {
 	if (!$('#skills-screen').is(':visible')) {
 		for (key in skills) {
@@ -63,33 +103,33 @@ $('.skillBtn').click(function() {
 			}
 
 			switch (skills[key].type) {
-				case "melee":
+				case 'melee':
 					document.getElementById('melee-skills-list').appendChild(div);
 					break;
-				case "ranged":
+				case 'ranged':
 					document.getElementById('ranged-skills-list').appendChild(div);
 					break;
-				case "defense":
+				case 'defense':
 					document.getElementById('defense-skills-list').appendChild(div);
 					break;
-				case "elemental":
+				case 'elemental':
 					document.getElementById('elemental-skills-list').appendChild(div);
 					break;
-				case "movement":
+				case 'movement':
 					document.getElementById('movement-skills-list').appendChild(div);
 					break;
-				case "manipulation":
+				case 'manipulation':
 					document.getElementById('manipulation-skills-list').appendChild(div);
 					break;
-				case "thought":
+				case 'thought':
 					document.getElementById('thought-skills-list').appendChild(div);
 					break;
-				case "misc":
+				case 'misc':
 					document.getElementById('misc-skills-list').appendChild(div);
 					break;
 			}
 		}
-		$('#home-screen').addClass('hidden');
+		$('section:not(#skills-screen)').addClass('hidden');
 		$('#skills-screen').removeClass('hidden');
 	}
 	$('#nav-list').removeClass('nav-open');
