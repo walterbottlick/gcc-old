@@ -122,51 +122,6 @@
 		"subtitle": "",
 		"affiliation": "hero",
 		"gender": "his",
-		"melee": "orange",
-		"ranged": "orange",
-		"manipulation": "yellow",
-		"thought": "orange",
-		"defense": "orange",
-		"moralCode": true,
-		"headerImage": "",
-		"icon": "",
-		"rank": 3,
-		"reinforcementCost": 0,
-		"skills": {
-			"combo": {
-				"level": 1,
-				"disabledAt": 4
-			},
-			"martialArts": {
-				"level": 1,
-				"disabledAt": 4
-			},
-			"counterAttack": {
-				"level": 2,
-				"disabledAt": 3
-			},
-			"ambidexterity": {
-				"level": 1,
-				"disabledAt": 0
-			},
-			"mobility": {
-				"level": 1,
-				"disabledAt": 4
-			},
-			"parkour": {
-				"level": 2,
-				"disabledAt": 4
-			}
-		},
-		"startingItem": {
-			"baton": 2
-		}
-	},
-	"nightwing": {
-		"name": "Nightwing",
-		"subtitle": "",
-		"affiliation": "hero",
-		"gender": "his",
 		"moralCode": true,
 		"headerImage": "",
 		"icon": "",
