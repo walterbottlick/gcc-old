@@ -51,8 +51,13 @@
 			},
 			"power": {
 				"name": "Care",
-				"type": "Special Event",
-				"description": "<p>The hero resets the lieutenant's life point marker back to its initial value.</p><p class=\"and-or\">OR</p><p>The hero immediately performs a character activation with Alfred. They only carry out their First Movement Step.</p>"
+				"type1": "Special Event",
+				"flavor1": "The hero takes care of their lieutenant.",
+				"description1": "<p>The hero resets the lieutenant's life point marker back to its initial value.</p>",
+				"andor": "OR",
+				"type2": "Special Event",
+				"flavor2": "Alfred immediately performs a movement.",
+				"description2": "<p>The hero immediately performs a character activation with Alfred. They only carry out their First Movement Step.</p>"
 			}
 		}
 	},
@@ -112,8 +117,13 @@
 			},
 			"power": {
 				"name": "No Limits",
-				"type": "Special Event",
-				"description": "<p>The hero immediately performs a character activation with Batman. To do so, they follow the Activate a Character Controlled by a Tile steps with the following exceptions:</p><ul><li>They can perform their First Movement Step but not the second.</li><li>During the Declare an Action Other than Movement step, they can only declare melee attack actions with 2 orange dice and an action multiplier of 3. They then suffer one wound.</li></ul><p class=\"and-or\">OR</p><p>The hero immediately performs a character activation with Batman. To do so, they follow the Activate a Character Controlled by a Tile steps with the following exceptions:</p><ul><li>They can perform their First Movement Step but not the second.</li><li>During the Declare an Action Other than Movement step, they can only declare a melee attack action with 2 black dice + 1 red die. They then suffer two wounds.</li></ul>"
+				"type1": "Special Event",
+				"flavor1": "Batman immediately performs a movement and several attacks, injuring himself.",
+				"description1": "<p>The hero immediately performs a character activation with Batman. To do so, they follow the Activate a Character Controlled by a Tile steps with the following exceptions:</p><ul><li>They can perform their First Movement Step but not the second.</li><li>During the Declare an Action Other than Movement step, they can only declare melee attack actions with 2 orange dice and an action multiplier of 3. They then suffer one wound.</li></ul>",
+				"andor": "OR",
+				"type2": "Special Event",
+				"flavor2": "Batman immediately performs a movement and a big attack injuring himself.",
+				"description2": "<p>The hero immediately performs a character activation with Batman. To do so, they follow the Activate a Character Controlled by a Tile steps with the following exceptions:</p><ul><li>They can perform their First Movement Step but not the second.</li><li>During the Declare an Action Other than Movement step, they can only declare a melee attack action with 2 black dice + 1 red die. They then suffer two wounds.</li></ul>"
 			}
 		}
 	},
@@ -171,9 +181,435 @@
 			},
 			"power": {
 				"name": "Impetuous",
-				"type": "Special Event",
-				"description": "<p>The hero immediately performs a character activation with Nightwing. To do so, they follow the Activate a Character Controlled by a Tile steps with the following excepions:</p><ul><li>Nightwing can only perform one of the two movement steps.</li><li>During the Declare an Action Other than a Movement step, they can only declare melee attacks.</li></ul>"
+				"type1": "Special Event",
+				"flavor1": "Nightwing performs a charge.",
+				"description1": "<p>The hero immediately performs a character activation with Nightwing. To do so, they follow the Activate a Character Controlled by a Tile steps with the following excepions:</p><ul><li>Nightwing can only perform one of the two movement steps.</li><li>During the Declare an Action Other than a Movement step, they can only declare melee attacks.</li></ul>",
+				"andor": "",
+				"type2": "",
+				"flavor2": "",
+				"description2": ""
 			}
+		}
+	},
+	"batmanThrasherSuit": {
+		"name": "Batman",
+		"subtitle": "Thrasher Suit",
+		"affiliation": "hero",
+		"gender": "his",
+		"moralCode": true,
+		"headerImage": "",
+		"icon": "",
+		"sheet": {
+			"melee": "black",
+			"ranged": "yellow",
+			"manipulation": "yellow",
+			"thought": "red",
+			"defense": "white",
+			"skills": {
+				"circularStrike": {
+					"level": 2,
+					"disabledAt": 0
+				},
+				"nervesOfSteel": {
+					"level": 3,
+					"disabledAt": 0
+				},
+				"hacking": {
+					"level": 2,
+					"disabledAt": 0
+				},
+				"investigation": {
+					"level": 1,
+					"disabledAt": 0
+				},
+				"elusive": {
+					"level": 3,
+					"disabledAt": 0
+				},
+				"parkour": {
+					"level": 2,
+					"disabledAt": 0
+				}
+			},
+			"startingItem": ""
+		},
+		"tile": ""
+	},
+	"bruceWayne": {
+		"name": "Bruce Wayne",
+		"subtitle": "",
+		"affiliation": "hero",
+		"gender": "his",
+		"moralCode": true,
+		"headerImage": "",
+		"icon": "",
+		"sheet": {
+			"melee": "red",
+			"ranged": "orange",
+			"manipulation": "orange",
+			"thought": "red",
+			"defense": "orange",
+			"skills": {
+				"martialArts": {
+					"level": 1,
+					"disabledAt": 4
+				},
+				"hacking": {
+					"level": 1,
+					"disabledAt": 0
+				},
+				"investigation": {
+					"level": 2,
+					"disabledAt": 0
+				},
+				"pushingLimits": {
+					"level": 1,
+					"disabledAt": 0
+				},
+				"sacrifice": {
+					"level": 2,
+					"disabledAt": 0
+				},
+				"parkour": {
+					"level": 1,
+					"disabledAt": 4
+				},
+				"elusive": {
+					"level": 1,
+					"disabledAt": 3
+				},
+				"mobility": {
+					"level": 2,
+					"disabledAt": 3
+				}
+			},
+			"startingItem": ""
+		},
+		"tile": {
+			"rank": 3,
+			"reinforcementCost": 0,
+			"skills": {
+				"parkour": 2,
+				"elusive": 1,
+				"investigation": 2
+			},
+			"power": {
+				"name": "Bodyguard",
+				"type1": "Permanent",
+				"flavor1": "Bruce Wayne arrives on the scene, accompanied by his personal bodyguards.",
+				"description1": "<p>At the end of the Leader Selection step, the hero replaces the event tile in their river with a Bat-Robots tile. They then place 2 Bat-Robots miniatures in the same area as Bruce Wayne.</p>",
+				"andor": "",
+				"type2": "",
+				"flavor2": "",
+				"description2": ""
+			}
+		}
+	},
+	"juliaPennyworth": {
+		"name": "Julia Pennyworth",
+		"subtitle": "",
+		"affiliation": "hero",
+		"gender": "her",
+		"moralCode": false,
+		"headerImage": "",
+		"icon": "",
+		"sheet": {
+			"melee": "orange",
+			"ranged": "orange",
+			"manipulation": "red",
+			"thought": "orange",
+			"defense": "orange",
+			"skills": {
+				"martialArts": {
+					"level": 1,
+					"disabledAt": 4
+				},
+				"munitionsSpecialist": {
+					"level": 2,
+					"disabledAt": 0
+				},
+				"hacking": {
+					"level": 1,
+					"disabledAt": 0
+				},
+				"nervesOfSteel": {
+					"level": 1,
+					"disabledAt": 0
+				},
+				"mobility": {
+					"level": 1,
+					"disabledAt": 4
+				}
+			},
+			"startingItem": ""
+		},
+		"tile": {
+			"rank": 3,
+			"reinforcementCost": 0,
+			"skills": {
+				"marksman": 1,
+				"hacking": 1,
+				"martialArts": 1
+			},
+			"power": {
+				"name": "Military Planning",
+				"type1": "Permanent",
+				"flavor1": "Julia Pennyworth uses her military education to lead operations.",
+				"description1": "<p>If Julia Pennyworth is not neutralized, the hero recovers 2 additional Energy cubes during the Upkeep Hero phase.</p><p>During the activation of the event tile, this power has no effect.</p>",
+				"andor": "",
+				"type2": "",
+				"flavor2": "",
+				"description2": ""
+			}
+		}
+	},
+	"oracle": {
+		"name": "Oracle",
+		"subtitle": "",
+		"affiliation": "hero",
+		"gender": "her",
+		"moralCode": true,
+		"headerImage": "",
+		"icon": "",
+		"sheet": {
+			"melee": "yellow",
+			"ranged": "orange",
+			"manipulation": "red",
+			"thought": "orange",
+			"defense": "yellow",
+			"skills": {
+				"reducedMobility": {
+					"level": 0,
+					"disabledAt": 0
+				},
+				"munitionsSpecialist": {
+					"level": 2,
+					"disabledAt": 0
+				},
+				"hacking": {
+					"level": 2,
+					"disabledAt": 0
+				},
+				"protected": {
+					"level": 1,
+					"disabledAt": 0
+				},
+				"untouchable": {
+					"level": 1,
+					"disabledAt": 4
+				},
+				"tactician": {
+					"level": 3,
+					"disabledAt": 0
+				},
+				"support": {
+					"level": 2,
+					"disabledAt": 0
+				},
+				"henchmanCommand": {
+					"level": 3,
+					"disabledAt": 0
+				}
+			},
+			"startingItem": ""
+		},
+		"tile": {
+			"rank": 3,
+			"reinforcementCost": 0,
+			"skills": {
+				"hacking": 2,
+				"tactician": 3,
+				"protected": 1,
+				"reducedMobility": 0
+			},
+			"power": {
+				"name": "Accomplished Strategist",
+				"type1": "Permanent",
+				"flavor1": "Oracle is at the head of operations.",
+				"description1": "<p>If Oracle is not neutralized, the hero recovers 1 additional activation potential point during the Upkeep Hero phase.</p><p>This power has no effect during the activation of the event tile.</p>",
+				"andor": "",
+				"type2": "",
+				"flavor2": "",
+				"description2": ""
+			}
+		}
+	},
+	"redRobin": {
+		"name": "Red Robin",
+		"subtitle": "",
+		"affiliation": "hero",
+		"gender": "his",
+		"moralCode": true,
+		"headerImage": "",
+		"icon": "",
+		"sheet": {
+			"melee": "orange",
+			"ranged": "orange",
+			"manipulation": "orange",
+			"thought": "red",
+			"defense": "orange",
+			"skills": {
+				"martialArts": {
+					"level": 1,
+					"disabledAt": 4
+				},
+				"tactician": {
+					"level": 1,
+					"disabledAt": 0
+				},
+				"munitionsSpecialist": {
+					"level": 1,
+					"disabledAt": 0
+				},
+				"hacking": {
+					"level": 2,
+					"disabledAt": 0
+				},
+				"sacrifice": {
+					"level": 2,
+					"disabledAt": 0
+				},
+				"parkour": {
+					"level": 1,
+					"disabledAt": 4
+				}
+			},
+			"startingItem": ""
+		},
+		"tile": {
+			"rank": 3,
+			"reinforcementCost": 0,
+			"skills": {
+				"parkour": 1,
+				"elusive": 1,
+				"hacking": 1
+			},
+			"power": {
+				"name": "Cyberattack",
+				"type1": "Special Event",
+				"flavor1": "Red Robin hacks into enemy communications.",
+				"description1": "<p>The hero can hack the enemy command post. To do so, they take a Hacking token and place it in one of the following spaces of the enemy command post that does not yet contain a Hacking token: movement, defense, or reroll.</p>",
+				"andor": "AND",
+				"type2": "Permanent",
+				"flavor2": "Communications are hacked.",
+				"description2": "<p>The exertion limit of a movement, defense or reroll space that contains a Hacking token is reduced by 1.</p>"
+			}
+		}
+	},
+	"batwing": {
+		"name": "Batwing",
+		"subtitle": "",
+		"affiliation": "hero",
+		"gender": "his",
+		"moralCode": true,
+		"headerImage": "",
+		"icon": "",
+		"sheet": {
+			"melee": "orange",
+			"ranged": "yellow",
+			"manipulation": "red",
+			"thought": "red",
+			"defense": "yellow",
+			"skills": {
+				"martialArts": {
+					"level": 1,
+					"disabledAt": 4
+				},
+				"fly": {
+					"level": 0,
+					"disabledAt": 0
+				},
+				"munitionsSpecialist": {
+					"level": 1,
+					"disabledAt": 0
+				},
+				"hacking": {
+					"level": 1,
+					"disabledAt": 0
+				},
+				"sacrifice": {
+					"level": 3,
+					"disabledAt": 0
+				}
+			},
+			"startingItem": ""
+		},
+		"tile": {
+			"rank": 3,
+			"reinforcementCost": 0,
+			"skills": {
+				"hacking": 2,
+				"lockPicking": 1,
+				"martialArts": 1,
+				"fly": 0
+			},
+			"power": {
+				"name": "Electric Shock",
+				"type1": "Special Event",
+				"flavor1": "Batwing triggers an electric shock in his zone.",
+				"description1": "<p>The hero triggers a level 3 explosion in the same area as Batwing. He ignores this explosion.</p>",
+				"andor": "OR",
+				"type2": "Special Event",
+				"flavor2": "Batwing does nothing.",
+				"description2": "<p>No effect.</p>"
+			}
+		}
+	},
+	"batRobots": {
+		"name": "Bat-Robots",
+		"subtitle": "",
+		"affiliation": "hero",
+		"gender": "",
+		"moralCode": false,
+		"headerImage": "",
+		"icon": "",
+		"sheet": "",
+		"tile": {
+			"rank": 2,
+			"reinforcementCost": 2,
+			"skills": {
+				"burst": 2,
+				"sacrifice": 3,
+				"gasImmunity": 0
+			},
+			"power": ""
+		}
+	},
+	"bats": {
+		"name": "Bats",
+		"subtitle": "",
+		"affiliation": "hero",
+		"gender": "",
+		"moralCode": false,
+		"headerImage": "",
+		"icon": "",
+		"sheet": "",
+		"tile": {
+			"rank": 1,
+			"reinforcementCost": 1,
+			"skills": {
+				"fly": 0
+			},
+			"power": ""
+		}
+	},
+	"trex": {
+		"name": "T-Rex",
+		"subtitle": "",
+		"affiliation": "hero",
+		"gender": "",
+		"moralCode": false,
+		"headerImage": "",
+		"icon": "",
+		"sheet": "",
+		"tile": {
+			"rank": 3,
+			"reinforcementCost": 0,
+			"skills": {
+				"elusive": 4,
+				"circularStrike": 5
+			},
+			"power": ""
 		}
 	}
 }
