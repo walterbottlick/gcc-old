@@ -61,6 +61,26 @@
 			}
 		}
 	},
+	"batRobots": {
+		"name": "Bat-Robots",
+		"subtitle": "",
+		"affiliation": "hero",
+		"gender": "",
+		"moralCode": false,
+		"headerImage": "",
+		"icon": "",
+		"sheet": "",
+		"tile": {
+			"rank": 2,
+			"reinforcementCost": 2,
+			"skills": {
+				"burst": 2,
+				"sacrifice": 3,
+				"gasImmunity": 0
+			},
+			"power": ""
+		}
+	},
 	"batmanDarkKnightReturns": {
 		"name": "Batman",
 		"subtitle": "Dark Knight Returns",
@@ -127,70 +147,6 @@
 			}
 		}
 	},
-	"nightwing": {
-		"name": "Nightwing",
-		"subtitle": "",
-		"affiliation": "hero",
-		"gender": "his",
-		"moralCode": true,
-		"headerImage": "",
-		"icon": "",
-		"sheet": {
-			"melee": "orange",
-			"ranged": "orange",
-			"manipulation": "yellow",
-			"thought": "orange",
-			"defense": "orange",
-			"skills": {
-				"combo": {
-					"level": 1,
-					"disabledAt": 4
-				},
-				"martialArts": {
-					"level": 1,
-					"disabledAt": 4
-				},
-				"counterAttack": {
-					"level": 2,
-					"disabledAt": 3
-				},
-				"ambidexterity": {
-					"level": 1,
-					"disabledAt": 0
-				},
-				"mobility": {
-					"level": 1,
-					"disabledAt": 4
-				},
-				"parkour": {
-					"level": 2,
-					"disabledAt": 4
-				}
-			},
-			"startingItem": {
-				"baton": 2
-			}
-		},
-		"tile": {
-			"rank": 3,
-			"reinforcementCost": 0,
-			"skills": {
-				"parkour": 3,
-				"mobility": 2,
-				"counterAttack": 2
-			},
-			"power": {
-				"name": "Impetuous",
-				"type1": "Special Event",
-				"flavor1": "Nightwing performs a charge.",
-				"description1": "<p>The hero immediately performs a character activation with Nightwing. To do so, they follow the Activate a Character Controlled by a Tile steps with the following excepions:</p><ul><li>Nightwing can only perform one of the two movement steps.</li><li>During the Declare an Action Other than a Movement step, they can only declare melee attacks.</li></ul>",
-				"andor": "",
-				"type2": "",
-				"flavor2": "",
-				"description2": ""
-			}
-		}
-	},
 	"batmanThrasherSuit": {
 		"name": "Batman",
 		"subtitle": "Thrasher Suit",
@@ -234,6 +190,83 @@
 			"startingItem": ""
 		},
 		"tile": ""
+	},
+	"bats": {
+		"name": "Bats",
+		"subtitle": "",
+		"affiliation": "hero",
+		"gender": "",
+		"moralCode": false,
+		"headerImage": "",
+		"icon": "",
+		"sheet": "",
+		"tile": {
+			"rank": 1,
+			"reinforcementCost": 1,
+			"skills": {
+				"fly": 0
+			},
+			"power": ""
+		}
+	},
+	"batwing": {
+		"name": "Batwing",
+		"subtitle": "",
+		"affiliation": "hero",
+		"gender": "his",
+		"moralCode": true,
+		"headerImage": "",
+		"icon": "",
+		"sheet": {
+			"melee": "orange",
+			"ranged": "yellow",
+			"manipulation": "red",
+			"thought": "red",
+			"defense": "yellow",
+			"skills": {
+				"martialArts": {
+					"level": 1,
+					"disabledAt": 4
+				},
+				"fly": {
+					"level": 0,
+					"disabledAt": 0
+				},
+				"munitionsSpecialist": {
+					"level": 1,
+					"disabledAt": 0
+				},
+				"hacking": {
+					"level": 1,
+					"disabledAt": 0
+				},
+				"sacrifice": {
+					"level": 3,
+					"disabledAt": 0
+				}
+			},
+			"startingItem": ""
+		},
+		"tile": {
+			"rank": 3,
+			"reinforcementCost": 0,
+			"skills": {
+				"hacking": 2,
+				"lockPicking": 1,
+				"martialArts": 1,
+				"fly": 0
+			},
+			"power": {
+				"name": "Electric Shock",
+				"type1": "Special Event",
+				"flavor1": "Batwing triggers an electric shock in his zone.",
+				"description1": "<p>The hero triggers a level 3 explosion in the same area as Batwing. He ignores this explosion.</p>",
+				"andor": "OR",
+				"type2": "Special Event",
+				"flavor2": "Batwing does nothing.",
+				"description2": "<p>No effect.</p>"
+			}
+		}
 	},
 	"bruceWayne": {
 		"name": "Bruce Wayne",
@@ -356,6 +389,70 @@
 				"type1": "Permanent",
 				"flavor1": "Julia Pennyworth uses her military education to lead operations.",
 				"description1": "<p>If Julia Pennyworth is not neutralized, the hero recovers 2 additional Energy cubes during the Upkeep Hero phase.</p><p>During the activation of the event tile, this power has no effect.</p>",
+				"andor": "",
+				"type2": "",
+				"flavor2": "",
+				"description2": ""
+			}
+		}
+	},
+	"nightwing": {
+		"name": "Nightwing",
+		"subtitle": "",
+		"affiliation": "hero",
+		"gender": "his",
+		"moralCode": true,
+		"headerImage": "",
+		"icon": "",
+		"sheet": {
+			"melee": "orange",
+			"ranged": "orange",
+			"manipulation": "yellow",
+			"thought": "orange",
+			"defense": "orange",
+			"skills": {
+				"combo": {
+					"level": 1,
+					"disabledAt": 4
+				},
+				"martialArts": {
+					"level": 1,
+					"disabledAt": 4
+				},
+				"counterAttack": {
+					"level": 2,
+					"disabledAt": 3
+				},
+				"ambidexterity": {
+					"level": 1,
+					"disabledAt": 0
+				},
+				"mobility": {
+					"level": 1,
+					"disabledAt": 4
+				},
+				"parkour": {
+					"level": 2,
+					"disabledAt": 4
+				}
+			},
+			"startingItem": {
+				"baton": 2
+			}
+		},
+		"tile": {
+			"rank": 3,
+			"reinforcementCost": 0,
+			"skills": {
+				"parkour": 3,
+				"mobility": 2,
+				"counterAttack": 2
+			},
+			"power": {
+				"name": "Impetuous",
+				"type1": "Special Event",
+				"flavor1": "Nightwing performs a charge.",
+				"description1": "<p>The hero immediately performs a character activation with Nightwing. To do so, they follow the Activate a Character Controlled by a Tile steps with the following excepions:</p><ul><li>Nightwing can only perform one of the two movement steps.</li><li>During the Declare an Action Other than a Movement step, they can only declare melee attacks.</li></ul>",
 				"andor": "",
 				"type2": "",
 				"flavor2": "",
@@ -494,103 +591,6 @@
 				"flavor2": "Communications are hacked.",
 				"description2": "<p>The exertion limit of a movement, defense or reroll space that contains a Hacking token is reduced by 1.</p>"
 			}
-		}
-	},
-	"batwing": {
-		"name": "Batwing",
-		"subtitle": "",
-		"affiliation": "hero",
-		"gender": "his",
-		"moralCode": true,
-		"headerImage": "",
-		"icon": "",
-		"sheet": {
-			"melee": "orange",
-			"ranged": "yellow",
-			"manipulation": "red",
-			"thought": "red",
-			"defense": "yellow",
-			"skills": {
-				"martialArts": {
-					"level": 1,
-					"disabledAt": 4
-				},
-				"fly": {
-					"level": 0,
-					"disabledAt": 0
-				},
-				"munitionsSpecialist": {
-					"level": 1,
-					"disabledAt": 0
-				},
-				"hacking": {
-					"level": 1,
-					"disabledAt": 0
-				},
-				"sacrifice": {
-					"level": 3,
-					"disabledAt": 0
-				}
-			},
-			"startingItem": ""
-		},
-		"tile": {
-			"rank": 3,
-			"reinforcementCost": 0,
-			"skills": {
-				"hacking": 2,
-				"lockPicking": 1,
-				"martialArts": 1,
-				"fly": 0
-			},
-			"power": {
-				"name": "Electric Shock",
-				"type1": "Special Event",
-				"flavor1": "Batwing triggers an electric shock in his zone.",
-				"description1": "<p>The hero triggers a level 3 explosion in the same area as Batwing. He ignores this explosion.</p>",
-				"andor": "OR",
-				"type2": "Special Event",
-				"flavor2": "Batwing does nothing.",
-				"description2": "<p>No effect.</p>"
-			}
-		}
-	},
-	"batRobots": {
-		"name": "Bat-Robots",
-		"subtitle": "",
-		"affiliation": "hero",
-		"gender": "",
-		"moralCode": false,
-		"headerImage": "",
-		"icon": "",
-		"sheet": "",
-		"tile": {
-			"rank": 2,
-			"reinforcementCost": 2,
-			"skills": {
-				"burst": 2,
-				"sacrifice": 3,
-				"gasImmunity": 0
-			},
-			"power": ""
-		}
-	},
-	"bats": {
-		"name": "Bats",
-		"subtitle": "",
-		"affiliation": "hero",
-		"gender": "",
-		"moralCode": false,
-		"headerImage": "",
-		"icon": "",
-		"sheet": "",
-		"tile": {
-			"rank": 1,
-			"reinforcementCost": 1,
-			"skills": {
-				"fly": 0
-			},
-			"power": ""
 		}
 	},
 	"trex": {
