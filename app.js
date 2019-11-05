@@ -136,6 +136,15 @@ $('.skillBtn').click(function() {
 	$('.nav').removeClass('change');
 });
 
+$('.losBtn').click(function() {
+	if (!$('#los-tool-screen').is(':visible')) {
+		$('section:not(#lost-tool-screen)').addClass('hidden');
+		$('#los-tool-screen').removeClass('hidden');
+	}
+	$('#nav-list').removeClass('nav-open');
+	$('.nav').removeClass('change');
+});
+
 // Skills search bar keyup listener
 
 $('#skills-search').keyup(function(){

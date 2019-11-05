@@ -58,6 +58,53 @@
         </div>
     </section>
 
+    <!-- Characters Screen -->
+
+    <section id="characters-screen" class="hidden">
+        <div class="row characters-search-container">
+            <div class="col-6">
+                <input type="text" placeholder="Search for character..." name="search" id="character-search" maxlength="25" autocomplete="off">
+            </div>
+        </div>
+        <div id="heroes">
+            <div class="row heroes-header">
+                <div class="col-4">
+                    <h3>HEROES</h3>
+                </div>
+            </div>
+            <div class="row" id="heroes-list">
+                <div class="col-6 char-container">
+                    <div>
+                        <img src="/gcc/images/Batman_test2.jpg">
+                    </div>
+                    <div>ADD</div>
+                </div>
+                <div class="col-6 char-container">
+                    <div>
+                        <img src="/gcc/images/Batman_test2.jpg">
+                    </div>
+                    <div>ADD</div>
+                </div>
+            </div>
+        </div>
+        <div id="villains">
+            <div class="row villains-header">
+                <div class="col-4">
+                    <h3>VILLAINS</h3>
+                </div>
+            </div>
+            <div class="row columnFix" id="villains-list"></div>
+        </div>
+        <div id="neutral">
+            <div class="row neutral-header">
+                <div class="col-4">
+                    <h3>NEUTRAL</h3>
+                </div>
+            </div>
+            <div class="row columnFix" id="neutral-list"></div>
+        </div>
+    </section>
+
     <!-- Skills Screen -->
 
     <section id="skills-screen" class="hidden">
@@ -132,51 +179,10 @@
         </div>
     </section>
 
-    <!-- Characters Screen -->
+    <!-- LoS Tool Screen -->
 
-    <section id="characters-screen" class="hidden">
-        <div class="row characters-search-container">
-            <div class="col-6">
-                <input type="text" placeholder="Search for character..." name="search" id="character-search" maxlength="25" autocomplete="off">
-            </div>
-        </div>
-        <div id="heroes">
-            <div class="row heroes-header">
-                <div class="col-4">
-                    <h3>HEROES</h3>
-                </div>
-            </div>
-            <div class="row" id="heroes-list">
-                <div class="col-6 char-container">
-                    <div>
-                        <img src="/gcc/images/Batman_test2.jpg">
-                    </div>
-                    <div>ADD</div>
-                </div>
-                <div class="col-6 char-container">
-                    <div>
-                        <img src="/gcc/images/Batman_test2.jpg">
-                    </div>
-                    <div>ADD</div>
-                </div>
-            </div>
-        </div>
-        <div id="villains">
-            <div class="row villains-header">
-                <div class="col-4">
-                    <h3>VILLAINS</h3>
-                </div>
-            </div>
-            <div class="row columnFix" id="villains-list"></div>
-        </div>
-        <div id="neutral">
-            <div class="row neutral-header">
-                <div class="col-4">
-                    <h3>NEUTRAL</h3>
-                </div>
-            </div>
-            <div class="row columnFix" id="neutral-list"></div>
-        </div>
+    <section id="lost-tool-screen" class="hidden">
+        <iframe frameborder="0" src="https://the-overlord.com/batmap/chemicals.html" width="1225" height="980"></iframe>
     </section>
 
     <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
