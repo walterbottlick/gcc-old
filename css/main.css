@@ -337,19 +337,17 @@ input {
 
 /* LoS Tool embed scaling styles */
 
-#wrapper {
+#los-wrapper {
 	width: 869.75px;
 	height: 695.8px;
 	padding: 0;
 	overflow: hidden;
 }
 
-#scaled-frame {
+#los-scaled-frame {
 	width: 1225px;
 	height: 980px;
 	border: 0px;
-}
-#scaled-frame {
     zoom: 0.71;
     -moz-transform: scale(0.71);
     -moz-transform-origin: 0 0;
@@ -360,7 +358,7 @@ input {
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
-	#scaled-frame  {
+	#los-scaled-frame  {
 		zoom: 1;
 	}
 }
