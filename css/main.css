@@ -342,6 +342,7 @@ input {
 	height: 695.8px;
 	padding: 0;
 	overflow: hidden;
+	margin: 0 auto;
 }
 
 #los-scaled-frame {
