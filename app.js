@@ -227,3 +227,29 @@ function navOpen(x) {
 	x.classList.toggle('change');
 	document.getElementById('nav-list').classList.toggle('nav-open');
 }
+
+// LoS Resize
+
+var windowWidth;
+
+$(document).ready(function() {
+	setLosSize();
+	$(window).resize(function() {
+		setLosSize();
+	});
+});
+
+function setLosSize() {
+	windowWidth = window.innerWidth;
+
+	if (windowWidth < 869.75) {
+		$('#los-wrapper').css('width', windowWidth - 20);
+		$('#los-wrapper').css('height', (windowWidth)*0.8);
+
+		var scale = (windowWidth - 60) / 1225;
+
+		$('#los-scaled-frame').css('-moz-transform', 'scale(' + scale + ')');
+		$('#los-scaled-frame').css('-o-transform', 'scale(' + scale + ')');
+		$('#los-scaled-frame').css('-webkit-transform', 'scale(' + scale + ')');
+	}
+}

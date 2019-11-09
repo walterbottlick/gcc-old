@@ -338,9 +338,10 @@ input {
 /* LoS Tool embed scaling styles */
 
 #los-wrapper {
-	width: 869.75px;
-	height: 695.8px;
-	padding: 0;
+	max-width: 909.75px;
+	max-height: 695.8px;
+	padding: 0 20px;
+	box-sizing: border-box;
 	overflow: hidden;
 	margin: 0 auto;
 }
