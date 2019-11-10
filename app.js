@@ -28,43 +28,111 @@ function setCharacterList(json) {
 	characters = json;
 }
 
+// Populate Characters, Skills, and items from JSON on page load
+
+$(document).ready(function() {
+
+	// Populate Characters
+	for (key in characters) {
+		const div = document.createElement('div');
+		div.classList.add('col-4', 'character-box');
+		div.id = key;
+		var subtitle = '';
+
+		if (characters[key].subtitle) {
+			subtitle = '<h5>' + characters[key].subtitle + '</h5>'
+		}
+
+		div.innerHTML = `
+			<div class="character-container">
+				<div>
+					<h4>` + characters[key].name + `</h4>`
+					+ characters[key].subtitle + 
+				`</div>
+			</div>
+		`;
+
+		switch(characters[key].affiliation) {
+			case 'hero':
+				document.getElementById('heroes-list').appendChild(div);
+				break;
+			case 'villain':
+				document.getElementById('villains-list').appendChild(div);
+				break;
+			case 'neutral':
+				document.getElementById('neutral-list').appendChild(div);
+				break;
+		}
+	}
+
+	// Populate Skills
+	for (key in skills) {
+		const div = document.createElement('div');
+		div.classList.add('col-4', 'skill-box');
+		div.id = key;
+
+		if (skills[key].altTileDesc) {
+			div.innerHTML = `
+	            <div class="skill-container">
+	                <div><img src="` + skills[key].icon + `"></div>
+	                <div>
+	                	<h4>` + skills[key].name + `</h4>
+	            		<p><em>Hero Sheet</em></p>
+	            		<p>` + placeholderReplace(skills[key].description) + `</p>
+	            		<p><em>Tile</em></p>
+	            		<p>` + placeholderReplace(skills[key].altTileDesc) + `</p>
+	                </div>
+	            </div>
+			`;
+		} else {
+			div.innerHTML = `
+	            <div class="skill-container">
+	                <div><img src="` + skills[key].icon + `"></div>
+	                <div>
+	                	<h4>` + skills[key].name + `</h4>
+	            		<p>` + placeholderReplace(skills[key].description) + `</p>
+	                </div>
+	            </div>
+			`;
+		}
+
+		switch (skills[key].type) {
+			case 'melee':
+				document.getElementById('melee-skills-list').appendChild(div);
+				break;
+			case 'ranged':
+				document.getElementById('ranged-skills-list').appendChild(div);
+				break;
+			case 'defense':
+				document.getElementById('defense-skills-list').appendChild(div);
+				break;
+			case 'elemental':
+				document.getElementById('elemental-skills-list').appendChild(div);
+				break;
+			case 'movement':
+				document.getElementById('movement-skills-list').appendChild(div);
+				break;
+			case 'manipulation':
+				document.getElementById('manipulation-skills-list').appendChild(div);
+				break;
+			case 'thought':
+				document.getElementById('thought-skills-list').appendChild(div);
+				break;
+			case 'misc':
+				document.getElementById('misc-skills-list').appendChild(div);
+				break;
+		}
+	}
+
+});
+
 // Button Click Listeners
 
 $('.charBtn').click(function() {
 	if (!$('#characters-screen').is(':visible')) {
-		for (key in characters) {
-			const div = document.createElement('div');
-			div.classList.add('col-4', 'character-box');
-			div.id = key;
-			var subtitle = '';
-
-			if (characters[key].subtitle) {
-				subtitle = '<h5>' + characters[key].subtitle + '</h5>'
-			}
-
-			div.innerHTML = `
-				<div class="character-container">
-					<div>
-						<h4>` + characters[key].name + `</h4>`
-						+ characters[key].subtitle + 
-					`</div>
-				</div>
-			`;
-
-			switch(characters[key].affiliation) {
-				case 'hero':
-					document.getElementById('heroes-list').appendChild(div);
-					break;
-				case 'villain':
-					document.getElementById('villains-list').appendChild(div);
-					break;
-				case 'neutral':
-					document.getElementById('neutral-list').appendChild(div);
-					break;
-			}
-		}
 		$('section:not(#characters-screen)').addClass('hidden');
 		$('#characters-screen').removeClass('hidden');
+		$('#los-scaled-frame').removeAttr('src');
 	}
 	$('#nav-list').removeClass('nav-open');
 	$('.nav').removeClass('change');
@@ -72,65 +140,9 @@ $('.charBtn').click(function() {
 
 $('.skillBtn').click(function() {
 	if (!$('#skills-screen').is(':visible')) {
-		for (key in skills) {
-			const div = document.createElement('div');
-			div.classList.add('col-4', 'skill-box');
-			div.id = key;
-
-			if (skills[key].altTileDesc) {
-				div.innerHTML = `
-		            <div class="skill-container">
-		                <div><img src="` + skills[key].icon + `"></div>
-		                <div>
-		                	<h4>` + skills[key].name + `</h4>
-		            		<p><em>Hero Sheet</em></p>
-		            		<p>` + placeholderReplace(skills[key].description) + `</p>
-		            		<p><em>Tile</em></p>
-		            		<p>` + placeholderReplace(skills[key].altTileDesc) + `</p>
-		                </div>
-		            </div>
-				`;
-			} else {
-				div.innerHTML = `
-		            <div class="skill-container">
-		                <div><img src="` + skills[key].icon + `"></div>
-		                <div>
-		                	<h4>` + skills[key].name + `</h4>
-		            		<p>` + placeholderReplace(skills[key].description) + `</p>
-		                </div>
-		            </div>
-				`;
-			}
-
-			switch (skills[key].type) {
-				case 'melee':
-					document.getElementById('melee-skills-list').appendChild(div);
-					break;
-				case 'ranged':
-					document.getElementById('ranged-skills-list').appendChild(div);
-					break;
-				case 'defense':
-					document.getElementById('defense-skills-list').appendChild(div);
-					break;
-				case 'elemental':
-					document.getElementById('elemental-skills-list').appendChild(div);
-					break;
-				case 'movement':
-					document.getElementById('movement-skills-list').appendChild(div);
-					break;
-				case 'manipulation':
-					document.getElementById('manipulation-skills-list').appendChild(div);
-					break;
-				case 'thought':
-					document.getElementById('thought-skills-list').appendChild(div);
-					break;
-				case 'misc':
-					document.getElementById('misc-skills-list').appendChild(div);
-					break;
-			}
-		}
 		$('section:not(#skills-screen)').addClass('hidden');
 		$('#skills-screen').removeClass('hidden');
+		$('#los-scaled-frame').removeAttr('src');
 	}
 	$('#nav-list').removeClass('nav-open');
 	$('.nav').removeClass('change');
@@ -254,7 +266,7 @@ function setLosSize() {
 	}
 }
 
-// LoS Select Option Events
+// LoS Select Option Event
 
 $('#los-tool-select').change(function() {
 	$('#los-scaled-frame').attr('src', 'https://the-overlord.net/batmap/' + this.value + '.html');
