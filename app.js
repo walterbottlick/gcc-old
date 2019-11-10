@@ -141,7 +141,7 @@ $('.charBtn').click(function() {
 		$('section:not(#characters-screen)').addClass('hidden');
 		$('#characters-screen').removeClass('hidden');
 		$('#los-scaled-frame').removeAttr('src');
-		$('#los-tool-select').selectedIndex = 0;
+		$('#los-tool-select').prop('selectedIndex',0);
 	}
 	$('#nav-list').removeClass('nav-open');
 	$('.nav').removeClass('change');
@@ -152,7 +152,7 @@ $('.skillBtn').click(function() {
 		$('section:not(#skills-screen)').addClass('hidden');
 		$('#skills-screen').removeClass('hidden');
 		$('#los-scaled-frame').removeAttr('src');
-		$('#los-tool-select').selectedIndex = 0;
+		$('#los-tool-select').prop('selectedIndex',0);
 	}
 	$('#nav-list').removeClass('nav-open');
 	$('.nav').removeClass('change');
