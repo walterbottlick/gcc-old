@@ -31,8 +31,14 @@ function setCharacterList(json) {
 // Populate Characters, Skills, and items from JSON on page load
 
 $(document).ready(function() {
+	console.log('Test');
+	populateChars(characters);
+	populateSkills(skills);
+});
 
-	// Populate Characters
+// Populate Characters Function
+
+function populateChars(characters) {
 	for (key in characters) {
 		const div = document.createElement('div');
 		div.classList.add('col-4', 'character-box');
@@ -64,8 +70,11 @@ $(document).ready(function() {
 				break;
 		}
 	}
+}
 
-	// Populate Skills
+// Populate Skills Function
+
+function populateSkills(skills) {
 	for (key in skills) {
 		const div = document.createElement('div');
 		div.classList.add('col-4', 'skill-box');
@@ -123,8 +132,7 @@ $(document).ready(function() {
 				break;
 		}
 	}
-
-});
+}
 
 // Button Click Listeners
 
@@ -133,6 +141,7 @@ $('.charBtn').click(function() {
 		$('section:not(#characters-screen)').addClass('hidden');
 		$('#characters-screen').removeClass('hidden');
 		$('#los-scaled-frame').removeAttr('src');
+		$('#los-tool-select').selectedIndex = 0;
 	}
 	$('#nav-list').removeClass('nav-open');
 	$('.nav').removeClass('change');
@@ -143,6 +152,7 @@ $('.skillBtn').click(function() {
 		$('section:not(#skills-screen)').addClass('hidden');
 		$('#skills-screen').removeClass('hidden');
 		$('#los-scaled-frame').removeAttr('src');
+		$('#los-tool-select').selectedIndex = 0;
 	}
 	$('#nav-list').removeClass('nav-open');
 	$('.nav').removeClass('change');
