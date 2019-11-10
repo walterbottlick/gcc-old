@@ -28,17 +28,9 @@ function setCharacterList(json) {
 	characters = json;
 }
 
-// Populate Characters, Skills, and items from JSON on page load
+// Button Click Listeners
 
-$(document).ready(function() {
-	console.log('Test');
-	populateChars(characters);
-	populateSkills(skills);
-});
-
-// Populate Characters Function
-
-function populateChars(characters) {
+$('.charBtn').click(function() {
 	for (key in characters) {
 		const div = document.createElement('div');
 		div.classList.add('col-4', 'character-box');
@@ -70,11 +62,17 @@ function populateChars(characters) {
 				break;
 		}
 	}
-}
+	if (!$('#characters-screen').is(':visible')) {
+		$('section:not(#characters-screen)').addClass('hidden');
+		$('#characters-screen').removeClass('hidden');
+		$('#los-scaled-frame').removeAttr('src');
+		$('#los-tool-select').prop('selectedIndex',0);
+	}
+	$('#nav-list').removeClass('nav-open');
+	$('.nav').removeClass('change');
+});
 
-// Populate Skills Function
-
-function populateSkills(skills) {
+$('.skillBtn').click(function() {
 	for (key in skills) {
 		const div = document.createElement('div');
 		div.classList.add('col-4', 'skill-box');
@@ -132,22 +130,6 @@ function populateSkills(skills) {
 				break;
 		}
 	}
-}
-
-// Button Click Listeners
-
-$('.charBtn').click(function() {
-	if (!$('#characters-screen').is(':visible')) {
-		$('section:not(#characters-screen)').addClass('hidden');
-		$('#characters-screen').removeClass('hidden');
-		$('#los-scaled-frame').removeAttr('src');
-		$('#los-tool-select').prop('selectedIndex',0);
-	}
-	$('#nav-list').removeClass('nav-open');
-	$('.nav').removeClass('change');
-});
-
-$('.skillBtn').click(function() {
 	if (!$('#skills-screen').is(':visible')) {
 		$('section:not(#skills-screen)').addClass('hidden');
 		$('#skills-screen').removeClass('hidden');
