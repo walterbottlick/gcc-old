@@ -34,7 +34,7 @@
                 <li class="charBtn">CHARACTERS</li>
                 <li class="skillBtn">SKILLS</li>
                 <li>ITEMS</li>
-                <li>LoS TOOL</li>
+                <li class="losBtn">LoS TOOL</li>
             </ul>
         </div>
     </header>
@@ -61,7 +61,7 @@
     <!-- Characters Screen -->
 
     <section id="characters-screen" class="hidden">
-        <div class="row characters-search-container">
+        <div class="row character-search-container">
             <div class="col-6">
                 <input type="text" placeholder="Search for character..." name="search" id="character-search" maxlength="25" autocomplete="off">
             </div>
@@ -182,8 +182,30 @@
     <!-- LoS Tool Screen -->
 
     <section id="los-tool-screen" class="hidden">
+        <div class="row los-tool-select-container">
+            <div class="col-6">
+                <select id="los-tool-select">
+                    <option value="" disabled selected hidden>Select Board</option>
+                    <optgroup label="Core Game">
+                        <option value="bank">The Bank</option>
+                        <option value="chemicals">ACE Chemical</option>
+                        <option value="crimealley">Crime Alley</option>
+                        <option value="subway">The Subway</option>
+                    </optgroup>
+                    <optgroup label="Arkham Asylum Expansion">
+                        <option value="asylum">Arkham Asylum</option>
+                        <option value="funhouse">Joker's Funhouse</option>
+                    </optgroup>
+                    <optgroup label="Wayne Manor Expansion">
+                        <option value="batcave">The Batcave</option>
+                        <option value="crimealleynight">Crime Alley by Night</option>
+                        <option value="manor">Wayne Manor</option>
+                    </optgroup>
+                </select>
+            </div>
+        </div>
         <div id="los-wrapper">
-            <iframe id="los-scaled-frame" src="https://the-overlord.com/batmap/chemicals.html"></iframe>
+            <iframe id="los-scaled-frame"></iframe>
         </div>
     </section>
 

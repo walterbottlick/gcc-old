@@ -246,10 +246,16 @@ function setLosSize() {
 		$('#los-wrapper').css('width', windowWidth - 20);
 		$('#los-wrapper').css('height', (windowWidth)*0.8);
 
-		var scale = (windowWidth - 60) / 1225;
+		var scale = (windowWidth - 60) / 1227;
 
 		$('#los-scaled-frame').css('-moz-transform', 'scale(' + scale + ')');
 		$('#los-scaled-frame').css('-o-transform', 'scale(' + scale + ')');
 		$('#los-scaled-frame').css('-webkit-transform', 'scale(' + scale + ')');
 	}
 }
+
+// LoS Select Option Events
+
+$('#los-tool-select').change(function() {
+	$('#los-scaled-frame').attr('src', 'https://the-overlord.net/batmap/' + this.value + '.html');
+});

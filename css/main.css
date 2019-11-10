@@ -88,7 +88,9 @@ section {
 	margin-bottom: 1em;
 }
 
-.skills-search-container div {
+.character-search-container div,
+.skills-search-container div,
+.los-tool-select-container div {
 	text-align: center;
 	float: none;
     margin: 1em auto 0;
@@ -124,7 +126,8 @@ button:active {
 	background: -moz-linear-gradient(top,  rgb(190,120,5),  rgb(243,148,0));
 }
 
-input {
+input,
+select {
 	height: 1.7em;
 }
 
@@ -163,7 +166,6 @@ input {
 
 .skill-box .skill-container {
 	height: auto;
-	box-shadow: 0 0 2em rgb(0,159,204);
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     border-radius: 10px;
@@ -238,7 +240,10 @@ input {
 #movement-skills,
 #manipulation-skills,
 #thought-skills,
-#misc-skills {
+#misc-skills,
+#heroes,
+#villains,
+#neutral {
 	margin: 2em 0;
 }
 
@@ -343,11 +348,11 @@ input {
 	padding: 0 20px;
 	box-sizing: border-box;
 	overflow: hidden;
-	margin: 0 auto;
+	margin: 2em auto;
 }
 
 #los-scaled-frame {
-	width: 1225px;
+	width: 1227px;
 	height: 980px;
 	border: 0px;
     zoom: 0.71;
