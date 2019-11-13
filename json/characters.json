@@ -122,7 +122,7 @@
 		"moralCode": false,
 		"headerImage": "",
 		"icon": "",
-		"sheet": "",
+		"sheet": {},
 		"tile": {
 			"rank": 2,
 			"reinforcementCost": 2,
@@ -188,7 +188,7 @@
 			},
 			"startingItem": ""
 		},
-		"tile": ""
+		"tile": {}
 	},
 	"batgirlBarbaraGordon": {
 		"name": "Batgirl",
@@ -430,7 +430,7 @@
 		"moralCode": false,
 		"headerImage": "",
 		"icon": "",
-		"sheet": "",
+		"sheet": {},
 		"tile": {
 			"rank": 1,
 			"reinforcementCost": 1,
@@ -885,7 +885,7 @@
 		"moralCode": false,
 		"headerImage": "",
 		"icon": "",
-		"sheet": "",
+		"sheet": {},
 		"tile": {
 			"rank": 3,
 			"reinforcementCost": 0,
