@@ -264,6 +264,12 @@ $('.tileBtn').click(function() {
 	var sheetID = '#' + $(this).value + 'sheet-skills';
 	var tileID = '#' + $(this).value + 'tile-skills';
 
+	console.log('this:');
+	console.log($(this));
+	console.log('this.value: ' + $(this).value);
+	console.log('sheetID: ' + sheetID);
+	console.log('tileID: ' + tileID);
+
 	$(this).addClass('clicked');
 	$(this).siblings().removeClass('clicked');
 	
