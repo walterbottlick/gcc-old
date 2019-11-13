@@ -101,8 +101,8 @@ charPromise.then(function() {
 					<button type="button">SHEET</button>
 					<button type="button">TILE</button>
 				</div>
-				<div class="char-sheet-skills">` + charSheetSkillsHTML + `</div>
-				<div class="char-tile-skills">` + charTileSkillsHTML + `</div>
+				<div id="` + characters[key] + `-sheet-skills" class="char-skills">` + charSheetSkillsHTML + `</div>
+				<div id="` + characters[key] + `-tile-skills" class="char-skills">` + charTileSkillsHTML + `</div>
 			</div>
 		`;
 

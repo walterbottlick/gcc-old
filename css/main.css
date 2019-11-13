@@ -196,7 +196,7 @@ select {
     border-left: none;
 }
 
-.char-sheet-skills .skill-container {
+.char-skills .skill-container, {
 	height: auto;
 }
 
@@ -218,24 +218,24 @@ select {
 }
 
 .skill-box .skill-container div,
-.char-sheet-skills .skill-container div {
+.char-skills .skill-container div {
 	display: inline-block;
 }
 
 .skill-box .skill-container div:first-child,
-.char-sheet-skills .skill-container div:first-child {
+.char-skills .skill-container div:first-child {
 	height: 5em;
 	width: 23%;
 }
 
 .skill-box .skill-container div:first-child img,
-.char-sheet-skills .skill-container div:first-child img {
+.char-skills .skill-container div:first-child img {
 	max-width: 100%;
     padding: 0.5em 0 0 0.5em;
 }
 
 .skill-box .skill-container div:last-child,
-.char-sheet-skills .skill-container div:last-child {
+.char-skills .skill-container div:last-child {
 	height: auto;
 	width: 74%;
 	padding: 0.5em;
@@ -246,12 +246,12 @@ select {
 }
 
 .skill-box .skill-container div:last-child h4,
-.char-sheet-skills .skill-container div:last-child h4 {
+.char-skills .skill-container div:last-child h4 {
 	margin: 0.1em 0 0.5em;
 }
 
 .skill-box .skill-container div:last-child p,
-.char-sheet-skills .skill-container div:last-child p {
+.char-skills .skill-container div:last-child p {
     margin: 0 0 1em 0;
 }
 
