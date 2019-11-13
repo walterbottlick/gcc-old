@@ -264,7 +264,7 @@ select {
 
 .char-skills .skill-container div:first-child img {
 	max-width: 100%;
-    padding: 0.5em 0 0 1.5em;
+    padding: 0.5em 0 0 1.25em;
 }
 
 .skill-box .skill-container div:last-child,
@@ -289,7 +289,7 @@ select {
 }
 
 .tileInfoWrapper {
-	padding: 1em 1.5em;
+	padding: 0.5em 1.5em 1em;
 }
 
 .rank,
