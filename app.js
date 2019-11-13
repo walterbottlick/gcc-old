@@ -1,7 +1,7 @@
 // JSON files
 
-var characterList = 'https://walterbottlick.github.io/gcc/json/characters.json';
-var skillList = 'https://walterbottlick.github.io/gcc/json/skills.json';
+var characterList = 'https://walterbottlick.github.io/gcc-old/json/characters.json';
+var skillList = 'https://walterbottlick.github.io/gcc-old/json/skills.json';
 
 // JSON file objects
 
