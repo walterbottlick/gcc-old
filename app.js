@@ -146,8 +146,8 @@ charPromise.then(function() {
 
 	// Character Sheet Button Listener
 	$('.sheetBtn').click(function() {
-		var sheetID = '#' + $(this).value + 'sheet-skills';
-		var tileID = '#' + $(this).value + 'tile-skills';
+		var sheetID = '#' + $(this).attr.('value') + 'sheet-skills';
+		var tileID = '#' + $(this).attr.('value') + 'tile-skills';
 
 		$(this).addClass('clicked');
 		$(this).siblings().removeClass('clicked');
@@ -159,12 +159,12 @@ charPromise.then(function() {
 
 	// Character Tile Button Listener
 	$('.tileBtn').click(function() {
-		var sheetID = '#' + $(this).value + 'sheet-skills';
-		var tileID = '#' + $(this).value + 'tile-skills';
+		var sheetID = '#' + $(this).attr.('value') + 'sheet-skills';
+		var tileID = '#' + $(this).attr.('value') + 'tile-skills';
 
 		console.log('this:');
 		console.log($(this));
-		console.log('this.value: ' + $(this).value);
+		console.log('this.value: ' + $(this).attr.('value'));
 		console.log('sheetID: ' + sheetID);
 		console.log('tileID: ' + tileID);
 

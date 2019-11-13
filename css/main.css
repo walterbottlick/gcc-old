@@ -213,6 +213,10 @@ select {
     cursor: auto;
 }
 
+.char-showhide .btn-group button.tileBtn.clicked {
+	border-left: none;
+}
+
 .char-skills {
 	padding-bottom: 1.25em;
 }
