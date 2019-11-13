@@ -74,14 +74,15 @@ charPromise.then(function() {
 			charTileSkillsHTML += (characters[key].tile.reinforcementCost > 0) ? '<div class="reinforcement-cost">Reinforcement Cost: ' + characters[key].tile.reinforcementCost + '</div>' : '';
 
 			for (var tileKey in characters[key].tile.skills) {
+				var tileDesc = (skills[tileKey].altTileDesc) ? skills[tileKey].altTileDesc : skills[tileKey].description;
 				charTileSkillsHTML += `
-					<div class="row">
-	                	<div class="col-3">
+					<div class="skill-container">
+	                	<div>
 	                		<img src="` + skills[tileKey].icon + `">
 	                	</div>
-	                	<div class="col-9">
+	                	<div>
 	                		<h4>` + skills[tileKey].name + `</h4>
-	            			<p>` + placeholderReplace(skills[tileKey].description) + `</p>
+	            			<p>` + placeholderReplace(tileDesc) + `</p>
 	                	</div>
 	            	</div>
 				`;
