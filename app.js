@@ -143,6 +143,37 @@ charPromise.then(function() {
 				break;
 		}
 	}
+
+	// Character Sheet Button Listener
+	$('.sheetBtn').click(function() {
+		var sheetID = '#' + $(this).value + 'sheet-skills';
+		var tileID = '#' + $(this).value + 'tile-skills';
+
+		$(this).addClass('clicked');
+		$(this).siblings().removeClass('clicked');
+		
+		$(sheetID).removeClass('hidden');
+		$(tileID).addClass('hidden');
+	});
+
+
+	// Character Tile Button Listener
+	$('.tileBtn').click(function() {
+		var sheetID = '#' + $(this).value + 'sheet-skills';
+		var tileID = '#' + $(this).value + 'tile-skills';
+
+		console.log('this:');
+		console.log($(this));
+		console.log('this.value: ' + $(this).value);
+		console.log('sheetID: ' + sheetID);
+		console.log('tileID: ' + tileID);
+
+		$(this).addClass('clicked');
+		$(this).siblings().removeClass('clicked');
+		
+		$(tileID).removeClass('hidden');
+		$(sheetID).addClass('hidden');
+	});
 });
 
 skillPromise.then(function() {
@@ -243,38 +274,6 @@ $('.losBtn').click(function() {
 	}
 	$('#nav-list').removeClass('nav-open');
 	$('.nav').removeClass('change');
-});
-
-// Character Sheet Button
-$('.sheetBtn').click(function() {
-	var sheetID = '#' + $(this).value + 'sheet-skills';
-	var tileID = '#' + $(this).value + 'tile-skills';
-
-	$(this).addClass('clicked');
-	$(this).siblings().removeClass('clicked');
-	
-	$(sheetID).removeClass('hidden');
-	$(tileID).addClass('hidden');
-});
-
-
-// Character Tile Button
-
-$('.tileBtn').click(function() {
-	var sheetID = '#' + $(this).value + 'sheet-skills';
-	var tileID = '#' + $(this).value + 'tile-skills';
-
-	console.log('this:');
-	console.log($(this));
-	console.log('this.value: ' + $(this).value);
-	console.log('sheetID: ' + sheetID);
-	console.log('tileID: ' + tileID);
-
-	$(this).addClass('clicked');
-	$(this).siblings().removeClass('clicked');
-	
-	$(tileID).removeClass('hidden');
-	$(sheetID).addClass('hidden');
 });
 
 // Skills search bar keyup listener
