@@ -43,6 +43,7 @@ charPromise.then(function() {
 
 		if ('skills' in characters[key].sheet) {
 			for (var sheetKey in characters[key].sheet.skills) {
+				console.log(skills[sheetKey]);
 				charSheetSkillsHTML += `
 					<div class="row">
 	                	<div class="col-3">
