@@ -101,8 +101,8 @@ charPromise.then(function() {
 		if (hasSheet && hasTile) {
 			btnGroup = `
 				<div class="btn-group">
-					<button type="button">SHEET</button>
-					<button type="button">TILE</button>
+					<button class="sheetBtn clicked" value="` + key + `" type="button">SHEET</button>
+					<button class="tileBtn" value="` + key + `" type="button">TILE</button>
 				</div>
 			`;
 			tileHiddenClass = ' hidden';
@@ -211,6 +211,7 @@ skillPromise.then(function() {
 
 // Button Click Listeners
 
+// Character Menu Button
 $('.charBtn').click(function() {
 	if (!$('#characters-screen').is(':visible')) {
 		$('section:not(#characters-screen)').addClass('hidden');
@@ -222,6 +223,7 @@ $('.charBtn').click(function() {
 	$('.nav').removeClass('change');
 });
 
+// Skill Menu Button
 $('.skillBtn').click(function() {
 	if (!$('#skills-screen').is(':visible')) {
 		$('section:not(#skills-screen)').addClass('hidden');
@@ -233,6 +235,7 @@ $('.skillBtn').click(function() {
 	$('.nav').removeClass('change');
 });
 
+// LoS Menu Button
 $('.losBtn').click(function() {
 	if (!$('#los-tool-screen').is(':visible')) {
 		$('section:not(#lost-tool-screen)').addClass('hidden');
@@ -241,6 +244,17 @@ $('.losBtn').click(function() {
 	$('#nav-list').removeClass('nav-open');
 	$('.nav').removeClass('change');
 });
+
+// Character Sheet Button
+/*$('.sheetBtn').click(function() {
+	var charvalue = $(this).value;
+
+});*/
+
+
+// Character Tile Button
+
+
 
 // Skills search bar keyup listener
 

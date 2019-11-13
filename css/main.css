@@ -203,6 +203,19 @@ select {
     border-left: none;
 }
 
+.char-showhide .btn-group button.clicked {
+	background: rgb(160, 160, 160);
+    background: linear-gradient(top, rgb(160, 160, 160), rgb(200, 200, 200));
+    background: -ms-linear-gradient(top, rgb(160, 160, 160), rgb(200,200,200));
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(160, 160, 160)), to(rgb(200,200,200)));
+    background: -moz-linear-gradient(top, rgb(160, 160, 160), rgb(200,200,200));
+    cursor: auto;
+}
+
+.char-skills {
+	padding-bottom: 1.25em;
+}
+
 .char-skills .skill-container, {
 	height: auto;
 }
