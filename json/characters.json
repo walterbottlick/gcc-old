@@ -105,7 +105,7 @@
 		},
 		"tile": {
 			"rank": 3,
-			"reinforcementCost": 0,
+			"reinforcementCost": 1,
 			"skills": {
 				"martialArts": 2,
 				"parkour": 1,

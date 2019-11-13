@@ -288,11 +288,16 @@ select {
     margin: 0 0 1em 0;
 }
 
+.tileInfoWrapper {
+	padding: 1em 1.5em;
+}
+
 .rank,
 .reinforcement-cost {
-	padding: 0.75em 1.5em;
+	padding: 0;
 	font-size: 0.95em;
 	font-family: 'Rajdhani', sans-serif;
+	text-align: center;
 }
 
 .rank h5,
