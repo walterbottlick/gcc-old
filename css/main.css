@@ -204,11 +204,12 @@ select {
 }
 
 .char-showhide .btn-group button.clicked {
-	background: rgb(160, 160, 160);
-    background: linear-gradient(top, rgb(160, 160, 160), rgb(200, 200, 200));
-    background: -ms-linear-gradient(top, rgb(160, 160, 160), rgb(200,200,200));
-    background: -webkit-gradient(linear, left top, left bottom, from(rgb(160, 160, 160)), to(rgb(200,200,200)));
-    background: -moz-linear-gradient(top, rgb(160, 160, 160), rgb(200,200,200));
+	background: rgb(140, 140, 140);
+    background: linear-gradient(top, rgb(140, 140, 140), rgb(200, 200, 200));
+    background: -ms-linear-gradient(top, rgb(140, 140, 140), rgb(200,200,200));
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(140, 140, 140)), to(rgb(200,200,200)));
+    background: -moz-linear-gradient(top, rgb(140, 140, 140), rgb(200,200,200));
+    border: 1px solid rgb(100,100,100);
     cursor: auto;
 }
 

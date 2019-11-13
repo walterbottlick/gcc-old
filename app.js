@@ -246,10 +246,16 @@ $('.losBtn').click(function() {
 });
 
 // Character Sheet Button
-/*$('.sheetBtn').click(function() {
-	var charvalue = $(this).value;
+$('.sheetBtn').click(function() {
+	var sheetID = '#' + $(this).value + 'sheet-skills';
+	var tileID = '#' + $(this).value = 'tile-skills';
 
-});*/
+	$(this).addClass('clicked');
+	$(this).siblings().removeClass('clicked');
+	
+	$(sheetID).removeClass('hidden');
+	$(tileID).addClass('hidden');
+});
 
 
 // Character Tile Button
