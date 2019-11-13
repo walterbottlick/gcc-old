@@ -39,7 +39,7 @@ charPromise.then(function() {
 		div.id = key;
 
 		var charSheetSkillsHTML = '';
-		var charTileSkillsHTML = '<div class="rank">Rank: ';
+		var charTileSkillsHTML = '';
 
 		if ('skills' in characters[key].sheet) {
 			for (var sheetKey in characters[key].sheet.skills) {
@@ -61,13 +61,13 @@ charPromise.then(function() {
 
 			switch(characters[key].tile.rank) {
 				case 1:
-					charTileSkillsHTML += 'Henchman</div>'
+					charTileSkillsHTML += '<div class="rank">Rank: Henchman</div>'
 					break;
 				case 2:
-					charTileSkillsHTML += 'Elite</div>'
+					charTileSkillsHTML += '<div class="rank">Rank: Elite</div>'
 					break;
 				case 3:
-					charTileSkillsHTML += 'Leader / Lieutenant</div>'
+					charTileSkillsHTML += '<div class="rank">Rank: Leader / Lieutenant</div>'
 					break;
 			}
 

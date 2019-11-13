@@ -366,7 +366,7 @@
 	"wallbreaker": {
 		"name": "Wall Breaker",
 		"type": "movement",
-		"icon": "/gcc-old/images/skills/wallbreaker.png",
+		"icon": "/gcc-old/images/skills/wallBreaker.png",
 		"description": "Move through a level [x] or lower wall at a movement cost raised by 2, placing a broken wall token on it. The two areas become adjacent and crossable and possess clear line of sight.",
 		"altTileDesc": ""
 	}
