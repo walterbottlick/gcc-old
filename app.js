@@ -43,6 +43,8 @@ charPromise.then(function() {
 		var hasSheet = ('skills' in characters[key].sheet) ? true : false;
 		var hasTile = ('skills' in characters[key].tile) ? true : false;
 		var btnGroup = '';
+		var sheetHiddenClass = '';
+		var tileHiddenClass = '';
 
 		// If character has a sheet object, loop through sheet skills and add a skill container for each one
 
@@ -102,11 +104,14 @@ charPromise.then(function() {
 					<button type="button">SHEET</button>
 					<button type="button">TILE</button>
 				</div>
-			`
-		} else if (!hasSheet && hasTile) {
-			btnGroup = '<h3>TILE ONLY</h3>';
-		} else {
+			`;
+			tileHiddenClass = ' hidden';
+		} else if (hasSheet && !hasTile) {
 			btnGroup = '<h3>SHEET ONLY</h3>';
+			tileHiddenClass = ' hidden';
+		} else {
+			btnGroup = '<h3>TILE ONLY</h3>';
+			sheetHiddenClass = ' hidden';
 		}
 
 		// Create inner HTML for character container
@@ -119,8 +124,8 @@ charPromise.then(function() {
 				<div>ADD</div>
 			</div>
 			<div class="char-showhide">` + btnGroup + `
-				<div id="` + characters[key] + `-sheet-skills" class="char-skills">` + charSheetSkillsHTML + `</div>
-				<div id="` + characters[key] + `-tile-skills" class="char-skills">` + charTileSkillsHTML + `</div>
+				<div id="` + key + `-sheet-skills" class="char-skills` + sheetHiddenClass + `">` + charSheetSkillsHTML + `</div>
+				<div id="` + key + `-tile-skills" class="char-skills` + tileHiddenClass + `">` + charTileSkillsHTML + `</div>
 			</div>
 		`;
 
