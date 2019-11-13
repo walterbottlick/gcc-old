@@ -124,8 +124,10 @@ charPromise.then(function() {
 				<div>ADD</div>
 			</div>
 			<div class="char-showhide">` + btnGroup + `
-				<div id="` + key + `-sheet-skills" class="char-skills` + sheetHiddenClass + `">` + charSheetSkillsHTML + `</div>
-				<div id="` + key + `-tile-skills" class="char-skills` + tileHiddenClass + `">` + charTileSkillsHTML + `</div>
+				<div>
+					<div id="` + key + `-sheet-skills" class="char-skills` + sheetHiddenClass + `">` + charSheetSkillsHTML + `</div>
+					<div id="` + key + `-tile-skills" class="char-skills` + tileHiddenClass + `">` + charTileSkillsHTML + `</div>
+				</div>
 			</div>
 		`;
 
@@ -146,34 +148,24 @@ charPromise.then(function() {
 
 	// Character Sheet Button Listener
 	$('.sheetBtn').click(function() {
-		var sheetID = '#' + $(this).attr.('value') + 'sheet-skills';
-		var tileID = '#' + $(this).attr.('value') + 'tile-skills';
-
-		$(this).addClass('clicked');
-		$(this).siblings().removeClass('clicked');
-		
-		$(sheetID).removeClass('hidden');
-		$(tileID).addClass('hidden');
+		sheetTileSwitch($(this),'sheet');
 	});
 
 
 	// Character Tile Button Listener
 	$('.tileBtn').click(function() {
-		var sheetID = '#' + $(this).attr.('value') + 'sheet-skills';
-		var tileID = '#' + $(this).attr.('value') + 'tile-skills';
-
-		console.log('this:');
-		console.log($(this));
-		console.log('this.value: ' + $(this).attr.('value'));
-		console.log('sheetID: ' + sheetID);
-		console.log('tileID: ' + tileID);
-
-		$(this).addClass('clicked');
-		$(this).siblings().removeClass('clicked');
-		
-		$(tileID).removeClass('hidden');
-		$(sheetID).addClass('hidden');
+		sheetTileSwitch($(this),'tile');
 	});
+
+	function sheetTileSwitch(btn, panel) {
+		var panelID = '#' + btn.attr('value') + '-' + panel + '-skills';
+
+		btn.addClass('clicked');
+		btn.siblings().removeClass('clicked');
+
+		$(panelID).removeClass('hidden');
+		$(panelID).siblings().addClass('hidden');
+	}
 });
 
 skillPromise.then(function() {
