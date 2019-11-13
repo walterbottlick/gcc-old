@@ -1,10 +1,10 @@
 html {
     height: 120%;
-    background: url(/gcc-old/images/background.png) no-repeat right bottom fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: url(/gcc-old/images/background.png) no-repeat center center fixed; 
+    -webkit-background-size: auto 150%;
+    -moz-background-size: auto 150%;
+    -o-background-size: auto 150%;
+    background-size: auto 150%;
     background-color: rgb(8,102,134);
     background-attachment: fixed;
 }
