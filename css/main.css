@@ -177,7 +177,9 @@ select {
 }
 
 .char-showhide .btn-group:after {
+	content: "";
 	clear: both;
+	display: table;
 }
 
 .char-showhide .btn-group button {
