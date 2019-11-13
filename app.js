@@ -248,7 +248,7 @@ $('.losBtn').click(function() {
 // Character Sheet Button
 $('.sheetBtn').click(function() {
 	var sheetID = '#' + $(this).value + 'sheet-skills';
-	var tileID = '#' + $(this).value = 'tile-skills';
+	var tileID = '#' + $(this).value + 'tile-skills';
 
 	$(this).addClass('clicked');
 	$(this).siblings().removeClass('clicked');
@@ -260,7 +260,16 @@ $('.sheetBtn').click(function() {
 
 // Character Tile Button
 
+$('.tileBtn').click(function() {
+	var sheetID = '#' + $(this).value + 'sheet-skills';
+	var tileID = '#' + $(this).value + 'tile-skills';
 
+	$(this).addClass('clicked');
+	$(this).siblings().removeClass('clicked');
+	
+	$(tileID).removeClass('hidden');
+	$(sheetID).addClass('hidden');
+});
 
 // Skills search bar keyup listener
 
