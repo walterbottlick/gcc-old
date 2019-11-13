@@ -222,16 +222,24 @@ select {
 	display: inline-block;
 }
 
-.skill-box .skill-container div:first-child,
-.char-skills .skill-container div:first-child {
+.skill-box .skill-container div:first-child {
 	height: 5em;
 	width: 23%;
 }
 
-.skill-box .skill-container div:first-child img,
-.char-skills .skill-container div:first-child img {
+.char-skills .skill-container div:first-child {
+	height: 5em;
+	width: 22%;
+}
+
+.skill-box .skill-container div:first-child img {
 	max-width: 100%;
     padding: 0.5em 0 0 0.5em;
+}
+
+.char-skills .skill-container div:first-child img {
+	max-width: 100%;
+    padding: 0.5em 0 0 1.5em;
 }
 
 .skill-box .skill-container div:last-child,
