@@ -162,6 +162,14 @@ select {
     vertical-align: middle;
 }
 
+.char-showhide {
+	background: rgb(255, 255, 255);
+    background: linear-gradient(top, rgb(255, 255, 255), rgb(165, 165, 165));
+    background: -ms-linear-gradient(top, rgb(255, 255, 255), rgb(165, 165, 165));
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), to(rgb(165, 165, 165)));
+    background: -moz-linear-gradient(top, rgb(255, 255, 255), rgb(165, 165, 165));
+}
+
 .skill-box {
 	display: inline-block;
     padding: .5rem;
@@ -259,6 +267,13 @@ select {
 
 .columnFix .skill-box {
 	width:  100%;
+}
+
+#heroes-list.columnFix {
+	-moz-column-width: 30em;
+    -webkit-column-width: 30em;
+    -moz-column-gap: 1em;
+    -webkit-column-gap: 1em;
 }
 
 #noResults {
