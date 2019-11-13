@@ -140,7 +140,6 @@ select {
 }
 
 .char-container {
-	padding: .5rem;
 	display: table;
     font-size: 0;
 }

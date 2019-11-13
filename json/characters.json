@@ -87,7 +87,7 @@
 		"affiliation": "hero",
 		"gender": "his",
 		"moralCode": true,
-		"headerImage": "",
+		"headerImage": "/gcc-old/images/banners/batman-dark-knight-returns.jpg",
 		"icon": "",
 		"sheet": {
 			"melee": "red",
@@ -610,6 +610,290 @@
 				"circularStrike": 5
 			},
 			"power": ""
+		}
+	},
+	"batgirlBarbaraGordon": {
+		"name": "Batgirl",
+		"subtitle": "Barbara Gordon",
+		"affiliation": "hero",
+		"gender": "her",
+		"moralCode": true,
+		"headerImage": "/gcc-old/images/banners/batgirl-barbara-gordon.jpg",
+		"icon": "",
+		"sheet": {
+			"melee": "orange",
+			"ranged": "orange",
+			"manipulation": "orange",
+			"thought": "orange",
+			"defense": "orange",
+			"skills": {
+				"martialArts": {
+					"level": 1,
+					"disabledAt": 4
+				},
+				"support": {
+					"level": 1,
+					"disabledAt": 0
+				},
+				"investigation": {
+					"level": 2,
+					"disabledAt": 0
+				},
+				"hacking": {
+					"level": 1,
+					"disabledAt": 0
+				},
+				"untouchable": {
+					"level": 1,
+					"disabledAt": 4
+				},
+				"parkour": {
+					"level": 1,
+					"disabledAt": 3
+				},
+				"mobility": {
+					"level": 1,
+					"disabledAt": 3
+				}
+			},
+			"startingItem": ""
+		},
+		"tile": {
+			"rank": 3,
+			"reinforcementCost": 0,
+			"skills": {
+				"martialArts": 1,
+				"parkour": 1,
+				"investigation": 1
+			},
+			"power": {}
+		}
+	},
+	"batcow": {
+		"name": "Batcow",
+		"subtitle": "",
+		"affiliation": "hero",
+		"gender": "her",
+		"moralCode": false,
+		"headerImage": "/gcc-old/images/banners/batcow.jpg",
+		"icon": "",
+		"sheet": {
+			"melee": "yellow",
+			"ranged": "yellow",
+			"manipulation": "orange",
+			"thought": "orange",
+			"defense": "orange",
+			"skills": {
+				"combo": {
+					"level": "x",
+					"disabledAt": 0
+				},
+				"martialArts": {
+					"level": "x",
+					"disabledAt": 0
+				},
+				"marksman": {
+					"level": "x",
+					"disabledAt": 0
+				},
+				"munitionsSpecialist": {
+					"level": "x",
+					"disabledAt": 0
+				},
+				"lockPicking": {
+					"level": "x",
+					"disabledAt": 0
+				},
+				"hacking": {
+					"level": "x",
+					"disabledAt": 0
+				},
+				"investigation": {
+					"level": "x",
+					"disabledAt": 0
+				},
+				"nervesOfSteel": {
+					"level": "x",
+					"disabledAt": 0
+				},
+				"ambidexterity": {
+					"level": "x",
+					"disabledAt": 0
+				}
+			},
+			"startingItem": ""
+		},
+		"tile": ""
+	},
+	"azrael": {
+		"name": "Azrael",
+		"subtitle": "",
+		"affiliation": "hero",
+		"gender": "his",
+		"moralCode": false,
+		"headerImage": "/gcc-old/images/banners/azrael.jpg",
+		"icon": "",
+		"sheet": {
+			"melee": "red",
+			"ranged": "yellow",
+			"manipulation": "yellow",
+			"thought": "yellow",
+			"defense": "orange",
+			"skills": {
+				"combo": {
+					"level": 1,
+					"disabledAt": 4
+				},
+				"counterAttack": {
+					"level": 2,
+					"disabledAt": 4
+				},
+				"martialArts": {
+					"level": 1,
+					"disabledAt": 4
+				},
+				"pushingLimits": {
+					"level": 1,
+					"disabledAt": 0
+				},
+				"parkour": {
+					"level": 1,
+					"disabledAt": 3
+				},
+				"mobility": {
+					"level": 1,
+					"disabledAt": 3
+				}
+			},
+			"startingItem": ""
+		},
+		"tile": {
+			"rank": 3,
+			"reinforcementCost": 0,
+			"skills": {
+				"martialArts": 2,
+				"parkour": 1,
+				"counterAttack": 2
+			},
+			"power": {}
+		}
+	},
+	"batmanYear100": {
+		"name": "Batman",
+		"subtitle": "Year 100",
+		"affiliation": "hero",
+		"gender": "his",
+		"moralCode": true,
+		"headerImage": "/gcc-old/images/banners/batman-year-100.jpg",
+		"icon": "",
+		"sheet": {
+			"melee": "red",
+			"ranged": "orange",
+			"manipulation": "orange",
+			"thought": "red",
+			"defense": "orange",
+			"skills": {
+				"counterAttack": {
+					"level": 2,
+					"disabledAt": 4
+				},
+				"martialArts": {
+					"level": 1,
+					"disabledAt": 4
+				},
+				"retaliation": {
+					"level": 2,
+					"disabledAt": 4
+				},
+				"hacking": {
+					"level": 1,
+					"disabledAt": 0
+				},
+				"investigation": {
+					"level": 1,
+					"disabledAt": 0
+				},
+				"pushingLimits": {
+					"level": 1,
+					"disabledAt": 0
+				},
+				"support": {
+					"level": 1,
+					"disabledAt": 0
+				},
+				"parkour": {
+					"level": 1,
+					"disabledAt": 3
+				},
+				"mobility": {
+					"level": 2,
+					"disabledAt": 3
+				}
+			},
+			"startingItem": ""
+		},
+		"tile": {
+			"rank": 3,
+			"reinforcementCost": 0,
+			"skills": {
+				"parkour": 1,
+				"mobility": 1,
+				"martialArts": 1
+			},
+			"power": {}
+		}
+	},
+	"bluebird": {
+		"name": "Bluebird",
+		"subtitle": "",
+		"affiliation": "hero",
+		"gender": "her",
+		"moralCode": true,
+		"headerImage": "/gcc-old/images/banners/bluebird.jpg",
+		"icon": "",
+		"sheet": {
+			"melee": "orange",
+			"ranged": "yellow",
+			"manipulation": "red",
+			"thought": "orange",
+			"defense": "yellow",
+			"skills": {
+				"ambidexterity": {
+					"level": 1,
+					"disabledAt": 0
+				},
+				"munitionsSpecialist": {
+					"level": 2,
+					"disabledAt": 0
+				},
+				"hacking": {
+					"level": 2,
+					"disabledAt": 0
+				},
+				"untouchable": {
+					"level": 1,
+					"disabledAt": 4
+				},
+				"parkour": {
+					"level": 1,
+					"disabledAt": 3
+				},
+				"elusive": {
+					"level": 1,
+					"disabledAt": 3
+				}
+			},
+			"startingItem": ""
+		},
+		"tile": {
+			"rank": 3,
+			"reinforcementCost": 0,
+			"skills": {
+				"parkour": 1,
+				"hacking": 2,
+				"munitionsSpecialist": 1
+			},
+			"power": {}
 		}
 	}
 }

@@ -32,21 +32,76 @@ function setSkillList(json) {
 
 charPromise.then(function() {
 	for (key in characters) {
-		const div = document.createElement('div');
-		div.classList.add('col-4', 'character-box');
-		div.id = key;
-		var subtitle = '';
+		if (characters[key].headerImage === '') { continue; }
 
-		if (characters[key].subtitle) {
-			subtitle = '<h5>' + characters[key].subtitle + '</h5>'
+		const div = document.createElement('div');
+		div.classList.add('col-6', 'character-box');
+		div.id = key;
+
+		var charSheetSkillsHTML = '';
+		var charTileSkillsHTML = '<div class="rank">Rank: ';
+
+		if ('skills' in characters[key].sheet) {
+			for (var sheetKey in characters[key].sheet.skills) {
+				charSheetSkillsHTML += `
+					<div class="row">
+	                	<div class="col-3">
+	                		<img src="` + skills[sheetKey].icon + `">
+	                	</div>
+	                	<div class="col-9">
+	                		<h4>` + skills[sheetKey].name + `</h4>
+	            			<p>` + placeholderReplace(skills[sheetKey].description) + `</p>
+	                	</div>
+	            	</div>
+				`;
+			}
+		}
+
+		if ('skills' in characters[key].tile) {
+
+			switch(characters[key].tile.rank) {
+				case 1:
+					charTileSkillsHTML += 'Henchman</div>'
+					break;
+				case 2:
+					charTileSkillsHTML += 'Elite</div>'
+					break;
+				case 3:
+					charTileSkillsHTML += 'Leader / Lieutenant</div>'
+					break;
+			}
+
+			charTileSkillsHTML += (characters[key].tile.reinforcementCost > 0) ? '<div class="reinforcement-cost">Reinforcement Cost: ' + characters[key].tile.reinforcementCost + '</div>' : '';
+
+			for (var tileKey in characters[key].tile.skills) {
+				charTileSkillsHTML += `
+					<div class="row">
+	                	<div class="col-3">
+	                		<img src="` + skills[tileKey].icon + `">
+	                	</div>
+	                	<div class="col-9">
+	                		<h4>` + skills[tileKey].name + `</h4>
+	            			<p>` + placeholderReplace(skills[tileKey].description) + `</p>
+	                	</div>
+	            	</div>
+				`;
+			}
 		}
 
 		div.innerHTML = `
-			<div class="character-container">
+			<div class="char-container">
 				<div>
-					<h4>` + characters[key].name + `</h4>`
-					+ characters[key].subtitle + 
-				`</div>
+					<img src="` + characters[key].headerImage + `">
+				</div>
+				<div>ADD</div>
+			</div>
+			<div class="char-showhide">
+				<div class="btn-group">
+					<button type="button">SHEET</button>
+					<button type="button">TILE</button>
+				</div>
+				<div class="char-sheet-skills">` + charSheetSkillsHTML + `</div>
+				<div class="char-tile-skills">` + charTileSkillsHTML + `</div>
 			</div>
 		`;
 
