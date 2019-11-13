@@ -196,6 +196,10 @@ select {
     border-left: none;
 }
 
+.char-sheet-skills .skill-container {
+	height: auto;
+}
+
 .skill-box {
 	display: inline-block;
     padding: .5rem;
@@ -213,21 +217,25 @@ select {
     background: -moz-linear-gradient(top, rgb(255, 255, 255), rgb(165, 165, 165));
 }
 
-.skill-box .skill-container div {
+.skill-box .skill-container div,
+.char-sheet-skills .skill-container div {
 	display: inline-block;
 }
 
-.skill-box .skill-container div:first-child {
+.skill-box .skill-container div:first-child,
+.char-sheet-skills .skill-container div:first-child {
 	height: 5em;
 	width: 23%;
 }
 
-.skill-box .skill-container div:first-child img {
+.skill-box .skill-container div:first-child img,
+.char-sheet-skills .skill-container div:first-child img {
 	max-width: 100%;
     padding: 0.5em 0 0 0.5em;
 }
 
-.skill-box .skill-container div:last-child {
+.skill-box .skill-container div:last-child,
+.char-sheet-skills .skill-container div:last-child {
 	height: auto;
 	width: 74%;
 	padding: 0.5em;
@@ -237,11 +245,13 @@ select {
 	box-sizing: border-box;
 }
 
-.skill-box .skill-container div:last-child h4 {
+.skill-box .skill-container div:last-child h4,
+.char-sheet-skills .skill-container div:last-child h4 {
 	margin: 0.1em 0 0.5em;
 }
 
-.skill-box .skill-container div:last-child p {
+.skill-box .skill-container div:last-child p,
+.char-sheet-skills .skill-container div:last-child p {
     margin: 0 0 1em 0;
 }
 

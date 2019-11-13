@@ -44,11 +44,11 @@ charPromise.then(function() {
 		if ('skills' in characters[key].sheet) {
 			for (var sheetKey in characters[key].sheet.skills) {
 				charSheetSkillsHTML += `
-					<div class="row">
-	                	<div class="col-3">
+					<div class="skill-container">
+	                	<div>
 	                		<img src="` + skills[sheetKey].icon + `">
 	                	</div>
-	                	<div class="col-9">
+	                	<div>
 	                		<h4>` + skills[sheetKey].name + `</h4>
 	            			<p>` + placeholderReplace(skills[sheetKey].description) + `</p>
 	                	</div>
