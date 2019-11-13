@@ -32,7 +32,7 @@ function setSkillList(json) {
 
 charPromise.then(function() {
 	for (key in characters) {
-		if (characters[key].headerImage === '') { continue; }
+		if (characters[key].headerImage === '') { continue; } // If no headerImage is set in the json entry, then skip this character
 
 		const div = document.createElement('div');
 		div.classList.add('col-6', 'character-box');
@@ -40,8 +40,13 @@ charPromise.then(function() {
 
 		var charSheetSkillsHTML = '';
 		var charTileSkillsHTML = '';
+		var hasSheet = ('skills' in characters[key].sheet) ? true : false;
+		var hasTile = ('skills' in characters[key].tile) ? true : false;
+		var btnGroup = '';
 
-		if ('skills' in characters[key].sheet) {
+		// If character has a sheet object, loop through sheet skills and add a skill container for each one
+
+		if (hasSheet) {
 			for (var sheetKey in characters[key].sheet.skills) {
 				charSheetSkillsHTML += `
 					<div class="skill-container">
@@ -57,7 +62,9 @@ charPromise.then(function() {
 			}
 		}
 
-		if ('skills' in characters[key].tile) {
+		// If character has a tile object, loop through tile skills and add a skill container for each one, as well as any other relevant tile information
+
+		if (hasTile) {
 
 			switch(characters[key].tile.rank) {
 				case 1:
@@ -89,6 +96,21 @@ charPromise.then(function() {
 			}
 		}
 
+		if (hasSheet && hasTile) {
+			btnGroup = `
+				<div class="btn-group">
+					<button type="button">SHEET</button>
+					<button type="button">TILE</button>
+				</div>
+			`
+		} else if (!hasSheet && hasTile) {
+			btnGroup = '<h3>TILE ONLY</h3>';
+		} else {
+			btnGroup = '<h3>SHEET ONLY</h3>';
+		}
+
+		// Create inner HTML for character container
+
 		div.innerHTML = `
 			<div class="char-container">
 				<div>
@@ -96,15 +118,13 @@ charPromise.then(function() {
 				</div>
 				<div>ADD</div>
 			</div>
-			<div class="char-showhide">
-				<div class="btn-group">
-					<button type="button">SHEET</button>
-					<button type="button">TILE</button>
-				</div>
+			<div class="char-showhide">` + btnGroup + `
 				<div id="` + characters[key] + `-sheet-skills" class="char-skills">` + charSheetSkillsHTML + `</div>
 				<div id="` + characters[key] + `-tile-skills" class="char-skills">` + charTileSkillsHTML + `</div>
 			</div>
 		`;
+
+		// Display character under the appropriate header
 
 		switch(characters[key].affiliation) {
 			case 'hero':
@@ -125,6 +145,8 @@ skillPromise.then(function() {
 		const div = document.createElement('div');
 		div.classList.add('col-4', 'skill-box');
 		div.id = key;
+
+		// Check if skill has both a description and an alternate tile description, and display both if it does
 
 		if (skills[key].altTileDesc) {
 			div.innerHTML = `
@@ -150,6 +172,8 @@ skillPromise.then(function() {
 	            </div>
 			`;
 		}
+
+		// Display skill under the appropriate header
 
 		switch (skills[key].type) {
 			case 'melee':
