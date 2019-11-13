@@ -170,6 +170,30 @@ select {
     background: -moz-linear-gradient(top, rgb(255, 255, 255), rgb(165, 165, 165));
 }
 
+.char-showhide .btn-group {
+	width: 80%;
+    margin: 0 10%;
+    padding: 1em 0;
+}
+
+.char-showhide .btn-group:after {
+	clear: both;
+}
+
+.char-showhide .btn-group button {
+	float: left;
+    width: 50%;
+}
+
+.char-showhide .btn-group button:first-child {
+	border-radius: 10px 0 0 10px;
+}
+
+.char-showhide .btn-group button:last-child {
+	border-radius: 0 10px 10px 0;
+    border-left: none;
+}
+
 .skill-box {
 	display: inline-block;
     padding: .5rem;
