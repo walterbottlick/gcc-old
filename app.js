@@ -70,17 +70,17 @@ charPromise.then(function() {
 
 			switch(characters[key].tile.rank) {
 				case 1:
-					charTileSkillsHTML += '<div class="rank">Rank: Henchman</div>'
+					charTileSkillsHTML += '<div class="rank"><h5>Rank:</h5> Henchman</div>'
 					break;
 				case 2:
-					charTileSkillsHTML += '<div class="rank">Rank: Elite</div>'
+					charTileSkillsHTML += '<div class="rank"><h5>Rank:</h5> Elite</div>'
 					break;
 				case 3:
-					charTileSkillsHTML += '<div class="rank">Rank: Leader / Lieutenant</div>'
+					charTileSkillsHTML += '<div class="rank"><h5>Rank:</h5> Leader / Lieutenant</div>'
 					break;
 			}
 
-			charTileSkillsHTML += (characters[key].tile.reinforcementCost > 0) ? '<div class="reinforcement-cost">Reinforcement Cost: ' + characters[key].tile.reinforcementCost + '</div>' : '';
+			charTileSkillsHTML += (characters[key].tile.reinforcementCost > 0) ? '<div class="reinforcement-cost"><h5>Reinforcement Cost:</h5> ' + characters[key].tile.reinforcementCost + '</div>' : '';
 
 			for (var tileKey in characters[key].tile.skills) {
 				var tileDesc = (skills[tileKey].altTileDesc) ? skills[tileKey].altTileDesc : skills[tileKey].description;
