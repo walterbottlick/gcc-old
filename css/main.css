@@ -41,7 +41,7 @@ h2 {
 h3 {
 	font-family: 'Rajdhani', sans-serif;
 	color: rgb(243,148,0);
-    font-size: 1.75em;
+    font-size: 2em;
     margin: 0.5em 0 0.25em;
     text-shadow: 1px 1px 10px rgb(0,0,0);
 }
@@ -145,7 +145,7 @@ select {
 }
 
 .char-container div:first-child {
-	width: 83%;
+	width: 85%;
     display: table-cell;
 }
 
@@ -168,6 +168,13 @@ select {
     background: -ms-linear-gradient(top, rgb(255, 255, 255), rgb(165, 165, 165));
     background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), to(rgb(165, 165, 165)));
     background: -moz-linear-gradient(top, rgb(255, 255, 255), rgb(165, 165, 165));
+}
+
+.char-showhide h3 {
+	text-align: center;
+    margin: 0;
+    padding: 0.55em 0;
+    text-shadow: none;
 }
 
 .char-showhide .btn-group {
