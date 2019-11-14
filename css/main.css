@@ -148,18 +148,18 @@ select {
     font-size: 0;
 }
 
-.char-container div:first-child {
-	width: 85%;
+.char-container div:last-child {
+	width: 84%;
     display: table-cell;
     cursor: pointer;
 }
 
-.char-container div:first-child img {
+.char-container div:last-child img {
 	width: 100%;
 	height: auto;
 }
 
-.char-container div:last-child {
+.char-container div:first-child {
 	background-color: orange;
     font-size: 16px;
     text-align: center;

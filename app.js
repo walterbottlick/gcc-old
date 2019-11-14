@@ -131,11 +131,11 @@ charPromise.then(function() {
 		// Create inner HTML for character container
 
 		div += `
-			<div class="char-container">
-				<div class="showhide-trigger" value="` + key + `">
+			<div class="char-container showhide-trigger" value="` + key + `">
+				<div>ADD</div>
+				<div>
 					<img src="` + characters[key].headerImage + `" alt="` + characters[key].name + `">
 				</div>
-				<div>ADD</div>
 			</div>
 			<div id="` + key + `-showhide" class="char-showhide">` + btnGroup + `
 				<div>
