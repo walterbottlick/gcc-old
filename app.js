@@ -144,13 +144,13 @@ charPromise.then(function() {
 
 		switch(characters[key].affiliation) {
 			case 'hero':
-				heroesHTML[key] = div;
+				heroesHTML.push(div);
 				break;
 			case 'villain':
-				villainsHTML[key] = div;
+				villainsHTML.push(div);
 				break;
 			case 'neutral':
-				neutralsHTML[key] = div;
+				neutralsHTML.push(div);
 				break;
 		}
 	}
@@ -181,7 +181,7 @@ charPromise.then(function() {
 	function populateJsonHTML(htmlArr, affiliation) {
 		var arrLength = htmlArr.length;
 		var rowAmount = Math.floor(htmlArr.length / 2);
-		var remainder = htmlArr.length % 2
+		var remainder = htmlArr.length % 2;
 		var colOneRows = (remainder > 0) ? rowAmount + 1 : rowAmount;
 		var colNumber = 1;
 
@@ -189,6 +189,7 @@ charPromise.then(function() {
 			if (i == colOneRows) {
 				colNumber++;
 			}
+			console.log(htmlArr[i]);
 			$('#' + affiliation + '-col-' + colNumber).append(htmlArr[i]);
 		}
 	}
