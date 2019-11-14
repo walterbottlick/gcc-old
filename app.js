@@ -38,13 +38,15 @@ function setSkillList(json) {
 // Populate Characters and Skills
 
 charPromise.then(function() {
+	
+	var heroArrTracker = 0;
+	var villainArrTracker = 0;
+	var neutralArrTracker = 0;
+
 	for (key in characters) {
 		if (characters[key].headerImage === '') { continue; } // If no headerImage is set in the json entry, then skip this character
 
 		var div = `<div id="` + key + `" class="cold-6 character-box">`
-		var heroArrTracker = 0;
-		var villainArrTracker = 0;
-		var neutralArrTracker = 0;
 		var charSheetSkillsHTML = '';
 		var charTileSkillsHTML = '';
 		var hasSheet = ('skills' in characters[key].sheet) ? true : false;
