@@ -188,6 +188,7 @@ charPromise.then(function() {
 				colNumber++;
 			}
 			$('#' + affiliation + '-col-' + colNumber).append(htmlObj[key]);
+			console.log(charCount);
 			charCount++;
 		}
 	}
