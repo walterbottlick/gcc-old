@@ -212,7 +212,7 @@ charPromise.then(function() {
 
 skillPromise.then(function() {
 	for (key in skills) {
-		var div = `<div id="` + key + `" class="col-4 skill-box>"`;
+		var div = `<div id="` + key + `" class="col-4 skill-box">`;
 
 		// Check if skill has both a description and an alternate tile description, and display both if it does
 
