@@ -139,6 +139,10 @@ select {
 	display: none !important;
 }
 
+.header-img {
+	
+}
+
 .char-container {
 	display: table;
     font-size: 0;
@@ -213,7 +217,7 @@ select {
     cursor: auto;
 }
 
-.char-showhide .btn-group button.tileBtn.clicked {
+.char-showhide .btn-group button.tile-btn.clicked {
 	border-left: none;
 }
 
@@ -288,7 +292,7 @@ select {
     margin: 0 0 1em 0;
 }
 
-.tileInfoWrapper {
+.tile-info-wrapper {
 	padding: 0.5em 1.5em 1em;
 }
 

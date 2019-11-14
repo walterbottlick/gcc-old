@@ -53,7 +53,7 @@ charPromise.then(function() {
 				charSheetSkillsHTML += `
 					<div class="skill-container">
 	                	<div>
-	                		<img src="` + skills[sheetKey].icon + `">
+	                		<img src="` + skills[sheetKey].icon + `" alt="` + skills[sheetKey].name + `">
 	                	</div>
 	                	<div>
 	                		<h4>` + skills[sheetKey].name + `</h4>
@@ -70,13 +70,13 @@ charPromise.then(function() {
 
 			switch(characters[key].tile.rank) {
 				case 1:
-					charTileSkillsHTML += '<div class="tileInfoWrapper"><div class="rank"><h5>Rank:</h5> Henchman</div>'
+					charTileSkillsHTML += '<div class="tile-info-wrapper"><div class="rank"><h5>Rank:</h5> Henchman</div>'
 					break;
 				case 2:
-					charTileSkillsHTML += '<div class="tileInfoWrapper"><div class="rank"><h5>Rank:</h5> Elite</div>'
+					charTileSkillsHTML += '<div class="tile-info-wrapper"><div class="rank"><h5>Rank:</h5> Elite</div>'
 					break;
 				case 3:
-					charTileSkillsHTML += '<div class="tileInfoWrapper"><div class="rank"><h5>Rank:</h5> Leader / Lieutenant</div>'
+					charTileSkillsHTML += '<div class="tile-info-wrapper"><div class="rank"><h5>Rank:</h5> Leader / Lieutenant</div>'
 					break;
 			}
 
@@ -87,7 +87,7 @@ charPromise.then(function() {
 				charTileSkillsHTML += `
 					<div class="skill-container">
 	                	<div>
-	                		<img src="` + skills[tileKey].icon + `">
+	                		<img src="` + skills[tileKey].icon + `" alt="` + skills[tileKey].name + `">
 	                	</div>
 	                	<div>
 	                		<h4>` + skills[tileKey].name + `</h4>
@@ -101,8 +101,8 @@ charPromise.then(function() {
 		if (hasSheet && hasTile) {
 			btnGroup = `
 				<div class="btn-group">
-					<button class="sheetBtn clicked" value="` + key + `" type="button">SHEET</button>
-					<button class="tileBtn" value="` + key + `" type="button">TILE</button>
+					<button class="sheet-btn clicked" value="` + key + `" type="button">SHEET</button>
+					<button class="tile-btn" value="` + key + `" type="button">TILE</button>
 				</div>
 			`;
 			tileHiddenClass = ' hidden';
@@ -119,7 +119,7 @@ charPromise.then(function() {
 		div.innerHTML = `
 			<div class="char-container">
 				<div>
-					<img src="` + characters[key].headerImage + `">
+					<img src="` + characters[key].headerImage + `" alt="` + characters[key].name + `">
 				</div>
 				<div>ADD</div>
 			</div>
@@ -147,13 +147,13 @@ charPromise.then(function() {
 	}
 
 	// Character Sheet Button Listener
-	$('.sheetBtn').click(function() {
+	$('.sheet-btn').click(function() {
 		sheetTileSwitch($(this),'sheet');
 	});
 
 
 	// Character Tile Button Listener
-	$('.tileBtn').click(function() {
+	$('.tile-btn').click(function() {
 		sheetTileSwitch($(this),'tile');
 	});
 
@@ -179,7 +179,7 @@ skillPromise.then(function() {
 		if (skills[key].altTileDesc) {
 			div.innerHTML = `
 	            <div class="skill-container">
-	                <div><img src="` + skills[key].icon + `"></div>
+	                <div><img src="` + skills[key].icon + `" alt="` + skills[key].name + `"></div>
 	                <div>
 	                	<h4>` + skills[key].name + `</h4>
 	            		<p><em>Hero Sheet</em></p>
@@ -235,31 +235,33 @@ skillPromise.then(function() {
 // Button Click Listeners
 
 // Character Menu Button
-$('.charBtn').click(function() {
+$('.char-btn').click(function() {
 	if (!$('#characters-screen').is(':visible')) {
 		$('section:not(#characters-screen)').addClass('hidden');
 		$('#characters-screen').removeClass('hidden');
 		$('#los-scaled-frame').removeAttr('src');
 		$('#los-tool-select').prop('selectedIndex',0);
+		$('#los-wrapper').addClass('hidden');
 	}
 	$('#nav-list').removeClass('nav-open');
 	$('.nav').removeClass('change');
 });
 
 // Skill Menu Button
-$('.skillBtn').click(function() {
+$('.skill-btn').click(function() {
 	if (!$('#skills-screen').is(':visible')) {
 		$('section:not(#skills-screen)').addClass('hidden');
 		$('#skills-screen').removeClass('hidden');
 		$('#los-scaled-frame').removeAttr('src');
 		$('#los-tool-select').prop('selectedIndex',0);
+		$('#los-wrapper').addClass('hidden');
 	}
 	$('#nav-list').removeClass('nav-open');
 	$('.nav').removeClass('change');
 });
 
 // LoS Menu Button
-$('.losBtn').click(function() {
+$('.los-btn').click(function() {
 	if (!$('#los-tool-screen').is(':visible')) {
 		$('section:not(#lost-tool-screen)').addClass('hidden');
 		$('#los-tool-screen').removeClass('hidden');
@@ -381,4 +383,5 @@ function setLosSize() {
 
 $('#los-tool-select').change(function() {
 	$('#los-scaled-frame').attr('src', 'https://the-overlord.net/batmap/' + this.value + '.html');
+	$('#los-wrapper').removeClass('hidden');
 });

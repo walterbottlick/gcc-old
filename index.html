@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Batman GCC Character Skills</title>
+    <title>Batman GCC Character Aid</title>
     <meta name="description" content="Easily find and view Batman GCC characters and their skills">
 
     <!-- Responsive viewport tag, tells small screens that it's responsive -->
@@ -27,14 +27,13 @@
             <div class="bar2"></div>
             <div class="bar3"></div>
         </div>
-        <h1>Batman GCC</h1>
-        <h2>Character Skills</h2>
+        <img class="header-img" src="/gcc-old/images/header-logo.png" alt="Batman: Gotham City Chronicles Character Aid">
         <div id="nav-list">
             <ul>
-                <li class="charBtn">CHARACTERS</li>
-                <li class="skillBtn">SKILLS</li>
+                <li class="char-btn">CHARACTERS</li>
+                <li class="skill-btn">SKILLS</li>
                 <li>ITEMS</li>
-                <li class="losBtn">LoS TOOL</li>
+                <li class="los-btn">LoS TOOL</li>
             </ul>
         </div>
     </header>
@@ -44,16 +43,16 @@
     <section id="home-screen">
         <div class="row main-buttons">
             <div class="col-3">
-                <button class="charBtn" type="button">CHARACTERS</button>
+                <button class="char-btn" type="button">CHARACTERS</button>
             </div>
             <div class="col-3">
-                <button class="skillBtn" type="button">SKILLS</button>
+                <button class="skill-btn" type="button">SKILLS</button>
             </div>
             <div class="col-3">
-                <button class="itemBtn" type="button">ITEMS</button>
+                <button class="item-btn" type="button">ITEMS</button>
             </div>
             <div class="col-3">
-                <button class="losBtn" type="button">LoS TOOL</button>
+                <button class="los-btn" type="button">LoS TOOL</button>
             </div>
         </div>
     </section>
@@ -191,7 +190,7 @@
                 </select>
             </div>
         </div>
-        <div id="los-wrapper">
+        <div id="los-wrapper" class="hidden">
             <iframe id="los-scaled-frame"></iframe>
         </div>
     </section>
