@@ -50,7 +50,6 @@ charPromise.then(function() {
 
 		if (hasSheet) {
 			for (var sheetKey in characters[key].sheet.skills) {
-				console.log(skills[sheetKey]);
 				charSheetSkillsHTML += `
 					<div class="skill-container">
 	                	<div>
@@ -97,6 +96,8 @@ charPromise.then(function() {
 	            	</div>
 				`;
 			}
+
+			charTileSkillsHTML += (jQuery.isEmptyObject(characters[key].tile.skills)) ? '<h4 class="no-skills">NO SKILLS</h4>' : '';
 		}
 
 		if (hasSheet && hasTile) {
