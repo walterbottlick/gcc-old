@@ -144,13 +144,13 @@ charPromise.then(function() {
 
 		switch(characters[key].affiliation) {
 			case 'hero':
-				heroesHTML.push(div);
+				//heroesHTML.push(div);
 				break;
 			case 'villain':
-				villainsHTML.push(div);
+				//villainsHTML.push(div);
 				break;
 			case 'neutral':
-				neutralsHTML.push(div);
+				//neutralsHTML.push(div);
 				break;
 		}
 	}
