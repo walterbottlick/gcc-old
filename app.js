@@ -42,6 +42,9 @@ charPromise.then(function() {
 		if (characters[key].headerImage === '') { continue; } // If no headerImage is set in the json entry, then skip this character
 
 		var div = `<div id="` + key + `" class="cold-6 character-box">`
+		var heroArrTracker = 0;
+		var villainArrTracker = 0;
+		var neutralArrTracker = 0;
 		var charSheetSkillsHTML = '';
 		var charTileSkillsHTML = '';
 		var hasSheet = ('skills' in characters[key].sheet) ? true : false;
@@ -141,13 +144,16 @@ charPromise.then(function() {
 
 		switch(characters[key].affiliation) {
 			case 'hero':
-				heroesHTML.push(div);
+				heroesHTML[heroArrTracker] = div;
+				heroArrTracker++;
 				break;
 			case 'villain':
-				villainsHTML.push(div);
+				villainsHTML[villainArrTracker] = div;
+				villainArrTracker++;
 				break;
 			case 'neutral':
-				neutralsHTML.push(div);
+				neutralsHTML[neutralArrTracker] = div;
+				neutralArrTracker++;
 				break;
 		}
 	}
