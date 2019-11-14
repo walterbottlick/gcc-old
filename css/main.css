@@ -367,7 +367,9 @@ select {
 	width:  100%;
 }
 
-#heroes-list.columnFix {
+#heroes-list.columnFix,
+#villains-list.columnFix,
+#neutral-list.columnFix {
 	-moz-column-width: 30em;
     -webkit-column-width: 30em;
     -moz-column-gap: 1em;
