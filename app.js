@@ -177,7 +177,7 @@ charPromise.then(function() {
 
 	function populateJsonHTML(htmlObj, affiliation) {
 		var rowAmount = Math.floor(Object.entries(htmlObj).length / 2);
-		var remainder = htmlObj.length % 2;
+		var remainder = Object.entries(htmlObj).length % 2;
 		var colOneRows = (remainder > 0) ? rowAmount + 1 : rowAmount;
 		var colNumber = 1;
 		var charCount = 0;
