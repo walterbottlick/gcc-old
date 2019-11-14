@@ -114,6 +114,108 @@
 			"power": {}
 		}
 	},
+	"bane": {
+		"name": "Bane",
+		"subtitle": "",
+		"affiliation": "villain",
+		"gender": "his",
+		"moralCode": false,
+		"headerImage": "/gcc-old/images/banners/bane.jpg",
+		"icon": "",
+		"sheet": {
+			"melee": "red",
+			"ranged": "orange",
+			"manipulation": "orange",
+			"thought": "red",
+			"defense": "orange",
+			"skills": {
+				"counterAttack": {
+					"level": 2,
+					"disabledAt": 4
+				},
+				"martialArts": {
+					"level": 1,
+					"disabledAt": 4
+				},
+				"tactician": {
+					"level": 1,
+					"disabledAt": 0
+				},
+				"support": {
+					"level": 1,
+					"disabledAt": 0
+				},
+				"munitionsSpecialist": {
+					"level": 1,
+					"disabledAt": 0
+				},
+				"investigation": {
+					"level": 2,
+					"disabledAt": 0
+				},
+				"parkour": {
+					"level": 1,
+					"disabledAt": 3
+				}
+			},
+			"startingItem": ""
+		},
+		"tile": {
+			"rank": 3,
+			"reinforcementCost": 0,
+			"skills": {
+				"munitionsSpecialist": 1,
+				"support": 1,
+				"martialArts": 1
+			},
+			"power": {}
+		}
+	},
+	"baneVenomInjected": {
+		"name": "Bane",
+		"subtitle": "Venom Injected",
+		"affiliation": "villain",
+		"gender": "his",
+		"moralCode": false,
+		"headerImage": "",
+		"icon": "",
+		"sheet": {
+			"melee": "black",
+			"ranged": "yellow",
+			"manipulation": "yellow",
+			"thought": "yellow",
+			"defense": "orange",
+			"skills": {
+				"counterAttack": {
+					"level": 4,
+					"disabledAt": 0
+				},
+				"martialArts": {
+					"level": 2,
+					"disabledAt": 0
+				},
+				"wallBreaker": {
+					"level": 2,
+					"disabledAt": 0
+				},
+				"parkour": {
+					"level": 2,
+					"disabledAt": 0
+				}
+			},
+			"startingItem": ""
+		},
+		"tile": {
+			"rank": 3,
+			"reinforcementCost": 0,
+			"skills": {
+				"parkour": 2,
+				"martialArts": 1,
+				"wallBreaker": 1
+			},
+			"power": {}
+		}
+	},
 	"batRobots": {
 		"name": "Bat-Robots",
 		"subtitle": "",
@@ -355,7 +457,7 @@
 			},
 			"startingItem": ""
 		},
-		"tile": ""
+		"tile": {}
 	},
 	"batmanYear100": {
 		"name": "Batman",
@@ -622,6 +724,148 @@
 			}
 		}
 	},
+	"bystander": {
+		"name": "Bystander",
+		"subtitle": "",
+		"affiliation": "neutral",
+		"gender": "",
+		"moralCode": false,
+		"headerImage": "/gcc-old/images/banners/bystander.jpg",
+		"icon": "",
+		"sheet": {},
+		"tile": {
+			"rank": 1,
+			"reinforcementCost": 0,
+			"skills": {},
+			"power": {}
+		}
+	},
+	"citizen": {
+		"name": "Citizen",
+		"subtitle": "",
+		"affiliation": "neutral",
+		"gender": "",
+		"moralCode": false,
+		"headerImage": "/gcc-old/images/banners/citizen.jpg",
+		"icon": "",
+		"sheet": {},
+		"tile": {
+			"rank": 1,
+			"reinforcementCost": 0,
+			"skills": {},
+			"power": {}
+		}
+	},
+	"harleyQuinn": {
+		"name": "Harley Quinn",
+		"subtitle": "",
+		"affiliation": "villain",
+		"gender": "her",
+		"moralCode": false,
+		"headerImage": "/gcc-old/images/banners/harley-quinn.jpg",
+		"icon": "",
+		"sheet": {
+			"melee": "orange",
+			"ranged": "orange",
+			"manipulation": "orange",
+			"thought": "black",
+			"defense": "orange",
+			"skills": {
+				"martialArts": {
+					"level": 1,
+					"disabledAt": 3
+				},
+				"nervesOfSteel": {
+					"level": 1,
+					"disabledAt": 0
+				},
+				"munitionsSpecialist": {
+					"level": 1,
+					"disabledAt": 0
+				},
+				"parkour": {
+					"level": 2,
+					"disabledAt": 4
+				},
+				"elusive": {
+					"level": 1,
+					"disabledAt": 3
+				},
+				"mobility": {
+					"level": 1,
+					"disabledAt": 3
+				}
+			},
+			"startingItem": ""
+		},
+		"tile": {
+			"rank": 3,
+			"reinforcementCost": 0,
+			"skills": {
+				"imaginaryFriend": 1,
+				"parkour": 3,
+				"elusive": 2
+			},
+			"power": {}
+		}
+	},
+	"joker": {
+		"name": "Joker",
+		"subtitle": "",
+		"affiliation": "villain",
+		"gender": "his",
+		"moralCode": false,
+		"headerImage": "/gcc-old/images/banners/joker.jpg",
+		"icon": "",
+		"sheet": {
+			"melee": "red",
+			"ranged": "orange",
+			"manipulation": "orange",
+			"thought": "orange",
+			"defense": "orange",
+			"skills": {
+				"combo": {
+					"level": 1,
+					"disabledAt": 4
+				},
+				"martialArts": {
+					"level": 1,
+					"disabledAt": 4
+				},
+				"munitionsSpecialist": {
+					"level": 1,
+					"disabledAt": 0
+				},
+				"lockPicking": {
+					"level": 1,
+					"disabledAt": 0
+				},
+				"nervesOfSteel": {
+					"level": 1,
+					"disabledAt": 0
+				},
+				"pushingLimits": {
+					"level": 1,
+					"disabledAt": 0
+				},
+				"parkour": {
+					"level": 1,
+					"disabledAt": 3
+				}
+			},
+			"startingItem": ""
+		},
+		"tile": {
+			"rank": 3,
+			"reinforcementCost": 0,
+			"skills": {
+				"nervesOfSteel": 4,
+				"support": 2,
+				"untouchable": 2
+			},
+			"power": {}
+		}
+	},
 	"juliaPennyworth": {
 		"name": "Julia Pennyworth",
 		"subtitle": "",
@@ -815,6 +1059,59 @@
 			}
 		}
 	},
+	"penguin": {
+		"name": "Penguin",
+		"subtitle": "",
+		"affiliation": "villain",
+		"gender": "his",
+		"moralCode": false,
+		"headerImage": "/gcc-old/images/banners/penguin.jpg",
+		"icon": "",
+		"sheet": {
+			"melee": "yellow",
+			"ranged": "orange",
+			"manipulation": "orange",
+			"thought": "orange",
+			"defense": "orange",
+			"skills": {
+				"sneakAttack": {
+					"level": 1,
+					"disabledAt": 0
+				},
+				"lockPicking": {
+					"level": 1,
+					"disabledAt": 0
+				},
+				"investigation": {
+					"level": 1,
+					"disabledAt": 0
+				},
+				"protected": {
+					"level": 1,
+					"disabledAt": 0
+				},
+				"henchmanCommand": {
+					"level": 2,
+					"disabledAt": 0
+				},
+				"support": {
+					"level": 1,
+					"disabledAt": 0
+				}
+			},
+			"startingItem": ""
+		},
+		"tile": {
+			"rank": 3,
+			"reinforcementCost": 0,
+			"skills": {
+				"untouchable": 1,
+				"support": 2,
+				"sneakAttack": 2
+			},
+			"power": {}
+		}
+	},
 	"redRobin": {
 		"name": "Red Robin",
 		"subtitle": "",
@@ -877,6 +1174,117 @@
 			}
 		}
 	},
+	"riddler": {
+		"name": "Riddler",
+		"subtitle": "",
+		"affiliation": "villain",
+		"gender": "his",
+		"moralCode": false,
+		"headerImage": "/gcc-old/images/banners/riddler.jpg",
+		"icon": "",
+		"sheet": {
+			"melee": "yellow",
+			"ranged": "orange",
+			"manipulation": "yellow",
+			"thought": "red",
+			"defense": "yellow",
+			"skills": {
+				"munitionsSpecialist": {
+					"level": 1,
+					"disabledAt": 0
+				},
+				"lockPicking": {
+					"level": 2,
+					"disabledAt": 0
+				},
+				"hacking": {
+					"level": 2,
+					"disabledAt": 0
+				},
+				"investigation": {
+					"level": 1,
+					"disabledAt": 0
+				},
+				"eliteCommand": {
+					"level": 2,
+					"disabledAt": 0
+				},
+				"support": {
+					"level": 1,
+					"disabledAt": 0
+				}
+			},
+			"startingItem": ""
+		},
+		"tile": {
+			"rank": 3,
+			"reinforcementCost": 0,
+			"skills": {
+				"hacking": 2,
+				"investigation": 1,
+				"protected": 1
+			},
+			"power": {}
+		}
+	},
+	"scarecrow": {
+		"name": "Scarecrow",
+		"subtitle": "",
+		"affiliation": "villain",
+		"gender": "his",
+		"moralCode": false,
+		"headerImage": "/gcc-old/images/banners/scarecrow.jpg",
+		"icon": "",
+		"sheet": {
+			"melee": "yellow",
+			"ranged": "orange",
+			"manipulation": "orange",
+			"thought": "black",
+			"defense": "yellow",
+			"skills": {
+				"nervesOfSteel": {
+					"level": 1,
+					"disabledAt": 0
+				},
+				"misfortune": {
+					"level": 1,
+					"disabledAt": 0
+				},
+				"henchmanCommand": {
+					"level": 2,
+					"disabledAt": 0
+				},
+				"hacking": {
+					"level": 1,
+					"disabledAt": 0
+				},
+				"investigation": {
+					"level": 1,
+					"disabledAt": 0
+				},
+				"protected": {
+					"level": 2,
+					"disabledAt": 0
+				},
+				"gasImmunity": {
+					"level": 0,
+					"disabledAt": 0
+				}
+			},
+			"startingItem": ""
+		},
+		"tile": {
+			"rank": 3,
+			"reinforcementCost": 0,
+			"skills": {
+				"misfortune": 2,
+				"horror": 2,
+				"protected": 2,
+				"gasImmunity": 0
+			},
+			"power": {}
+		}
+	},
 	"trex": {
 		"name": "T-Rex",
 		"subtitle": "",
@@ -894,6 +1302,59 @@
 				"circularStrike": 5
 			},
 			"power": ""
+		}
+	},
+	"twoFace": {
+		"name": "Two-Face",
+		"subtitle": "",
+		"affiliation": "villain",
+		"gender": "his",
+		"moralCode": false,
+		"headerImage": "/gcc-old/images/banners/two-face.jpg",
+		"icon": "",
+		"sheet": {
+			"melee": "orange",
+			"ranged": "red",
+			"manipulation": "orange",
+			"thought": "orange",
+			"defense": "orange",
+			"skills": {
+				"pushingLimits": {
+					"level": 1,
+					"disabledAt": 0
+				},
+				"nervesOfSteel": {
+					"level": 1,
+					"disabledAt": 0
+				},
+				"marksman": {
+					"level": 1,
+					"disabledAt": 4
+				},
+				"retaliation": {
+					"level": 2,
+					"disabledAt": 5
+				},
+				"investigation": {
+					"level": 1,
+					"disabledAt": 0
+				},
+				"parkour": {
+					"level": 1,
+					"disabledAt": 3
+				}
+			},
+			"startingItem": ""
+		},
+		"tile": {
+			"rank": 3,
+			"reinforcementCost": 0,
+			"skills": {
+				"retaliation": 3,
+				"pointBlank": 2,
+				"tactician": 2
+			},
+			"power": {}
 		}
 	}
 }

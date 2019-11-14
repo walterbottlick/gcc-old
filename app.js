@@ -159,7 +159,7 @@ charPromise.then(function() {
 
 	// Character show/hide Click Listener
 	$('.showhide-trigger').click(function() {
-		var showHideID = '#' + $(this).att('value') + '-showhide';
+		var showHideID = '#' + $(this).attr('value') + '-showhide';
 		$(showHideID).slideToggle();
 	});
 

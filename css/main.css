@@ -151,6 +151,7 @@ select {
 .char-container div:first-child {
 	width: 85%;
     display: table-cell;
+    cursor: pointer;
 }
 
 .char-container div:first-child img {
@@ -228,6 +229,10 @@ select {
 
 .char-skills .skill-container, {
 	height: auto;
+}
+
+.character-box {
+	margin-bottom: 0.75em;
 }
 
 .skill-box {
