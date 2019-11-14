@@ -41,10 +41,7 @@ charPromise.then(function() {
 	for (key in characters) {
 		if (characters[key].headerImage === '') { continue; } // If no headerImage is set in the json entry, then skip this character
 
-		const div = document.createElement('div');
-		div.classList.add('col-6', 'character-box');
-		div.id = key;
-
+		var div = `<div id="` + key + `" class="cold-6 character-box">`
 		var charSheetSkillsHTML = '';
 		var charTileSkillsHTML = '';
 		var hasSheet = ('skills' in characters[key].sheet) ? true : false;
@@ -125,7 +122,7 @@ charPromise.then(function() {
 
 		// Create inner HTML for character container
 
-		div.innerHTML = `
+		div += `
 			<div class="char-container">
 				<div class="showhide-trigger" value="` + key + `">
 					<img src="` + characters[key].headerImage + `" alt="` + characters[key].name + `">
@@ -138,19 +135,19 @@ charPromise.then(function() {
 					<div id="` + key + `-tile-skills" class="char-skills` + tileHiddenClass + `">` + charTileSkillsHTML + `</div>
 				</div>
 			</div>
-		`;
+		</div>`;
 
 		// Add character HTML to charactersHTML object
 
 		switch(characters[key].affiliation) {
 			case 'hero':
-				//heroesHTML.push(div);
+				heroesHTML.push(div);
 				break;
 			case 'villain':
-				//villainsHTML.push(div);
+				villainsHTML.push(div);
 				break;
 			case 'neutral':
-				//neutralsHTML.push(div);
+				neutralsHTML.push(div);
 				break;
 		}
 	}
