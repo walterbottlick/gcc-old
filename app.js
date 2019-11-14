@@ -176,8 +176,7 @@ charPromise.then(function() {
 	});
 
 	function populateJsonHTML(htmlObj, affiliation) {
-		var arrLength = htmlObj.length;
-		var rowAmount = Math.floor(htmlObj.length / 2);
+		var rowAmount = Math.floor(Object.entries(htmlObj).length / 2);
 		var remainder = htmlObj.length % 2;
 		var colOneRows = (remainder > 0) ? rowAmount + 1 : rowAmount;
 		var colNumber = 1;
@@ -188,7 +187,6 @@ charPromise.then(function() {
 				colNumber++;
 			}
 			$('#' + affiliation + '-col-' + colNumber).append(htmlObj[key]);
-			console.log(charCount);
 			charCount++;
 		}
 	}
