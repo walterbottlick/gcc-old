@@ -23,8 +23,16 @@ var skillPromise = $.getJSON(skillList, function(json) {
 var heroesHTML = {};
 var villainsHTML = {};
 var neutralsHTML = {};
-var skillsHTML = {};
-
+var skillsHTML = {
+	'melee': {},
+	'ranged': {},
+	'defense': {},
+	'elemental': {},
+	'movement': {},
+	'manipulation': {},
+	'thought': {},
+	'misc': {}
+};
 // Setters
 
 function setCharacterList(json) {
