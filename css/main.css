@@ -140,7 +140,7 @@ select {
 }
 
 .header-img {
-	width: 15em;
+	width: 10em;
 }
 
 .char-container {
@@ -411,13 +411,7 @@ select {
 	header {
 		text-align: center;
 		margin-bottom: 1em;
-		padding: 0;
-		background: none;
 		position: static;
-    	width: auto;
-    	-moz-box-shadow: none;
-        -webkit-box-shadow: none;
-    	box-shadow: none;
 	}
 
 	h1 {
@@ -432,6 +426,10 @@ select {
 
 	section {
 		padding-top: 0;
+	}
+
+	#home-screen {
+		padding-top: 1em;
 	}
 
 	#home-screen.hidden {
