@@ -18,6 +18,13 @@ var skillPromise = $.getJSON(skillList, function(json) {
     setSkillList(json);
 });
 
+// Character and Skill HTML holder arrays
+
+var heroesHTML = [];
+var villainsHTML = [];
+var neutralsHTML = [];
+var skillsHTML = [];
+
 // Setters
 
 function setCharacterList(json) {
@@ -133,20 +140,26 @@ charPromise.then(function() {
 			</div>
 		`;
 
-		// Display character under the appropriate header
+		// Add character HTML to charactersHTML object
 
 		switch(characters[key].affiliation) {
 			case 'hero':
-				document.getElementById('heroes-list').appendChild(div);
+				heroesHTML[key] = div;
 				break;
 			case 'villain':
-				document.getElementById('villains-list').appendChild(div);
+				villainsHTML[key] = div;
 				break;
 			case 'neutral':
-				document.getElementById('neutral-list').appendChild(div);
+				neutralsHTML[key] = div;
 				break;
 		}
 	}
+
+	// Display character under the appropriate header
+
+	populateJsonHTML(heroesHTML, 'hero');
+	populateJsonHTML(villainsHTML, 'villain');
+	populateJsonHTML(neutralsHTML, 'neutral');
 
 	// Character Sheet Button Listener
 	$('.sheet-btn').click(function() {
@@ -164,6 +177,21 @@ charPromise.then(function() {
 		var showHideID = '#' + $(this).attr('value') + '-showhide';
 		$(showHideID).slideToggle();
 	});
+
+	function populateJsonHTML(htmlArr, affiliation) {
+		var arrLength = htmlArr.length;
+		var rowAmount = Math.floor(htmlArr.length / 2);
+		var remainder = htmlArr.length % 2
+		var colOneRows = (remainder > 0) ? rowAmount + 1 : rowAmount;
+		var colNumber = 1;
+
+		for (i = 0; 1 < htmlArr.length; i++) {
+			if (i == colOneRows) {
+				colNumber++;
+			}
+			document.getElementById(affiliation + '-col-' + colNumber).appendChild(htmlArr[i]);
+		}
+	}
 
 	function sheetTileSwitch(btn, panel) {
 		var panelID = '#' + btn.attr('value') + '-' + panel + '-skills';
@@ -238,6 +266,23 @@ skillPromise.then(function() {
 				break;
 		}
 	}
+
+	/*function populateJsonHTML(htmlArr, affiliation) {
+		var arrLength = htmlArr.length;
+		var colAmount = (affiliation = 'skills') ? 3 : 2;
+		var rowAmount = Math.floor(htmlArr.length / colAmount);
+		var remainder = htmlArr.length % colAmount
+		var colOneRows = (remainder > 0) ? rowAmount + 1 : rowAmount;
+		var colTwoRows = (remainder > 1) ? colOneRows + colAmount + 1 : rowAmount;
+		var colNumber = 1;
+
+		for (i = 0; 1 < htmlArr.length; i++) {
+			if (i == colOneRows || i == colTwoRows) {
+				colNumber++;
+			}
+			document.getElementById(affiliation + '-col-' + colNumber).appendChild(htmlArr[i]);
+		}
+	}*/
 });
 
 // Button Click Listeners
