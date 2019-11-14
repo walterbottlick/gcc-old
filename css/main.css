@@ -189,7 +189,15 @@ select {
     padding: 1em 0;
 }
 
-.char-showhide .btn-group:after {
+.main-buttons {
+	width: 75%;
+	max-width: 40em;
+	margin: 0 auto;
+	padding: 1em 0;
+}
+
+.char-showhide .btn-group:after,
+.main-buttons:after {
 	content: "";
 	clear: both;
 	display: table;
@@ -200,11 +208,26 @@ select {
     width: 50%;
 }
 
-.char-showhide .btn-group button:first-child {
+.main-buttons button {
+	float: left;
+	width: 33.33%;
+	border-radius: 0;
+	border-left: none;
+	border-right: none;
+}
+
+.main-buttons button:first-child,
+.main-buttons button:last-child {
+	border: 1px solid rgb(131,82,22) !important;
+}
+
+.char-showhide .btn-group button:first-child,
+.main-buttons button:first-child {
 	border-radius: 10px 0 0 10px;
 }
 
-.char-showhide .btn-group button:last-child {
+.char-showhide .btn-group button:last-child,
+.main-buttons button:last-child {
 	border-radius: 0 10px 10px 0;
     border-left: none;
 }
