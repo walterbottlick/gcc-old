@@ -500,6 +500,17 @@ h4.no-skills {
 	#home-screen {
 		padding-top: 6em;
 	}
+
+	.main-buttons {
+		width: 65%;
+	}
+
+	.main-buttons button {
+		float: none;
+		width: 100%;
+		border-radius: 10px !important;
+		margin: 1em 0;
+	}
 }
 
 /* LoS Tool embed scaling styles */
