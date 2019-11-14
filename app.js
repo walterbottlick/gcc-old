@@ -191,7 +191,7 @@ charPromise.then(function() {
 			$('#' + affiliation + '-col-' + colNumber).append(htmlObj[key]);
 			charCount++;
 			console.log('charCount: ' + charCount);
-			console.log('colOneRows: ' = colOneRows);
+			console.log('colOneRows: ' + colOneRows);
 			console.log('colNumber: ' + colNumber);
 		}
 	}
@@ -270,7 +270,29 @@ skillPromise.then(function() {
 		}
 	}
 
-	/*function populateJsonHTML(htmlArr, affiliation) {
+	/*function populateJsonHTML(htmlObj, affiliation) {
+		var rowAmount = Math.floor(Object.entries(htmlObj).length / 3);
+		var remainder = htmlObj.length % 3;
+		var colOneRows = (remainder > 0) ? rowAmount + 1 : rowAmount;
+		var colTwoRows = (remainder > 1) ? colOneRows + 4 : colOneRows + 3;
+		var colNumber = 1;
+		var charCount = 0;
+
+		console.log('colOneRows: ' + colOneRows);
+
+		for (key in htmlObj) {
+			if (charCount == colOneRows) {
+				colNumber++;
+			}
+			$('#' + affiliation + '-col-' + colNumber).append(htmlObj[key]);
+			charCount++;
+			console.log('charCount: ' + charCount);
+			console.log('colOneRows: ' = colOneRows);
+			console.log('colNumber: ' + colNumber);
+		}
+	}
+
+	function populateJsonHTML(htmlArr, affiliation) {
 		var arrLength = htmlArr.length;
 		var colAmount = (affiliation = 'skills') ? 3 : 2;
 		var rowAmount = Math.floor(htmlArr.length / colAmount);
