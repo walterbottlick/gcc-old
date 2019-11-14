@@ -313,7 +313,7 @@ $('.los-btn').click(function() {
 
 // Skills search bar keyup listener
 
-$('#skills-search').keyup(function(){
+/*$('#skills-search').keyup(function(){
 	for (key in skills) {
 		if (skills[key].name.toLowerCase().includes($('#skills-search').val().toLowerCase())) {
 			// Check if respective skill-box element is on page and add it if not
@@ -359,7 +359,7 @@ $('#skills-search').keyup(function(){
 			$('#noResults').remove();
 		}
 	}
-});
+});*/
 
 // Replaces placeholder content in skills
 
