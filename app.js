@@ -180,7 +180,7 @@ charPromise.then(function() {
 		var remainder = htmlObj.length % 2;
 		var colOneRows = (remainder > 0) ? rowAmount + 1 : rowAmount;
 		var colNumber = 1;
-		var charCount = 0;
+		var charCount = 1;
 
 		for (key in htmlObj) {
 			if (charCount == colOneRows) {
