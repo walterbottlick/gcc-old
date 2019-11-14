@@ -140,7 +140,7 @@ select {
 }
 
 .header-img {
-	
+	width: 15em;
 }
 
 .char-container {
@@ -377,8 +377,8 @@ select {
 	cursor: pointer;
 	float: left;
     position: absolute;
-    left: 0.85em;
-    top: 0.5em;
+    left: 1.2em;
+    top: 1em;
 }
 
 .bar1, .bar2, .bar3 {
@@ -410,7 +410,7 @@ select {
 
 	header {
 		text-align: center;
-		margin-bottom: 2em;
+		margin-bottom: 1em;
 		padding: 0;
 		background: none;
 		position: static;
@@ -443,10 +443,13 @@ select {
 	}
 }
 
-@media only screen and (min-width: 415px) and (max-width: 640px) {
-	.skill-box .skill-container div:first-child img {
-	    max-width: 85%;
-	    padding: 0.75em 0 0.5em 1em;
+@media only screen and  (max-width: 639px) {
+	.header-img {
+		width: 7em;
+	}
+
+	#home-screen {
+		padding-top: 6em;
 	}
 }
 
