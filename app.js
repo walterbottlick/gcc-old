@@ -38,7 +38,7 @@ function setSkillList(json) {
 // Populate Characters and Skills
 
 charPromise.then(function() {
-	
+
 	var heroArrTracker = 0;
 	var villainArrTracker = 0;
 	var neutralArrTracker = 0;
@@ -146,15 +146,15 @@ charPromise.then(function() {
 
 		switch(characters[key].affiliation) {
 			case 'hero':
-				heroesHTML[heroArrTracker] = div;
+				heroesHTML[key] = div;
 				heroArrTracker++;
 				break;
 			case 'villain':
-				villainsHTML[villainArrTracker] = div;
+				villainsHTML[key] = div;
 				villainArrTracker++;
 				break;
 			case 'neutral':
-				neutralsHTML[neutralArrTracker] = div;
+				neutralsHTML[key] = div;
 				neutralArrTracker++;
 				break;
 		}
