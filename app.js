@@ -182,17 +182,12 @@ charPromise.then(function() {
 		var colNumber = 1;
 		var charCount = 0;
 
-		console.log('colOneRows: ' + colOneRows);
-
 		for (key in htmlObj) {
 			if (charCount == colOneRows) {
 				colNumber++;
 			}
 			$('#' + affiliation + '-col-' + colNumber).append(htmlObj[key]);
 			charCount++;
-			console.log('charCount: ' + charCount);
-			console.log('colOneRows: ' + colOneRows);
-			console.log('colNumber: ' + colNumber);
 		}
 	}
 
@@ -209,14 +204,12 @@ charPromise.then(function() {
 
 skillPromise.then(function() {
 	for (key in skills) {
-		const div = document.createElement('div');
-		div.classList.add('col-4', 'skill-box');
-		div.id = key;
+		var div = `<div id="` + key + `" class="col-4 skill-box>"`;
 
 		// Check if skill has both a description and an alternate tile description, and display both if it does
 
 		if (skills[key].altTileDesc) {
-			div.innerHTML = `
+			div += `
 	            <div class="skill-container">
 	                <div><img src="` + skills[key].icon + `" alt="` + skills[key].name + `"></div>
 	                <div>
@@ -227,9 +220,9 @@ skillPromise.then(function() {
 	            		<p>` + placeholderReplace(skills[key].altTileDesc) + `</p>
 	                </div>
 	            </div>
-			`;
+			</div>`;
 		} else {
-			div.innerHTML = `
+			div += `
 	            <div class="skill-container">
 	                <div><img src="` + skills[key].icon + `"></div>
 	                <div>
@@ -237,77 +230,39 @@ skillPromise.then(function() {
 	            		<p>` + placeholderReplace(skills[key].description) + `</p>
 	                </div>
 	            </div>
-			`;
+			</div>`;
 		}
 
-		// Display skill under the appropriate header
+		// Add skills HTML to skillsHTML object
 
-		switch (skills[key].type) {
-			case 'melee':
-				document.getElementById('melee-skills-list').appendChild(div);
-				break;
-			case 'ranged':
-				document.getElementById('ranged-skills-list').appendChild(div);
-				break;
-			case 'defense':
-				document.getElementById('defense-skills-list').appendChild(div);
-				break;
-			case 'elemental':
-				document.getElementById('elemental-skills-list').appendChild(div);
-				break;
-			case 'movement':
-				document.getElementById('movement-skills-list').appendChild(div);
-				break;
-			case 'manipulation':
-				document.getElementById('manipulation-skills-list').appendChild(div);
-				break;
-			case 'thought':
-				document.getElementById('thought-skills-list').appendChild(div);
-				break;
-			case 'misc':
-				document.getElementById('misc-skills-list').appendChild(div);
-				break;
-		}
+		skillsHTML[skills[key].type][key] = div;
 	}
 
-	/*function populateJsonHTML(htmlObj, affiliation) {
-		var rowAmount = Math.floor(Object.entries(htmlObj).length / 3);
-		var remainder = htmlObj.length % 3;
-		var colOneRows = (remainder > 0) ? rowAmount + 1 : rowAmount;
-		var colTwoRows = (remainder > 1) ? colOneRows + 4 : colOneRows + 3;
-		var colNumber = 1;
-		var charCount = 0;
+	populateJsonHTML(skills['melee'], 'melee');
+	populateJsonHTML(skills['ranged'], 'ranged');
+	populateJsonHTML(skills['defense'], 'defense');
+	populateJsonHTML(skills['elemental'], 'elemental');
+	populateJsonHTML(skills['movement'], 'movement');
+	populateJsonHTML(skills['manipulation'], 'manipulation');
+	populateJsonHTML(skills['thought'], 'thought');
+	populateJsonHTML(skills['misc'], 'misc');
 
-		console.log('colOneRows: ' + colOneRows);
+	function populateJsonHTML(htmlObj, type) {
+		var rowAmount = Math.floor(Object.entries(htmlObj).length / 3);
+		var remainder = Object.entries(htmlObj).length % 3;
+		var colOneRows = (remainder > 0) ? rowAmount + 1 : rowAmount;
+		var colTwoRows = (remainder > 1) ? colOneRows + rowAmount + 1 : colOneRows + rowAmount;
+		var colNumber = 1;
+		var skillCount = 0;
 
 		for (key in htmlObj) {
-			if (charCount == colOneRows) {
+			if (skillCount == colOneRows) {
 				colNumber++;
 			}
-			$('#' + affiliation + '-col-' + colNumber).append(htmlObj[key]);
-			charCount++;
-			console.log('charCount: ' + charCount);
-			console.log('colOneRows: ' = colOneRows);
-			console.log('colNumber: ' + colNumber);
+			$('#' + type + '-col-' + colNumber).append(htmlObj[key]);
+			skillCount++;
 		}
 	}
-
-	function populateJsonHTML(htmlArr, affiliation) {
-		var arrLength = htmlArr.length;
-		var colAmount = (affiliation = 'skills') ? 3 : 2;
-		var rowAmount = Math.floor(htmlArr.length / colAmount);
-		var remainder = htmlArr.length % colAmount
-		var colOneRows = (remainder > 0) ? rowAmount + 1 : rowAmount;
-		var colTwoRows = (remainder > 1) ? colOneRows + colAmount + 1 : rowAmount;
-		var colNumber = 1;
-
-		for (i = 0; 1 < htmlArr.length; i++) {
-			if (i == colOneRows || i == colTwoRows) {
-				colNumber++;
-			}
-			document.getElementById(affiliation + '-col-' + colNumber).appendChild(htmlArr[i]);
-		}
-	}*/
 });
 
 // Button Click Listeners
