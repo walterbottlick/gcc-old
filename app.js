@@ -20,10 +20,10 @@ var skillPromise = $.getJSON(skillList, function(json) {
 
 // Character and Skill HTML holder arrays
 
-var heroesHTML = [];
-var villainsHTML = [];
-var neutralsHTML = [];
-var skillsHTML = [];
+var heroesHTML = {};
+var villainsHTML = {};
+var neutralsHTML = {};
+var skillsHTML = {};
 
 // Setters
 
@@ -38,11 +38,6 @@ function setSkillList(json) {
 // Populate Characters and Skills
 
 charPromise.then(function() {
-
-	var heroArrTracker = 0;
-	var villainArrTracker = 0;
-	var neutralArrTracker = 0;
-
 	for (key in characters) {
 		if (characters[key].headerImage === '') { continue; } // If no headerImage is set in the json entry, then skip this character
 
@@ -147,15 +142,12 @@ charPromise.then(function() {
 		switch(characters[key].affiliation) {
 			case 'hero':
 				heroesHTML[key] = div;
-				heroArrTracker++;
 				break;
 			case 'villain':
 				villainsHTML[key] = div;
-				villainArrTracker++;
 				break;
 			case 'neutral':
 				neutralsHTML[key] = div;
-				neutralArrTracker++;
 				break;
 		}
 	}
@@ -183,18 +175,20 @@ charPromise.then(function() {
 		$(showHideID).slideToggle();
 	});
 
-	function populateJsonHTML(htmlArr, affiliation) {
-		var arrLength = htmlArr.length;
-		var rowAmount = Math.floor(htmlArr.length / 2);
-		var remainder = htmlArr.length % 2;
+	function populateJsonHTML(htmlObj, affiliation) {
+		var arrLength = htmlObj.length;
+		var rowAmount = Math.floor(htmlObj.length / 2);
+		var remainder = htmlObj.length % 2;
 		var colOneRows = (remainder > 0) ? rowAmount + 1 : rowAmount;
 		var colNumber = 1;
+		var charCount = 0;
 
-		for (i = 0; 1 < htmlArr.length; i++) {
-			if (i == colOneRows) {
+		for (key in htmlObj) {
+			if (charCount == colOneRows) {
 				colNumber++;
 			}
-			$('#' + affiliation + '-col-' + colNumber).append(htmlArr[i]);
+			$('#' + affiliation + '-col-' + colNumber).append(htmlObj[key]);
+			charCount++;
 		}
 	}
 
