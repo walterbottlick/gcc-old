@@ -180,7 +180,9 @@ charPromise.then(function() {
 		var remainder = htmlObj.length % 2;
 		var colOneRows = (remainder > 0) ? rowAmount + 1 : rowAmount;
 		var colNumber = 1;
-		var charCount = 1;
+		var charCount = 0;
+
+		console.log('colOneRows: ' + colOneRows);
 
 		for (key in htmlObj) {
 			if (charCount == colOneRows) {
@@ -188,6 +190,9 @@ charPromise.then(function() {
 			}
 			$('#' + affiliation + '-col-' + colNumber).append(htmlObj[key]);
 			charCount++;
+			console.log('charCount: ' + charCount);
+			console.log('colOneRows: ' = colOneRows);
+			console.log('colNumber: ' + colNumber);
 		}
 	}
 
