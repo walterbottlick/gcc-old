@@ -189,7 +189,6 @@ charPromise.then(function() {
 			if (i == colOneRows) {
 				colNumber++;
 			}
-			console.log(htmlArr[i]);
 			$('#' + affiliation + '-col-' + colNumber).append(htmlArr[i]);
 		}
 	}
