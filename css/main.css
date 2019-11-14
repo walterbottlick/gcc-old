@@ -167,6 +167,7 @@ select {
 }
 
 .char-showhide {
+	display: none;
 	background: rgb(255, 255, 255);
     background: linear-gradient(top, rgb(255, 255, 255), rgb(165, 165, 165));
     background: -ms-linear-gradient(top, rgb(255, 255, 255), rgb(165, 165, 165));

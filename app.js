@@ -118,12 +118,12 @@ charPromise.then(function() {
 
 		div.innerHTML = `
 			<div class="char-container">
-				<div>
+				<div class="showhide-trigger" value="` + key + `">
 					<img src="` + characters[key].headerImage + `" alt="` + characters[key].name + `">
 				</div>
 				<div>ADD</div>
 			</div>
-			<div class="char-showhide">` + btnGroup + `
+			<div id="` + key + `-showhide" class="char-showhide">` + btnGroup + `
 				<div>
 					<div id="` + key + `-sheet-skills" class="char-skills` + sheetHiddenClass + `">` + charSheetSkillsHTML + `</div>
 					<div id="` + key + `-tile-skills" class="char-skills` + tileHiddenClass + `">` + charTileSkillsHTML + `</div>
@@ -155,6 +155,12 @@ charPromise.then(function() {
 	// Character Tile Button Listener
 	$('.tile-btn').click(function() {
 		sheetTileSwitch($(this),'tile');
+	});
+
+	// Character show/hide Click Listener
+	$('.showhide-trigger').click(function() {
+		var showHideID = '#' + $(this).att('value') + '-showhide';
+		$(showHideID).slideToggle();
 	});
 
 	function sheetTileSwitch(btn, panel) {
