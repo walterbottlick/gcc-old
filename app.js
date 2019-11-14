@@ -132,7 +132,7 @@ charPromise.then(function() {
 
 		div += `
 			<div class="char-container showhide-trigger" value="` + key + `">
-				<div>ADD</div>
+				<div>VIEW</div>
 				<div>
 					<img src="` + characters[key].headerImage + `" alt="` + characters[key].name + `">
 				</div>

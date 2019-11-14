@@ -146,25 +146,36 @@ select {
 .char-container {
 	display: table;
     font-size: 0;
+    cursor: pointer;
+}
+
+.char-container div:first-child {
+    font-size: 16px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    border: 1px solid rgb(131,82,22);
+    background: rgb(243,148,0);
+    background: linear-gradient(top, rgb(243,148,0), rgb(190,120,5));
+    background: -ms-linear-gradient(top, rgb(243,148,0), rgb(190,120,5));
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(243,148,0)), to(rgb(190,120,5)));
+    background: -moz-linear-gradient(top, rgb(243,148,0), rgb(190,120,5));
+    font-size: 20px;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+    box-shadow: 1px 1px 8px rgba(0,0,0,0.2);
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bold;
+    color: rgb(255,255,255) !important;
 }
 
 .char-container div:last-child {
 	width: 84%;
     display: table-cell;
-    cursor: pointer;
 }
 
 .char-container div:last-child img {
 	width: 100%;
 	height: auto;
-}
-
-.char-container div:first-child {
-	background-color: orange;
-    font-size: 16px;
-    text-align: center;
-    display: table-cell;
-    vertical-align: middle;
 }
 
 .char-showhide {
