@@ -10,17 +10,19 @@ var skills = {};
 
 // Call JSON files
 
-var charPromise = $.getJSON(characterList, function(json) {
-	return json;
-    //setCharacterList(json);
+var skillPromise = new Promise(function(resolve, reject) {
+	$.getJSON(skillList, function(json) {
+		return json;
+	});
+})
+
+var charPromise = new Promise(function(resolve, reject) {
+	$.getJSON(characterList, function(json) {
+		return json;
+	});
 });
 
-var skillPromise = $.getJSON(skillList, function(json) {
-	return json;
-    //setSkillList(json);
-});
-
-// Character and Skill HTML holder arrays
+// Character and Skill HTML holder objects
 
 var heroesHTML = {};
 var villainsHTML = {};
@@ -35,22 +37,14 @@ var skillsHTML = {
 	'thought': {},
 	'misc': {}
 };
-// Setters
-
-/*function setCharacterList(json) {
-	characters = json;
-}
-
-function setSkillList(json) {
-	skills = json;
-}*/
 
 // Populate Characters and Skills
 
-skillPromise.then(function() {
+Promise.all([skillPromise, charPromise]).then(function(skillPromise, charPromise) {
 
-	skills = skillPromise.responseJSON;
-	
+	skills = skillPromise;
+	characters = charPromise;
+
 	for (key in skills) {
 		var div = `<div id="` + key + `" class="skill-box">`;
 
@@ -107,11 +101,6 @@ skillPromise.then(function() {
 			skillCount++;
 		}
 	}
-});
-
-charPromise.then(function() {
-
-	characters = charPromise.responseJSON;
 
 	for (key in characters) {
 		if (characters[key].headerImage === '') { continue; } // If no headerImage is set in the json entry, then skip this character
