@@ -49,7 +49,7 @@ function setSkillList(json) {
 
 skillPromise.then(function() {
 
-	skills = skillPromise;
+	skills = skillPromise.responseJSON;
 	
 	for (key in skills) {
 		var div = `<div id="` + key + `" class="skill-box">`;
@@ -111,7 +111,7 @@ skillPromise.then(function() {
 
 charPromise.then(function() {
 
-	characters = charPromise;
+	characters = charPromise.responseJSON;
 
 	for (key in characters) {
 		if (characters[key].headerImage === '') { continue; } // If no headerImage is set in the json entry, then skip this character
