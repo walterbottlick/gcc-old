@@ -11,11 +11,13 @@ var skills = {};
 // Call JSON files
 
 var charPromise = $.getJSON(characterList, function(json) {
-    setCharacterList(json);
+	return json;
+    //setCharacterList(json);
 });
 
 var skillPromise = $.getJSON(skillList, function(json) {
-    setSkillList(json);
+	return json;
+    //setSkillList(json);
 });
 
 // Character and Skill HTML holder arrays
@@ -35,17 +37,82 @@ var skillsHTML = {
 };
 // Setters
 
-function setCharacterList(json) {
+/*function setCharacterList(json) {
 	characters = json;
 }
 
 function setSkillList(json) {
 	skills = json;
-}
+}*/
 
 // Populate Characters and Skills
 
+skillPromise.then(function() {
+
+	skills = skillPromise;
+	
+	for (key in skills) {
+		var div = `<div id="` + key + `" class="skill-box">`;
+
+		// Check if skill has both a description and an alternate tile description, and display both if it does
+
+		if (skills[key].altTileDesc) {
+			div += `
+	            <div class="skill-container">
+	                <div><img src="` + skills[key].icon + `" alt="` + skills[key].name + `"></div>
+	                <div>
+	                	<h4>` + skills[key].name + `</h4>
+	            		<p><em>Hero Sheet</em></p>
+	            		<p>` + placeholderReplace(skills[key].description) + `</p>
+	            		<p><em>Tile</em></p>
+	            		<p>` + placeholderReplace(skills[key].altTileDesc) + `</p>
+	                </div>
+	            </div>
+			</div>`;
+		} else {
+			div += `
+	            <div class="skill-container">
+	                <div><img src="` + skills[key].icon + `"></div>
+	                <div>
+	                	<h4>` + skills[key].name + `</h4>
+	            		<p>` + placeholderReplace(skills[key].description) + `</p>
+	                </div>
+	            </div>
+			</div>`;
+		}
+
+		// Add skills HTML to skillsHTML object
+
+		skillsHTML[skills[key].type][key] = div;
+	}
+
+	// Display skill under the appropriate header
+	for (key in skillsHTML) {
+		populateJsonHTML(skillsHTML[key], key);
+	}
+
+	function populateJsonHTML(htmlObj, type) {
+		var rowAmount = Math.floor(Object.entries(htmlObj).length / 3);
+		var remainder = Object.entries(htmlObj).length % 3;
+		var colOneRows = (remainder > 0) ? rowAmount + 1 : rowAmount;
+		var colTwoRows = (remainder > 1) ? colOneRows + rowAmount + 1 : colOneRows + rowAmount;
+		var colNumber = 1;
+		var skillCount = 0;
+
+		for (key in htmlObj) {
+			if (skillCount == colOneRows || skillCount == colTwoRows) {
+				colNumber++;
+			}
+			$('#' + type + '-col-' + colNumber).append(htmlObj[key]);
+			skillCount++;
+		}
+	}
+});
+
 charPromise.then(function() {
+
+	characters = charPromise;
+
 	for (key in characters) {
 		if (characters[key].headerImage === '') { continue; } // If no headerImage is set in the json entry, then skip this character
 
@@ -62,9 +129,6 @@ charPromise.then(function() {
 
 		if (hasSheet) {
 			for (sheetKey in characters[key].sheet.skills) {
-				console.log('sheetKey: ' + sheetKey);
-				console.log('skills[sheetKey]: ');
-				console.log(skills[sheetKey]);
 				charSheetSkillsHTML += `
 					<div class="skill-container">
 	                	<div>
@@ -210,65 +274,6 @@ charPromise.then(function() {
 
 		$(panelID).removeClass('hidden');
 		$(panelID).siblings().addClass('hidden');
-	}
-});
-
-skillPromise.then(function() {
-	for (key in skills) {
-		var div = `<div id="` + key + `" class="skill-box">`;
-
-		// Check if skill has both a description and an alternate tile description, and display both if it does
-
-		if (skills[key].altTileDesc) {
-			div += `
-	            <div class="skill-container">
-	                <div><img src="` + skills[key].icon + `" alt="` + skills[key].name + `"></div>
-	                <div>
-	                	<h4>` + skills[key].name + `</h4>
-	            		<p><em>Hero Sheet</em></p>
-	            		<p>` + placeholderReplace(skills[key].description) + `</p>
-	            		<p><em>Tile</em></p>
-	            		<p>` + placeholderReplace(skills[key].altTileDesc) + `</p>
-	                </div>
-	            </div>
-			</div>`;
-		} else {
-			div += `
-	            <div class="skill-container">
-	                <div><img src="` + skills[key].icon + `"></div>
-	                <div>
-	                	<h4>` + skills[key].name + `</h4>
-	            		<p>` + placeholderReplace(skills[key].description) + `</p>
-	                </div>
-	            </div>
-			</div>`;
-		}
-
-		// Add skills HTML to skillsHTML object
-
-		skillsHTML[skills[key].type][key] = div;
-	}
-
-	// Display skill under the appropriate header
-	for (key in skillsHTML) {
-		populateJsonHTML(skillsHTML[key], key);
-	}
-
-	function populateJsonHTML(htmlObj, type) {
-		var rowAmount = Math.floor(Object.entries(htmlObj).length / 3);
-		var remainder = Object.entries(htmlObj).length % 3;
-		var colOneRows = (remainder > 0) ? rowAmount + 1 : rowAmount;
-		var colTwoRows = (remainder > 1) ? colOneRows + rowAmount + 1 : colOneRows + rowAmount;
-		var colNumber = 1;
-		var skillCount = 0;
-
-		for (key in htmlObj) {
-			if (skillCount == colOneRows || skillCount == colTwoRows) {
-				colNumber++;
-			}
-			$('#' + type + '-col-' + colNumber).append(htmlObj[key]);
-			skillCount++;
-		}
 	}
 });
 
