@@ -128,15 +128,21 @@ charPromise.then(function() {
 		// If character has a sheet object, loop through sheet skills and add a skill container for each one
 
 		if (hasSheet) {
-			for (sheetKey in characters[key].sheet.skills) {
+			for (var sheetKey in characters[key].sheet.skills) {
+				console.log('sheetKey: ' + sheetKey);
+				console.log('skills:');
+				console.log(skills);
+				console.log('skills[sheetKey]: ');
+				console.log(skills[sheetKey]);
+
 				charSheetSkillsHTML += `
 					<div class="skill-container">
 	                	<div>
-	                		<img src="` + skills[String(sheetKey)].icon + `" alt="` + skills[String(sheetKey)].name + `">
+	                		<img src="` + skills[sheetKey].icon + `" alt="` + skills[sheetKey].name + `">
 	                	</div>
 	                	<div>
-	                		<h4>` + skills[String(sheetKey)].name + `</h4>
-	            			<p>` + placeholderReplace(skills[String(sheetKey)].description) + `</p>
+	                		<h4>` + skills[sheetKey].name + `</h4>
+	            			<p>` + placeholderReplace(skills[sheetKey].description) + `</p>
 	                	</div>
 	            	</div>
 				`;
