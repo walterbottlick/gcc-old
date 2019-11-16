@@ -41,6 +41,8 @@ Promise.all([skillPromise, charPromise]).then(function(values) {
 	skills = values[0];
 	characters = values[1];
 
+	// Populate Skills
+
 	for (key in skills) {
 		var div = `<div id="` + key + `" class="skill-box">`;
 
@@ -78,25 +80,11 @@ Promise.all([skillPromise, charPromise]).then(function(values) {
 
 	// Display skill under the appropriate header
 	for (key in skillsHTML) {
-		populateJsonHTML(skillsHTML[key], key);
+		populateSkillsJsonHTML(skillsHTML[key], key);
 	}
 
-	function populateJsonHTML(htmlObj, type) {
-		var rowAmount = Math.floor(Object.entries(htmlObj).length / 3);
-		var remainder = Object.entries(htmlObj).length % 3;
-		var colOneRows = (remainder > 0) ? rowAmount + 1 : rowAmount;
-		var colTwoRows = (remainder > 1) ? colOneRows + rowAmount + 1 : colOneRows + rowAmount;
-		var colNumber = 1;
-		var skillCount = 0;
 
-		for (key in htmlObj) {
-			if (skillCount == colOneRows || skillCount == colTwoRows) {
-				colNumber++;
-			}
-			$('#' + type + '-col-' + colNumber).append(htmlObj[key]);
-			skillCount++;
-		}
-	}
+	// Populate Characters
 
 	for (key in characters) {
 		if (characters[key].headerImage === '') { continue; } // If no headerImage is set in the json entry, then skip this character
@@ -220,15 +208,14 @@ Promise.all([skillPromise, charPromise]).then(function(values) {
 
 	// Display character under the appropriate header
 
-	populateJsonHTML(heroesHTML, 'hero');
-	populateJsonHTML(villainsHTML, 'villain');
-	populateJsonHTML(neutralsHTML, 'neutral');
+	populateCharactersJsonHTML(heroesHTML, 'hero');
+	populateCharactersJsonHTML(villainsHTML, 'villain');
+	populateCharactersJsonHTML(neutralsHTML, 'neutral');
 
 	// Character Sheet Button Listener
 	$('.sheet-btn').click(function() {
 		sheetTileSwitch($(this),'sheet');
 	});
-
 
 	// Character Tile Button Listener
 	$('.tile-btn').click(function() {
@@ -241,7 +228,26 @@ Promise.all([skillPromise, charPromise]).then(function(values) {
 		$(showHideID).slideToggle();
 	});
 
-	function populateJsonHTML(htmlObj, affiliation) {
+	// Populate Skills HTML function
+	function populateSkillsJsonHTML(htmlObj, type) {
+		var rowAmount = Math.floor(Object.entries(htmlObj).length / 3);
+		var remainder = Object.entries(htmlObj).length % 3;
+		var colOneRows = (remainder > 0) ? rowAmount + 1 : rowAmount;
+		var colTwoRows = (remainder > 1) ? colOneRows + rowAmount + 1 : colOneRows + rowAmount;
+		var colNumber = 1;
+		var skillCount = 0;
+
+		for (key in htmlObj) {
+			if (skillCount == colOneRows || skillCount == colTwoRows) {
+				colNumber++;
+			}
+			$('#' + type + '-col-' + colNumber).append(htmlObj[key]);
+			skillCount++;
+		}
+	}
+
+	// Populate CharactersHTML function
+	function populateCharactersJsonHTML(htmlObj, affiliation) {
 		var rowAmount = Math.floor(Object.entries(htmlObj).length / 2);
 		var remainder = Object.entries(htmlObj).length % 2;
 		var colOneRows = (remainder > 0) ? rowAmount + 1 : rowAmount;
