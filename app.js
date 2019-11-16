@@ -247,8 +247,8 @@ skillPromise.then(function() {
 	}
 
 	// Display skill under the appropriate header
-	for (key in skillsHTML) {
-		populateJsonHTML(skillsHTML[key], key);
+	for (skillsKey in skillsHTML) {
+		populateJsonHTML(skillsHTML[skillsKey], skillsKey);
 	}
 
 	function populateJsonHTML(htmlObj, type) {
