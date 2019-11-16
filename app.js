@@ -246,14 +246,10 @@ skillPromise.then(function() {
 		skillsHTML[skills[key].type][key] = div;
 	}
 
-	populateJsonHTML(skillsHTML['melee'], 'melee');
-	populateJsonHTML(skillsHTML['ranged'], 'ranged');
-	populateJsonHTML(skillsHTML['defense'], 'defense');
-	populateJsonHTML(skillsHTML['elemental'], 'elemental');
-	populateJsonHTML(skillsHTML['movement'], 'movement');
-	populateJsonHTML(skillsHTML['manipulation'], 'manipulation');
-	populateJsonHTML(skillsHTML['thought'], 'thought');
-	populateJsonHTML(skillsHTML['misc'], 'misc');
+	// Display skill under the appropriate header
+	for (key in skillsHTML) {
+		populateJsonHTML(skillsHTML[key], key);
+	}
 
 	function populateJsonHTML(htmlObj, type) {
 		var rowAmount = Math.floor(Object.entries(htmlObj).length / 3);
