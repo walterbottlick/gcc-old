@@ -36,10 +36,10 @@ var skillsHTML = {
 
 // Populate Characters and Skills
 
-Promise.all([skillPromise, charPromise]).then(function(skillPromise, charPromise) {
+Promise.all([skillPromise, charPromise]).then(function(values) {
 
-	skills = skillPromise;
-	characters = charPromise;
+	skills = values[0];
+	characters = values[1];
 
 	for (key in skills) {
 		var div = `<div id="` + key + `" class="skill-box">`;
