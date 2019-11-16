@@ -132,11 +132,11 @@ charPromise.then(function() {
 				charSheetSkillsHTML += `
 					<div class="skill-container">
 	                	<div>
-	                		<img src="` + skills[sheetKey].icon + `" alt="` + skills[sheetKey].name + `">
+	                		<img src="` + skills[String(sheetKey)].icon + `" alt="` + skills[String(sheetKey)].name + `">
 	                	</div>
 	                	<div>
-	                		<h4>` + skills[sheetKey].name + `</h4>
-	            			<p>` + placeholderReplace(skills[sheetKey].description) + `</p>
+	                		<h4>` + skills[String(sheetKey)].name + `</h4>
+	            			<p>` + placeholderReplace(skills[String(sheetKey)].description) + `</p>
 	                	</div>
 	            	</div>
 				`;
