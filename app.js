@@ -61,7 +61,10 @@ charPromise.then(function() {
 		// If character has a sheet object, loop through sheet skills and add a skill container for each one
 
 		if (hasSheet) {
-			for (var sheetKey in characters[key].sheet.skills) {
+			for (sheetKey in characters[key].sheet.skills) {
+				console.log('sheetKey: ' + sheetKey);
+				console.log('skills[sheetKey]: ');
+				console.log(skills[sheetKey]);
 				charSheetSkillsHTML += `
 					<div class="skill-container">
 	                	<div>
@@ -247,8 +250,8 @@ skillPromise.then(function() {
 	}
 
 	// Display skill under the appropriate header
-	for (skillsKey in skillsHTML) {
-		populateJsonHTML(skillsHTML[skillsKey], skillsKey);
+	for (key in skillsHTML) {
+		populateJsonHTML(skillsHTML[key], key);
 	}
 
 	function populateJsonHTML(htmlObj, type) {
