@@ -10,16 +10,12 @@ var skills = {};
 
 // Call JSON files
 
-var skillPromise = new Promise(function(resolve, reject) {
-	$.getJSON(skillList, function(json) {
-		return json;
-	});
-})
+var skillPromise = $.getJSON(skillList, function(json) {
+	return json;
+});
 
-var charPromise = new Promise(function(resolve, reject) {
-	$.getJSON(characterList, function(json) {
-		return json;
-	});
+var charPromise = $.getJSON(characterList, function(json) {
+	return json;
 });
 
 // Character and Skill HTML holder objects
