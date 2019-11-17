@@ -4,9 +4,7 @@
 		"subtitle": "",
 		"affiliation": "hero",
 		"gender": "his",
-		"moralCode": false,
 		"headerImage": "",
-		"icon": "",
 		"sheet": {
 			"melee": "white",
 			"ranged": "yellow",
@@ -66,9 +64,7 @@
 		"subtitle": "",
 		"affiliation": "hero",
 		"gender": "his",
-		"moralCode": false,
 		"headerImage": "/gcc-old/images/banners/azrael.jpg",
-		"icon": "",
 		"sheet": {
 			"melee": "red",
 			"ranged": "yellow",
@@ -119,9 +115,7 @@
 		"subtitle": "",
 		"affiliation": "villain",
 		"gender": "his",
-		"moralCode": false,
 		"headerImage": "/gcc-old/images/banners/bane.jpg",
-		"icon": "",
 		"sheet": {
 			"melee": "red",
 			"ranged": "orange",
@@ -176,9 +170,7 @@
 		"subtitle": "Venom Injected",
 		"affiliation": "villain",
 		"gender": "his",
-		"moralCode": false,
 		"headerImage": "",
-		"icon": "",
 		"sheet": {
 			"melee": "black",
 			"ranged": "yellow",
@@ -221,9 +213,7 @@
 		"subtitle": "",
 		"affiliation": "hero",
 		"gender": "",
-		"moralCode": false,
 		"headerImage": "",
-		"icon": "",
 		"sheet": {},
 		"tile": {
 			"rank": 2,
@@ -241,9 +231,7 @@
 		"subtitle": "",
 		"affiliation": "hero",
 		"gender": "her",
-		"moralCode": false,
 		"headerImage": "/gcc-old/images/banners/batcow.jpg",
-		"icon": "",
 		"sheet": {
 			"melee": "yellow",
 			"ranged": "yellow",
@@ -297,9 +285,7 @@
 		"subtitle": "Barbara Gordon",
 		"affiliation": "hero",
 		"gender": "her",
-		"moralCode": true,
 		"headerImage": "/gcc-old/images/banners/batgirl-barbara-gordon.jpg",
-		"icon": "",
 		"sheet": {
 			"melee": "orange",
 			"ranged": "orange",
@@ -307,6 +293,10 @@
 			"thought": "orange",
 			"defense": "orange",
 			"skills": {
+				"moralCode": {
+					"level": 0,
+					"disabledAt": 0
+				},
 				"martialArts": {
 					"level": 1,
 					"disabledAt": 4
@@ -354,9 +344,7 @@
 		"subtitle": "Dark Knight Returns",
 		"affiliation": "hero",
 		"gender": "his",
-		"moralCode": true,
 		"headerImage": "/gcc-old/images/banners/batman-dark-knight-returns.jpg",
-		"icon": "",
 		"sheet": {
 			"melee": "red",
 			"ranged": "orange",
@@ -364,6 +352,10 @@
 			"thought": "red",
 			"defense": "orange",
 			"skills": {
+				"moralCode": {
+					"level": 0,
+					"disabledAt": 0
+				},
 				"combo": {
 					"level": 2,
 					"disabledAt": 4
@@ -420,9 +412,7 @@
 		"subtitle": "Thrasher Suit",
 		"affiliation": "hero",
 		"gender": "his",
-		"moralCode": true,
 		"headerImage": "",
-		"icon": "",
 		"sheet": {
 			"melee": "black",
 			"ranged": "yellow",
@@ -430,6 +420,10 @@
 			"thought": "red",
 			"defense": "white",
 			"skills": {
+				"moralCode": {
+					"level": 0,
+					"disabledAt": 0
+				},
 				"circularStrike": {
 					"level": 2,
 					"disabledAt": 0
@@ -464,9 +458,7 @@
 		"subtitle": "Year 100",
 		"affiliation": "hero",
 		"gender": "his",
-		"moralCode": true,
 		"headerImage": "/gcc-old/images/banners/batman-year-100.jpg",
-		"icon": "",
 		"sheet": {
 			"melee": "red",
 			"ranged": "orange",
@@ -474,6 +466,10 @@
 			"thought": "red",
 			"defense": "orange",
 			"skills": {
+				"moralCode": {
+					"level": 0,
+					"disabledAt": 0
+				},
 				"counterAttack": {
 					"level": 2,
 					"disabledAt": 4
@@ -529,9 +525,7 @@
 		"subtitle": "",
 		"affiliation": "hero",
 		"gender": "",
-		"moralCode": false,
 		"headerImage": "",
-		"icon": "",
 		"sheet": {},
 		"tile": {
 			"rank": 1,
@@ -547,9 +541,7 @@
 		"subtitle": "",
 		"affiliation": "hero",
 		"gender": "his",
-		"moralCode": true,
 		"headerImage": "",
-		"icon": "",
 		"sheet": {
 			"melee": "orange",
 			"ranged": "yellow",
@@ -557,6 +549,10 @@
 			"thought": "red",
 			"defense": "yellow",
 			"skills": {
+				"moralCode": {
+					"level": 0,
+					"disabledAt": 0
+				},
 				"martialArts": {
 					"level": 1,
 					"disabledAt": 4
@@ -606,9 +602,7 @@
 		"subtitle": "",
 		"affiliation": "hero",
 		"gender": "her",
-		"moralCode": true,
 		"headerImage": "/gcc-old/images/banners/bluebird.jpg",
-		"icon": "",
 		"sheet": {
 			"melee": "orange",
 			"ranged": "yellow",
@@ -616,6 +610,10 @@
 			"thought": "orange",
 			"defense": "yellow",
 			"skills": {
+				"moralCode": {
+					"level": 0,
+					"disabledAt": 0
+				},
 				"ambidexterity": {
 					"level": 1,
 					"disabledAt": 0
@@ -659,9 +657,7 @@
 		"subtitle": "",
 		"affiliation": "hero",
 		"gender": "his",
-		"moralCode": true,
 		"headerImage": "",
-		"icon": "",
 		"sheet": {
 			"melee": "red",
 			"ranged": "orange",
@@ -669,6 +665,10 @@
 			"thought": "red",
 			"defense": "orange",
 			"skills": {
+				"moralCode": {
+					"level": 0,
+					"disabledAt": 0
+				},
 				"martialArts": {
 					"level": 1,
 					"disabledAt": 4
@@ -729,9 +729,7 @@
 		"subtitle": "",
 		"affiliation": "neutral",
 		"gender": "",
-		"moralCode": false,
 		"headerImage": "/gcc-old/images/banners/bystander.jpg",
-		"icon": "",
 		"sheet": {},
 		"tile": {
 			"rank": 1,
@@ -745,9 +743,7 @@
 		"subtitle": "",
 		"affiliation": "neutral",
 		"gender": "",
-		"moralCode": false,
 		"headerImage": "/gcc-old/images/banners/citizen.jpg",
-		"icon": "",
 		"sheet": {},
 		"tile": {
 			"rank": 1,
@@ -761,9 +757,7 @@
 		"subtitle": "",
 		"affiliation": "villain",
 		"gender": "her",
-		"moralCode": false,
 		"headerImage": "/gcc-old/images/banners/harley-quinn.jpg",
-		"icon": "",
 		"sheet": {
 			"melee": "orange",
 			"ranged": "orange",
@@ -814,9 +808,7 @@
 		"subtitle": "",
 		"affiliation": "villain",
 		"gender": "his",
-		"moralCode": false,
 		"headerImage": "/gcc-old/images/banners/joker.jpg",
-		"icon": "",
 		"sheet": {
 			"melee": "red",
 			"ranged": "orange",
@@ -871,9 +863,7 @@
 		"subtitle": "",
 		"affiliation": "hero",
 		"gender": "her",
-		"moralCode": false,
 		"headerImage": "",
-		"icon": "",
 		"sheet": {
 			"melee": "orange",
 			"ranged": "orange",
@@ -929,9 +919,7 @@
 		"subtitle": "",
 		"affiliation": "hero",
 		"gender": "his",
-		"moralCode": true,
 		"headerImage": "",
-		"icon": "",
 		"sheet": {
 			"melee": "orange",
 			"ranged": "orange",
@@ -939,6 +927,10 @@
 			"thought": "orange",
 			"defense": "orange",
 			"skills": {
+				"moralCode": {
+					"level": 0,
+					"disabledAt": 0
+				},
 				"combo": {
 					"level": 1,
 					"disabledAt": 4
@@ -993,9 +985,7 @@
 		"subtitle": "",
 		"affiliation": "hero",
 		"gender": "her",
-		"moralCode": true,
 		"headerImage": "",
-		"icon": "",
 		"sheet": {
 			"melee": "yellow",
 			"ranged": "orange",
@@ -1003,6 +993,10 @@
 			"thought": "orange",
 			"defense": "yellow",
 			"skills": {
+				"moralCode": {
+					"level": 0,
+					"disabledAt": 0
+				},
 				"reducedMobility": {
 					"level": 0,
 					"disabledAt": 0
@@ -1064,9 +1058,7 @@
 		"subtitle": "",
 		"affiliation": "villain",
 		"gender": "his",
-		"moralCode": false,
 		"headerImage": "/gcc-old/images/banners/penguin.jpg",
-		"icon": "",
 		"sheet": {
 			"melee": "yellow",
 			"ranged": "orange",
@@ -1117,9 +1109,7 @@
 		"subtitle": "",
 		"affiliation": "hero",
 		"gender": "his",
-		"moralCode": true,
 		"headerImage": "",
-		"icon": "",
 		"sheet": {
 			"melee": "orange",
 			"ranged": "orange",
@@ -1127,6 +1117,10 @@
 			"thought": "red",
 			"defense": "orange",
 			"skills": {
+				"moralCode": {
+					"level": 0,
+					"disabledAt": 0
+				},
 				"martialArts": {
 					"level": 1,
 					"disabledAt": 4
@@ -1179,9 +1173,7 @@
 		"subtitle": "",
 		"affiliation": "villain",
 		"gender": "his",
-		"moralCode": false,
 		"headerImage": "/gcc-old/images/banners/riddler.jpg",
-		"icon": "",
 		"sheet": {
 			"melee": "yellow",
 			"ranged": "orange",
@@ -1232,9 +1224,7 @@
 		"subtitle": "",
 		"affiliation": "villain",
 		"gender": "his",
-		"moralCode": false,
 		"headerImage": "/gcc-old/images/banners/scarecrow.jpg",
-		"icon": "",
 		"sheet": {
 			"melee": "yellow",
 			"ranged": "orange",
@@ -1290,9 +1280,7 @@
 		"subtitle": "",
 		"affiliation": "hero",
 		"gender": "",
-		"moralCode": false,
 		"headerImage": "",
-		"icon": "",
 		"sheet": {},
 		"tile": {
 			"rank": 3,
@@ -1301,7 +1289,7 @@
 				"elusive": 4,
 				"circularStrike": 5
 			},
-			"power": ""
+			"power": {}
 		}
 	},
 	"twoFace": {
@@ -1309,9 +1297,7 @@
 		"subtitle": "",
 		"affiliation": "villain",
 		"gender": "his",
-		"moralCode": false,
 		"headerImage": "/gcc-old/images/banners/two-face.jpg",
-		"icon": "",
 		"sheet": {
 			"melee": "orange",
 			"ranged": "red",
