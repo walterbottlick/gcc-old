@@ -95,6 +95,10 @@ section {
 	margin-bottom: 1em;
 }
 
+.los-tool-select-container {
+	margin-top: 1.25em;
+}
+
 .character-search-container div,
 .skills-search-container div,
 .los-tool-select-container div {
@@ -135,7 +139,9 @@ button:active {
 
 input,
 select {
-	height: 1.7em;
+	padding: 0.25em;
+    width: 14em;
+    font-family: 'Rajdhani', sans-serif;
 }
 
 .hidden {
