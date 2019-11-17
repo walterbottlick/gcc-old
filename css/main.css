@@ -28,8 +28,11 @@ header {
 
 h1 {
 	font-family: 'Rajdhani', sans-serif;
-	margin: 0;
-    font-size: 1.25em;
+    color: rgb(243,148,0);
+    font-size: 2.5em;
+    text-shadow: 1px 1px 10px rgb(0,0,0);
+    text-align: center;
+    margin: 0.5em 0 0 0;
 }
 
 h2 {
@@ -396,7 +399,7 @@ h4.no-skills {
 #heroes,
 #villains,
 #neutral {
-	margin: 2em 0;
+	margin: 1em 0;
 }
 
 .columnFix {
